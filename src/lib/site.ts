@@ -1,9 +1,9 @@
 export const site = {
   name: "Spandaman",
   tagline: "Real estate brokerage for Gurugram buyers",
-  phoneDisplay: "+91 98100 45021",
-  phoneTel: "+919810045021",
-  whatsapp: "919810045021",
+  phoneDisplay: "+91 99929 89289",
+  phoneTel: "+919992989289",
+  whatsapp: "919992989289",
   email: "enquire@spandaman.in",
   address: "Gurugram, Haryana",
   hours: "Mon–Sat, 10:00 AM – 7:00 PM",
