@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site, telUrl, whatsappUrl } from "@/lib/site";
 
@@ -6,7 +7,16 @@ export function SiteFooter() {
     <footer className="border-t border-border/70 bg-ink text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <p className="font-display text-3xl tracking-tight">{site.name}</p>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/brand/spandaman-logo.png"
+              alt="Spandaman Realtors"
+              width={40}
+              height={30}
+              className="h-8 w-auto brightness-110 contrast-105 drop-shadow-sm"
+            />
+            <p className="font-display text-3xl tracking-tight">{site.name}</p>
+          </div>
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/70">
             Independent real estate brokerage for Gurugram buyers. Currently
             prioritising enquiries for Krsumi in Sector 36A.

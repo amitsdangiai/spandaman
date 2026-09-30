@@ -56,44 +56,45 @@
 }
 
 :root {
-  --background: #f3f6f4;
-  --foreground: #14201c;
-  --card: #ffffff;
-  --card-foreground: #14201c;
-  --popover: #ffffff;
-  --popover-foreground: #14201c;
-  --primary: #1a3c32;
-  --primary-foreground: #f7faf8;
-  --secondary: #e4ece7;
-  --secondary-foreground: #1a3c32;
-  --muted: #e8efea;
-  --muted-foreground: #4d5f57;
-  --accent: #d9e6df;
-  --accent-foreground: #14201c;
+  /* Logo palette: slate ink, bronze, sand beige, deep teal */
+  --background: #f5ede5;
+  --foreground: #2f3a43;
+  --card: #fffaf6;
+  --card-foreground: #2f3a43;
+  --popover: #fffaf6;
+  --popover-foreground: #2f3a43;
+  --primary: #3d4852;
+  --primary-foreground: #f2eae2;
+  --secondary: #ebe0d4;
+  --secondary-foreground: #3d4852;
+  --muted: #efe6dc;
+  --muted-foreground: #5c6872;
+  --accent: #e5d6c6;
+  --accent-foreground: #2f3a43;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #cfdad3;
-  --input: #cfdad3;
-  --ring: #2f6b57;
-  --brand: #1a3c32;
-  --brand-foreground: #f7faf8;
-  --ink: #0f1a16;
-  --mist: #eef3f0;
-  --sage: #2f6b57;
-  --sand: #c4a574;
-  --chart-1: #1a3c32;
-  --chart-2: #2f6b57;
-  --chart-3: #c4a574;
-  --chart-4: #4d5f57;
-  --chart-5: #8aa396;
+  --border: #d4c4b3;
+  --input: #d4c4b3;
+  --ring: #a67c52;
+  --brand: #3d4852;
+  --brand-foreground: #f2eae2;
+  --ink: #2f3a43;
+  --mist: #f2eae2;
+  --sage: #3d6060;
+  --sand: #a67c52;
+  --chart-1: #3d4852;
+  --chart-2: #3d6060;
+  --chart-3: #a67c52;
+  --chart-4: #4e5b66;
+  --chart-5: #d9c5b2;
   --radius: 0.5rem;
-  --sidebar: #f7faf8;
-  --sidebar-foreground: #14201c;
-  --sidebar-primary: #1a3c32;
-  --sidebar-primary-foreground: #f7faf8;
-  --sidebar-accent: #e4ece7;
-  --sidebar-accent-foreground: #1a3c32;
-  --sidebar-border: #cfdad3;
-  --sidebar-ring: #2f6b57;
+  --sidebar: #f2eae2;
+  --sidebar-foreground: #2f3a43;
+  --sidebar-primary: #3d4852;
+  --sidebar-primary-foreground: #f2eae2;
+  --sidebar-accent: #ebe0d4;
+  --sidebar-accent-foreground: #3d4852;
+  --sidebar-border: #d4c4b3;
+  --sidebar-ring: #a67c52;
 }
 
 @layer base {
@@ -119,9 +120,10 @@
 
   .atmosphere {
     background:
-      radial-gradient(1200px 600px at 12% -10%, rgba(47, 107, 87, 0.14), transparent 55%),
-      radial-gradient(900px 500px at 88% 8%, rgba(196, 165, 116, 0.16), transparent 50%),
-      linear-gradient(180deg, #f7faf8 0%, #eef3f0 45%, #f3f6f4 100%);
+      radial-gradient(1200px 600px at 12% -10%, rgba(61, 96, 96, 0.12), transparent 55%),
+      radial-gradient(900px 500px at 88% 8%, rgba(166, 124, 82, 0.18), transparent 50%),
+      radial-gradient(700px 420px at 50% 100%, rgba(78, 91, 102, 0.08), transparent 55%),
+      linear-gradient(180deg, #f2eae2 0%, #ebe0d4 45%, #f5ede5 100%);
   }
 
   .animate-rise {

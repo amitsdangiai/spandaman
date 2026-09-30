@@ -30,6 +30,13 @@ export const metadata: Metadata = {
   },
   description:
     "Spandaman is a Gurugram real estate brokerage helping buyers enquire on Krsumi in Sector 36A — site visits, pricing on request, and clear next steps.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
