@@ -10,13 +10,18 @@ export default function HomePage() {
   return (
     <>
       <section className="relative min-h-[100svh] overflow-hidden text-white">
-        <HeroVideo
-          src="/hero/krisumi-hero.mp4"
-          poster="/hero/krisumi-hero-poster.jpg"
-          className="absolute inset-0 h-full w-full object-cover hero-video-zoom"
+        {/* 360° VR Tour iframe background */}
+        <iframe
+          src="https://nsventures.in/Krisumi-Gurugram-VR-New-V06/"
+          className="absolute inset-0 h-full w-full border-0"
+          title="Krsumi 360° Virtual Tour"
+          allow="accelerometer; gyroscope; xr-spatial-tracking"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,22,28,0.55)_0%,rgba(15,22,28,0.35)_42%,rgba(15,22,28,0.72)_100%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(15,22,28,0.45)_100%)]" />
+        
+        {/* Gradient overlays for readability */}
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(15,22,28,0.65)_0%,rgba(15,22,28,0.25)_42%,rgba(15,22,28,0.78)_100%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(15,22,28,0.55)_100%)]" />
 
         <div className="relative mx-auto flex min-h-[100svh] max-w-5xl flex-col items-center justify-center px-4 pb-20 pt-28 text-center sm:px-6 sm:pb-24">
           <div className="hero-cue-group max-w-3xl">
@@ -26,7 +31,7 @@ export default function HomePage() {
             <h1 className="hero-cue hero-cue-delay-1 mt-5 text-balance text-xl font-medium leading-snug text-white/95 sm:text-2xl md:text-[1.85rem]">
               Enquire on Krsumi — Sector 36A, Gurugram
             </h1>
-            <p className="hero-cue hero-cue-delay-2 mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+            <p className="hero-cue hero-cue-delay-2 mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/85 drop-shadow-[0_1px_8px_rgba(0,0,0,0.6)] sm:text-lg">
               Broker-led site visits, current inventory, and price on request —
               clear next steps without brochure fog.
             </p>
@@ -93,7 +98,7 @@ export default function HomePage() {
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
             Krsumi is a residential opportunity in Sector 36A that Spandaman is
             actively marketing to end-users and investors who want a clear
-            Gurugram address — not a vague “upcoming corridor” pitch.
+            Gurugram address — not a vague "upcoming corridor" pitch.
           </p>
         </div>
 
