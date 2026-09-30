@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { HeroVr } from "@/components/hero-vr";
 import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
 import { projects, site, telUrl, whatsappUrl } from "@/lib/site";
@@ -9,20 +10,14 @@ export default function HomePage() {
   return (
     <>
       <section className="relative min-h-[100svh] overflow-hidden text-white">
-        {/* 360° VR Tour iframe — interactive outside the overlay panel */}
-        <iframe
-          src="https://nsventures.in/Krisumi-Gurugram-VR-New-V06/"
-          className="absolute inset-0 z-0 h-full w-full border-0"
-          title="Krsumi 360° Virtual Tour"
-          allow="accelerometer; gyroscope; xr-spatial-tracking"
-          loading="eager"
-        />
+        {/* Local video paints immediately; VR iframe swaps in only if it loads in time */}
+        <HeroVr />
 
         {/* Gradient overlays for readability */}
         <div className="pointer-events-none absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(15,22,28,0.65)_0%,rgba(15,22,28,0.25)_42%,rgba(15,22,28,0.78)_100%)]" />
         <div className="pointer-events-none absolute inset-0 z-[1] bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(15,22,28,0.55)_100%)]" />
 
-        {/* Wrapper passes clicks through to iframe; panel restores CTA hit targets */}
+        {/* Wrapper passes clicks through to VR when active; panel restores CTA hit targets */}
         <div className="pointer-events-none relative z-[2] mx-auto flex min-h-[100svh] max-w-5xl flex-col items-center justify-center px-4 pb-28 pt-28 text-center sm:px-6 sm:pb-24">
           <div className="hero-cue-group pointer-events-auto max-w-3xl">
             <p className="hero-cue font-display text-5xl tracking-tight text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.45)] sm:text-6xl md:text-7xl">
