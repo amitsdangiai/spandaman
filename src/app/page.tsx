@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { HeroVideo } from "@/components/hero-video";
 import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
 import { projects, site, telUrl, whatsappUrl } from "@/lib/site";
@@ -10,21 +9,22 @@ export default function HomePage() {
   return (
     <>
       <section className="relative min-h-[100svh] overflow-hidden text-white">
-        {/* 360° VR Tour iframe background */}
+        {/* 360° VR Tour iframe — interactive outside the overlay panel */}
         <iframe
           src="https://nsventures.in/Krisumi-Gurugram-VR-New-V06/"
-          className="absolute inset-0 h-full w-full border-0"
+          className="absolute inset-0 z-0 h-full w-full border-0"
           title="Krsumi 360° Virtual Tour"
           allow="accelerometer; gyroscope; xr-spatial-tracking"
           loading="eager"
         />
-        
-        {/* Gradient overlays for readability */}
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(15,22,28,0.65)_0%,rgba(15,22,28,0.25)_42%,rgba(15,22,28,0.78)_100%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(15,22,28,0.55)_100%)]" />
 
-        <div className="relative mx-auto flex min-h-[100svh] max-w-5xl flex-col items-center justify-center px-4 pb-20 pt-28 text-center sm:px-6 sm:pb-24">
-          <div className="hero-cue-group max-w-3xl">
+        {/* Gradient overlays for readability */}
+        <div className="pointer-events-none absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(15,22,28,0.65)_0%,rgba(15,22,28,0.25)_42%,rgba(15,22,28,0.78)_100%)]" />
+        <div className="pointer-events-none absolute inset-0 z-[1] bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(15,22,28,0.55)_100%)]" />
+
+        {/* Wrapper passes clicks through to iframe; panel restores CTA hit targets */}
+        <div className="pointer-events-none relative z-[2] mx-auto flex min-h-[100svh] max-w-5xl flex-col items-center justify-center px-4 pb-28 pt-28 text-center sm:px-6 sm:pb-24">
+          <div className="hero-cue-group pointer-events-auto max-w-3xl">
             <p className="hero-cue font-display text-5xl tracking-tight text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.45)] sm:text-6xl md:text-7xl">
               {site.name}
             </p>
@@ -65,7 +65,7 @@ export default function HomePage() {
 
           <a
             href="#enquire"
-            className="hero-scroll-hint absolute bottom-8 left-1/2 -translate-x-1/2 text-white/70 transition-colors hover:text-white"
+            className="hero-scroll-hint pointer-events-auto absolute bottom-24 left-1/2 -translate-x-1/2 text-white/70 transition-colors hover:text-white md:bottom-8"
             aria-label="Scroll to enquire form"
           >
             <span className="sr-only">Scroll down</span>
