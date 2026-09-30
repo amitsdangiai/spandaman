@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LinkButton } from "@/components/link-button";
@@ -22,18 +23,36 @@ export function SiteHeader() {
         "z-40",
         overHero
           ? "absolute inset-x-0 top-0"
-          : "sticky top-0 border-b border-border/70 bg-[#f7faf8]/95 backdrop-blur",
+          : "sticky top-0 border-b border-border/70 bg-mist/95 backdrop-blur",
       )}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-5 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 sm:py-5">
         <Link
           href="/"
           className={cn(
-            "font-display text-2xl tracking-tight sm:text-[1.7rem]",
-            overHero ? "text-white drop-shadow-sm" : "text-ink",
+            "flex items-center gap-2.5 sm:gap-3",
+            overHero ? "drop-shadow-[0_1px_8px_rgba(0,0,0,0.45)]" : "",
           )}
         >
-          {site.name}
+          <Image
+            src="/brand/spandaman-logo.png"
+            alt="Spandaman Realtors"
+            width={48}
+            height={36}
+            priority
+            className={cn(
+              "h-9 w-auto sm:h-11",
+              overHero && "brightness-110 contrast-105",
+            )}
+          />
+          <span
+            className={cn(
+              "font-display text-xl tracking-tight sm:text-2xl",
+              overHero ? "text-white drop-shadow-sm" : "text-ink",
+            )}
+          >
+            {site.name}
+          </span>
         </Link>
         <nav
           aria-label="Primary"
