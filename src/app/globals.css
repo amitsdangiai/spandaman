@@ -145,6 +145,32 @@
   .float-cta {
     animation: floaty 3.2s ease-in-out infinite;
   }
+
+  /* Hero entrance (scrollCue-like slideInUp, CSS-only) */
+  .hero-cue {
+    animation: hero-slide-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .hero-cue-delay-1 {
+    animation-delay: 0.14s;
+  }
+
+  .hero-cue-delay-2 {
+    animation-delay: 0.28s;
+  }
+
+  .hero-cue-delay-3 {
+    animation-delay: 0.42s;
+  }
+
+  .hero-video-zoom {
+    animation: hero-video-zoom 22s ease-in-out infinite alternate;
+    will-change: transform;
+  }
+
+  .hero-scroll-hint {
+    animation: hero-scroll-bounce 2.2s ease-in-out 1.1s infinite;
+  }
 }
 
 @keyframes rise {
@@ -186,12 +212,47 @@
   }
 }
 
+@keyframes hero-slide-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes hero-video-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes hero-scroll-bounce {
+  0%,
+  100% {
+    transform: translate3d(-50%, 0, 0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translate3d(-50%, 8px, 0);
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-rise,
   .animate-rise-delay,
   .animate-fade,
   .ken-burns,
-  .float-cta {
+  .float-cta,
+  .hero-cue,
+  .hero-video-zoom,
+  .hero-scroll-hint {
     animation: none !important;
   }
 }

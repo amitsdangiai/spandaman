@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { HeroVideo } from "@/components/hero-video";
 import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
 import { projects, site, telUrl, whatsappUrl } from "@/lib/site";
@@ -9,34 +10,31 @@ export default function HomePage() {
   return (
     <>
       <section className="relative min-h-[100svh] overflow-hidden text-white">
-        <Image
-          src={krsumi.gallery[0].src}
-          alt={krsumi.gallery[0].alt}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover ken-burns"
+        <HeroVideo
+          src="/hero/krisumi-hero.mp4"
+          poster="/hero/krisumi-hero-poster.jpg"
+          className="absolute inset-0 h-full w-full object-cover hero-video-zoom"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(15,26,22,0.78)_0%,rgba(15,26,22,0.45)_48%,rgba(15,26,22,0.62)_100%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_40%,transparent_0%,rgba(15,26,22,0.35)_70%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,22,28,0.55)_0%,rgba(15,22,28,0.35)_42%,rgba(15,22,28,0.72)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(15,22,28,0.45)_100%)]" />
 
-        <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-4 pb-24 pt-28 sm:px-6 sm:pb-28">
-          <div className="max-w-2xl animate-rise">
-            <p className="font-display text-4xl tracking-tight text-white sm:text-5xl md:text-6xl">
+        <div className="relative mx-auto flex min-h-[100svh] max-w-5xl flex-col items-center justify-center px-4 pb-20 pt-28 text-center sm:px-6 sm:pb-24">
+          <div className="hero-cue-group max-w-3xl">
+            <p className="hero-cue font-display text-5xl tracking-tight text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.45)] sm:text-6xl md:text-7xl">
               {site.name}
             </p>
-            <h1 className="mt-5 max-w-xl text-balance text-2xl font-medium leading-snug text-white/95 sm:text-3xl md:text-[2.1rem]">
+            <h1 className="hero-cue hero-cue-delay-1 mt-5 text-balance text-xl font-medium leading-snug text-white/95 sm:text-2xl md:text-[1.85rem]">
               Enquire on Krsumi — Sector 36A, Gurugram
             </h1>
-            <p className="mt-4 max-w-lg text-base leading-relaxed text-white/80 sm:text-lg">
+            <p className="hero-cue hero-cue-delay-2 mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
               Broker-led site visits, current inventory, and price on request —
-              without the brochure fog.
+              clear next steps without brochure fog.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3 animate-rise-delay">
+            <div className="hero-cue hero-cue-delay-3 mt-8 flex flex-wrap items-center justify-center gap-3">
               <LinkButton
                 href="#enquire"
                 size="lg"
-                className="h-12 bg-white px-6 text-ink hover:bg-white/90"
+                className="h-12 bg-white px-7 text-ink hover:bg-white/90"
               >
                 Enquire now
               </LinkButton>
@@ -45,7 +43,7 @@ export default function HomePage() {
                 external
                 size="lg"
                 variant="outline"
-                className="h-12 border-white/50 bg-transparent px-6 text-white hover:bg-white/10 hover:text-white"
+                className="h-12 border-white/55 bg-transparent px-6 text-white hover:bg-white/10 hover:text-white"
               >
                 WhatsApp
               </LinkButton>
@@ -59,6 +57,28 @@ export default function HomePage() {
               </LinkButton>
             </div>
           </div>
+
+          <a
+            href="#enquire"
+            className="hero-scroll-hint absolute bottom-8 left-1/2 -translate-x-1/2 text-white/70 transition-colors hover:text-white"
+            aria-label="Scroll to enquire form"
+          >
+            <span className="sr-only">Scroll down</span>
+            <svg
+              aria-hidden
+              viewBox="0 0 24 24"
+              className="h-7 w-7"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.75"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 5v14m0 0-5-5m5 5 5-5"
+              />
+            </svg>
+          </a>
         </div>
       </section>
 
