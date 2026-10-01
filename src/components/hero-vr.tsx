@@ -3,16 +3,17 @@
 import { useEffect, useRef, useState } from "react";
 import { HeroVideo } from "@/components/hero-video";
 
-const VR_SRC = "https://nsventures.in/Krisumi-Gurugram-VR-New-V06/";
+/** Locally hosted Pano2VR tour with hotspots remapped to Spandaman project routes. */
+const VR_SRC = "/hero/vr/";
 /** Abort VR attempt if the tour has not become usable by this deadline. */
 const VR_LOAD_TIMEOUT_MS = 4500;
 
 type HeroMode = "pending" | "vr" | "fallback";
 
 /**
- * Full-bleed hero media: try the 360° VR iframe, fall back to local video.
+ * Full-bleed hero media: try the local 360° VR iframe, fall back to local video.
  * Video/poster paint immediately so LCP and desktop preview are never blocked
- * by a hung or sandboxed third-party tour.
+ * by a hung tour load.
  */
 export function HeroVr() {
   const [mode, setMode] = useState<HeroMode>("pending");
@@ -33,16 +34,18 @@ export function HeroVr() {
       settle("fallback");
     }, VR_LOAD_TIMEOUT_MS);
 
-    // Reachability probe (opaque ok). Avoid mounting a hung iframe when
-    // nsventures is blocked, slow, or offline in preview sandboxes.
-    fetch(VR_SRC, {
+    // Reachability probe for local tour assets (pano.xml is small + cacheable).
+    fetch(`${VR_SRC}pano.xml`, {
       method: "GET",
-      mode: "no-cors",
-      cache: "no-store",
+      cache: "force-cache",
       signal: controller.signal,
     })
-      .then(() => {
+      .then((res) => {
         if (settledRef.current) return;
+        if (!res.ok) {
+          settle("fallback");
+          return;
+        }
         setMountIframe(true);
       })
       .catch(() => {

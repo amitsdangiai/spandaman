@@ -56,6 +56,34 @@ export default function HomePage() {
                 Call {site.phoneDisplay}
               </LinkButton>
             </div>
+            {/* Always-visible project shortcuts — VR hotspots cover all six, but the tour labels
+                Sales Office / combined Forest for some dots; chips stay useful when VR falls back. */}
+            <nav
+              aria-label="Explore Krisumi projects"
+              className="hero-cue hero-cue-delay-3 mt-5 flex max-w-2xl flex-wrap items-center justify-center gap-2"
+            >
+              <span className="w-full text-center text-[0.7rem] font-semibold tracking-[0.16em] text-white/70 uppercase sm:w-auto sm:mr-1">
+                Explore projects
+              </span>
+              {(
+                [
+                  ["Waterfall Residences", "/projects/krisumi/waterfall-residences"],
+                  ["Waterfall Suites", "/projects/krisumi/waterfall-suites"],
+                  ["Waterfall Suites II", "/projects/krisumi/waterfall-suites-ii"],
+                  ["Waterside Residences", "/projects/krisumi/waterside-residences"],
+                  ["Forest Reserve", "/projects/krisumi/forest-reserve"],
+                  ["Forest Reserve II", "/projects/krisumi/forest-reserve-ii"],
+                ] as const
+              ).map(([label, href]) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="rounded-sm border border-white/35 bg-black/25 px-2.5 py-1 text-[0.7rem] font-medium tracking-wide text-white/90 backdrop-blur-[2px] transition-colors hover:border-white/60 hover:bg-black/40 hover:text-white"
+                >
+                  {label}
+                </a>
+              ))}
+            </nav>
           </div>
 
           <a
