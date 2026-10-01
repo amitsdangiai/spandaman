@@ -1,6 +1,6 @@
-# Spandaman — Krsumi lead site
+# Spandaman — Krisumi lead site
 
-Marketing site for **Spandaman**, a Gurugram real estate brokerage, focused on generating phone / WhatsApp / form leads for **Krsumi** in Sector 36A.
+Marketing site for **Spandaman**, a Gurugram real estate brokerage, focused on generating phone / WhatsApp / form leads for **Krisumi** in Sector 36A.
 
 ## Stack
 
@@ -28,8 +28,10 @@ npm run start
 
 | Route | Purpose |
 | --- | --- |
-| `/` | Home — Spandaman + Krsumi hero, highlights, form, FAQ |
-| `/projects/krsumi` | Dedicated Krsumi project page + enquiry |
+| `/` | Home — Spandaman + Krisumi hero, highlights, form, FAQ |
+| `/projects/krisumi` | Dedicated Krisumi project page + enquiry |
+| `/projects/krisumi/waterfall-residences` | Krisumi Waterfall Residences project page |
+| `/projects/krsumi` | Permanent redirect → `/projects/krisumi` |
 | `/contact` | Contact / enquire |
 | `/thank-you` | Post-submit success |
 

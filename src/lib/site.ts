@@ -10,9 +10,9 @@ export const site = {
 } as const;
 
 export const projects = {
-  krsumi: {
-    slug: "krsumi",
-    name: "Krsumi",
+  krisumi: {
+    slug: "krisumi",
+    name: "Krisumi",
     location: "Sector 36A, Gurugram",
     shortLocation: "Gurugram · Sector 36A",
     headline: "Residences shaped for how Gurugram lives now",
@@ -40,11 +40,11 @@ export const projects = {
     ],
     faqs: [
       {
-        q: "Where is Krsumi located?",
-        a: "Krsumi is in Sector 36A, Gurugram — a residential stretch buyers choose for connectivity and neighbourhood convenience.",
+        q: "Where is Krisumi located?",
+        a: "Krisumi is in Sector 36A, Gurugram — a residential stretch buyers choose for connectivity and neighbourhood convenience.",
       },
       {
-        q: "What is the price of Krsumi?",
+        q: "What is the price of Krisumi?",
         a: "Pricing depends on unit type, floor, and availability. Share your budget and preferred configuration — Spandaman will share current options on request.",
       },
       {
@@ -57,7 +57,7 @@ export const projects = {
       },
       {
         q: "Is Spandaman the developer?",
-        a: "No. Spandaman is an independent real estate brokerage. We represent buyers looking at Krsumi and comparable projects in Gurugram.",
+        a: "No. Spandaman is an independent real estate brokerage. We represent buyers looking at Krisumi and comparable projects in Gurugram.",
       },
     ],
     gallery: [
@@ -79,12 +79,96 @@ export const projects = {
       },
     ],
   },
+  waterfallResidences: {
+    slug: "waterfall-residences",
+    name: "Krisumi Waterfall Residences",
+    parentSlug: "krisumi",
+    location: "Sector 36A, Gurugram",
+    shortLocation: "Sector 36A · Dwarka Expressway",
+    headline: "Japanese-inspired luxury residences on Dwarka Expressway",
+    support:
+      "2 LDK, 3 LDK, and penthouse living in Sector 36A — Spandaman coordinates site visits and shares current availability on request.",
+    priceLabel: "Price on request",
+    typologies: [
+      "2 LDK",
+      "3 LDK",
+      "3 LDK + S",
+      "Penthouse",
+      "Penthouse + pool",
+    ],
+    highlights: [
+      {
+        title: "Sector 36A, at Gurugram’s widest roads",
+        body: "Positioned near the confluence of major arterials — Dwarka Expressway connectivity without the usual maze of clogged internal stretches.",
+      },
+      {
+        title: "Japanese design language",
+        body: "Residences and landscapes shaped around concepts of light, transition, and garden living — a quieter luxury than brochure clutter.",
+      },
+      {
+        title: "Clubhouse and amenity depth",
+        body: "A sprawling clubhouse with gym, spa, lounge dining, theatre, and outdoor leisure — built for daily use, not just launch-day photos.",
+      },
+      {
+        title: "Broker-led clarity",
+        body: "Spandaman is an independent brokerage. We confirm inventory, walk you through configurations, and share price on request — no developer spin.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Where is Krisumi Waterfall Residences?",
+        a: "In Sector 36A, Gurugram — framed by Dwarka Expressway–linked connectivity and access toward Delhi and other Gurugram sectors.",
+      },
+      {
+        q: "What configurations are available?",
+        a: "Public project information lists 2 LDK, 3 LDK, 3 LDK + servant, penthouse, and penthouse with pool options. Spandaman will confirm what is currently available for your visit.",
+      },
+      {
+        q: "What is the price?",
+        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified rates.",
+      },
+      {
+        q: "Is Spandaman the developer of Waterfall Residences?",
+        a: "No. Krisumi is the developer. Spandaman is an independent real estate brokerage helping buyers enquire, visit, and shortlist inventory.",
+      },
+      {
+        q: "Can I schedule a site visit?",
+        a: "Yes. Call, WhatsApp, or submit the enquire form. We coordinate visits around your schedule, including weekends where possible.",
+      },
+    ],
+    gallery: [
+      {
+        src: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80",
+        alt: "Modern high-rise residential towers against evening sky",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=1200&q=80",
+        alt: "Luxury apartment living room with floor-to-ceiling windows",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+        alt: "Contemporary residence exterior with landscaped courtyard",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80",
+        alt: "Elegant bedroom with soft natural light",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80",
+        alt: "Resort-style pool and landscaped outdoor space",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+        alt: "Open plan kitchen and dining in a luxury home",
+      },
+    ],
+  },
 } as const;
 
 export function whatsappUrl(message?: string) {
   const text =
     message ??
-    "Hi Spandaman, I want to enquire about Krsumi in Sector 36A, Gurugram.";
+    "Hi Spandaman, I want to enquire about Krisumi in Sector 36A, Gurugram.";
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`;
 }
 

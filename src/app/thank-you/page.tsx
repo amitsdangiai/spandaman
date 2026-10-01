@@ -35,8 +35,8 @@ export default function ThankYouPage() {
         >
           Message on WhatsApp
         </LinkButton>
-        <LinkButton href="/projects/krsumi" variant="outline">
-          Back to Krsumi
+        <LinkButton href="/projects/krisumi" variant="outline">
+          Back to Krisumi
         </LinkButton>
       </div>
     </div>

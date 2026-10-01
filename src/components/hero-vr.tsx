@@ -74,7 +74,7 @@ export function HeroVr() {
           className={`absolute inset-0 z-0 h-full w-full border-0 transition-opacity duration-500 ${
             showVr ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
-          title="Krsumi 360° Virtual Tour"
+          title="Krisumi 360° Virtual Tour"
           allow="accelerometer; gyroscope; xr-spatial-tracking"
           loading="eager"
           onLoad={() => {
