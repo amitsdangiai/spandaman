@@ -46,9 +46,6 @@
   --color-mist: var(--mist);
   --color-sage: var(--sage);
   --color-sand: var(--sand);
-  --color-gold: var(--gold);
-  --color-gold-deep: var(--gold-deep);
-  --color-gold-bright: var(--gold-bright);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -84,10 +81,6 @@
   --mist: #f2eae2;
   --sage: #3d6060;
   --sand: #a67c52;
-  /* Logo metallic gold */
-  --gold: #d4af37;
-  --gold-deep: #8c6b2d;
-  --gold-bright: #f1d279;
   --chart-1: #3d4852;
   --chart-2: #3d6060;
   --chart-3: #a67c52;
@@ -177,37 +170,6 @@
 
   .hero-scroll-hint {
     animation: hero-scroll-bounce 2.2s ease-in-out 1.1s infinite;
-  }
-
-  /* Brand + near-black mix matching logo metallic gold */
-  .text-brand-gold {
-    background-image: linear-gradient(
-      115deg,
-      #1a1a1a 0%,
-      var(--gold-deep) 22%,
-      var(--gold) 48%,
-      var(--gold-bright) 62%,
-      var(--gold) 78%,
-      #121212 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    filter: drop-shadow(0 1px 1px rgba(255, 255, 255, 0.35));
-  }
-
-  .text-brand-gold-soft {
-    background-image: linear-gradient(
-      115deg,
-      #1a1a1a 0%,
-      var(--gold-deep) 28%,
-      var(--gold) 55%,
-      #1f1f1f 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    filter: drop-shadow(0 1px 1px rgba(255, 255, 255, 0.3));
   }
 }
 
