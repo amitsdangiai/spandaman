@@ -163,12 +163,20 @@ export default function WaterfallResidencesPage() {
               actual inventory and finishes on your visit with Spandaman.
             </p>
           </div>
-          <Link
-            href="/projects/krisumi"
-            className="text-sm font-medium text-brand underline-offset-2 hover:underline"
-          >
-            ← Krisumi overview
-          </Link>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
+            <Link
+              href="/projects/krisumi"
+              className="text-brand underline-offset-2 hover:underline"
+            >
+              ← Krisumi overview
+            </Link>
+            <Link
+              href="/projects/krisumi/waterfall-suites"
+              className="text-brand underline-offset-2 hover:underline"
+            >
+              Waterfall Suites →
+            </Link>
+          </div>
         </div>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {waterfall.gallery.slice(1).map((image) => (
@@ -251,7 +259,14 @@ export default function WaterfallResidencesPage() {
             </h2>
             <p className="mt-3 text-base text-white/80">
               Spandaman will confirm inventory, share price on request, and
-              schedule a walkthrough that fits your day.
+              schedule a walkthrough that fits your day — including a look at{" "}
+              <Link
+                href="/projects/krisumi/waterfall-suites"
+                className="underline underline-offset-2 hover:text-white"
+              >
+                Waterfall Suites
+              </Link>{" "}
+              if you want compact 1 LDK living.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <LinkButton

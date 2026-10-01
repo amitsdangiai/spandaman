@@ -163,6 +163,88 @@ export const projects = {
       },
     ],
   },
+  waterfallSuites: {
+    slug: "waterfall-suites",
+    name: "Krisumi Waterfall Suites",
+    parentSlug: "krisumi",
+    location: "Sector 36A, Gurugram",
+    shortLocation: "Sector 36A · Dwarka Expressway",
+    headline: "Shiraito-inspired luxury suites for leaner Gurugram living",
+    support:
+      "1 LDK studio suites and penthouse options in Sector 36A — Spandaman coordinates site visits and shares current availability on request.",
+    priceLabel: "Price on request",
+    typologies: ["1 LDK + 1T", "1 LDK + 2T", "Penthouse"],
+    highlights: [
+      {
+        title: "Design drawn from Shiraito Falls",
+        body: "Façade and landscape motifs of stream, thread, and calm water — origami, silk yarn, and clear-handrail cues that read quieter than brochure excess.",
+      },
+      {
+        title: "Efficient 1 LDK suite living",
+        body: "Studio-suite layouts planned for professionals and investors who want Dwarka Expressway access without oversized footprint compromise.",
+      },
+      {
+        title: "Gardens, podium, and club lifestyle",
+        body: "Main garden with waterfall, podium rooftop greens, entrance drop-off drama, plus lobby, gym, spa, and dining — amenity depth you verify on a Spandaman visit.",
+      },
+      {
+        title: "Broker-led clarity",
+        body: "Spandaman is an independent brokerage. We confirm inventory, walk configurations, and share price on request — no invented rates or developer spin.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Where is Krisumi Waterfall Suites?",
+        a: "In Sector 36A, Gurugram — framed by Dwarka Expressway–linked connectivity and access toward Delhi and other Gurugram sectors, within the wider Krisumi address.",
+      },
+      {
+        q: "What configurations are available?",
+        a: "Public project information lists 1 LDK + 1T, 1 LDK + 2T studio-suite layouts, and penthouse options. Spandaman will confirm what is currently available for your visit.",
+      },
+      {
+        q: "What is the price?",
+        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified rates.",
+      },
+      {
+        q: "How is Waterfall Suites different from Waterfall Residences?",
+        a: "Suites lean toward compact 1 LDK studio living; Residences emphasise larger 2 LDK / 3 LDK and penthouse homes. Spandaman helps you compare both on the same Sector 36A visit.",
+      },
+      {
+        q: "Is Spandaman the developer of Waterfall Suites?",
+        a: "No. Krisumi is the developer. Spandaman is an independent real estate brokerage helping buyers enquire, visit, and shortlist inventory.",
+      },
+      {
+        q: "Can I schedule a site visit?",
+        a: "Yes. Call, WhatsApp, or submit the enquire form. We coordinate visits around your schedule, including weekends where possible.",
+      },
+    ],
+    gallery: [
+      {
+        src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
+        alt: "Modern glass residential tower rising against a clear sky",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+        alt: "Bright compact luxury apartment living space",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=1200&q=80",
+        alt: "Contemporary building lobby with soft natural light",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
+        alt: "Resort-style pool with landscaped deck seating",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
+        alt: "Zen-inspired garden path with lush greenery",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80",
+        alt: "Minimal modern bedroom with city view windows",
+      },
+    ],
+  },
 } as const;
 
 export function whatsappUrl(message?: string) {

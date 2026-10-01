@@ -110,9 +110,16 @@ export default function KrisumiProjectPage() {
                 className="font-medium text-brand underline-offset-2 hover:underline"
               >
                 Krisumi Waterfall Residences
+              </Link>{" "}
+              or{" "}
+              <Link
+                href="/projects/krisumi/waterfall-suites"
+                className="font-medium text-brand underline-offset-2 hover:underline"
+              >
+                Krisumi Waterfall Suites
               </Link>
-              ? Explore configurations, location framing, and a dedicated
-              enquiry form.
+              ? Explore configurations, location framing, and dedicated enquiry
+              forms for each.
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">

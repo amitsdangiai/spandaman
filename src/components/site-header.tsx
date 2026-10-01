@@ -14,6 +14,10 @@ const krisumiLinks = [
     href: "/projects/krisumi/waterfall-residences",
     label: "Waterfall Residences",
   },
+  {
+    href: "/projects/krisumi/waterfall-suites",
+    label: "Waterfall Suites",
+  },
 ];
 
 export function SiteHeader() {

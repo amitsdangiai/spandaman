@@ -100,6 +100,13 @@ export default function HomePage() {
               className="font-medium text-brand underline-offset-2 hover:underline"
             >
               Waterfall Residences
+            </a>{" "}
+            and{" "}
+            <a
+              href="/projects/krisumi/waterfall-suites"
+              className="font-medium text-brand underline-offset-2 hover:underline"
+            >
+              Waterfall Suites
             </a>
             .
           </p>
@@ -133,6 +140,13 @@ export default function HomePage() {
             className="border-brand/30 text-brand"
           >
             Waterfall Residences
+          </LinkButton>
+          <LinkButton
+            href="/projects/krisumi/waterfall-suites"
+            variant="outline"
+            className="border-brand/30 text-brand"
+          >
+            Waterfall Suites
           </LinkButton>
         </div>
       </section>
