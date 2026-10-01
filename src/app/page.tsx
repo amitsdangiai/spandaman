@@ -4,7 +4,7 @@ import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
 import { projects, site, telUrl, whatsappUrl } from "@/lib/site";
 
-const krsumi = projects.krsumi;
+const krisumi = projects.krisumi;
 
 export default function HomePage() {
   return (
@@ -24,7 +24,7 @@ export default function HomePage() {
               {site.name}
             </p>
             <h1 className="hero-cue hero-cue-delay-1 mt-5 text-balance text-xl font-medium leading-snug text-white/95 sm:text-2xl md:text-[1.85rem]">
-              Enquire on Krsumi — Sector 36A, Gurugram
+              Enquire on Krisumi — Sector 36A, Gurugram
             </h1>
             <p className="hero-cue hero-cue-delay-2 mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/85 drop-shadow-[0_1px_8px_rgba(0,0,0,0.6)] sm:text-lg">
               Broker-led site visits, current inventory, and price on request —
@@ -56,6 +56,34 @@ export default function HomePage() {
                 Call {site.phoneDisplay}
               </LinkButton>
             </div>
+            {/* Always-visible project shortcuts — VR hotspots cover all six, but the tour labels
+                Sales Office / combined Forest for some dots; chips stay useful when VR falls back. */}
+            <nav
+              aria-label="Explore Krisumi projects"
+              className="hero-cue hero-cue-delay-3 mt-5 flex max-w-2xl flex-wrap items-center justify-center gap-2"
+            >
+              <span className="w-full text-center text-[0.7rem] font-semibold tracking-[0.16em] text-white/70 uppercase sm:w-auto sm:mr-1">
+                Explore projects
+              </span>
+              {(
+                [
+                  ["Waterfall Residences", "/projects/krisumi/waterfall-residences"],
+                  ["Waterfall Suites", "/projects/krisumi/waterfall-suites"],
+                  ["Waterfall Suites II", "/projects/krisumi/waterfall-suites-ii"],
+                  ["Waterside Residences", "/projects/krisumi/waterside-residences"],
+                  ["Forest Reserve", "/projects/krisumi/forest-reserve"],
+                  ["Forest Reserve II", "/projects/krisumi/forest-reserve-ii"],
+                ] as const
+              ).map(([label, href]) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="rounded-sm border border-white/35 bg-black/25 px-2.5 py-1 text-[0.7rem] font-medium tracking-wide text-white/90 backdrop-blur-[2px] transition-colors hover:border-white/60 hover:bg-black/40 hover:text-white"
+                >
+                  {label}
+                </a>
+              ))}
+            </nav>
           </div>
 
           <a
@@ -88,17 +116,60 @@ export default function HomePage() {
             Featured project
           </p>
           <h2 className="mt-3 font-display text-3xl tracking-tight text-ink sm:text-4xl">
-            Why buyers are asking about Krsumi
+            Why buyers are asking about Krisumi
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Krsumi is a residential opportunity in Sector 36A that Spandaman is
+            Krisumi is a residential opportunity in Sector 36A that Spandaman is
             actively marketing to end-users and investors who want a clear
-            Gurugram address — not a vague "upcoming corridor" pitch.
+            Gurugram address — not a vague &ldquo;upcoming corridor&rdquo; pitch.
+            Featured inventory includes{" "}
+            <a
+              href="/projects/krisumi/waterfall-residences"
+              className="font-medium text-brand underline-offset-2 hover:underline"
+            >
+              Waterfall Residences
+            </a>
+            ,{" "}
+            <a
+              href="/projects/krisumi/waterfall-suites"
+              className="font-medium text-brand underline-offset-2 hover:underline"
+            >
+              Waterfall Suites
+            </a>
+            ,{" "}
+            <a
+              href="/projects/krisumi/waterfall-suites-ii"
+              className="font-medium text-brand underline-offset-2 hover:underline"
+            >
+              Waterfall Suites II
+            </a>
+            ,{" "}
+            <a
+              href="/projects/krisumi/waterside-residences"
+              className="font-medium text-brand underline-offset-2 hover:underline"
+            >
+              Waterside Residences
+            </a>
+            ,{" "}
+            <a
+              href="/projects/krisumi/forest-reserve"
+              className="font-medium text-brand underline-offset-2 hover:underline"
+            >
+              Forest Reserve
+            </a>
+            , and{" "}
+            <a
+              href="/projects/krisumi/forest-reserve-ii"
+              className="font-medium text-brand underline-offset-2 hover:underline"
+            >
+              Forest Reserve II
+            </a>
+            .
           </p>
         </div>
 
         <div className="mt-10 grid gap-8 md:grid-cols-2">
-          {krsumi.highlights.map((item) => (
+          {krisumi.highlights.map((item) => (
             <div key={item.title} className="border-t border-border/80 pt-5">
               <h3 className="font-display text-xl text-ink">{item.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">
@@ -110,14 +181,56 @@ export default function HomePage() {
 
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <p className="text-sm font-medium text-ink">
-            {krsumi.priceLabel} · {krsumi.typologies.join(" · ")}
+            {krisumi.priceLabel} · {krisumi.typologies.join(" · ")}
           </p>
           <LinkButton
-            href="/projects/krsumi"
+            href="/projects/krisumi"
             variant="outline"
             className="border-brand/30 text-brand"
           >
-            View Krsumi details
+            View Krisumi details
+          </LinkButton>
+          <LinkButton
+            href="/projects/krisumi/waterfall-residences"
+            variant="outline"
+            className="border-brand/30 text-brand"
+          >
+            Waterfall Residences
+          </LinkButton>
+          <LinkButton
+            href="/projects/krisumi/waterfall-suites"
+            variant="outline"
+            className="border-brand/30 text-brand"
+          >
+            Waterfall Suites
+          </LinkButton>
+          <LinkButton
+            href="/projects/krisumi/waterfall-suites-ii"
+            variant="outline"
+            className="border-brand/30 text-brand"
+          >
+            Waterfall Suites II
+          </LinkButton>
+          <LinkButton
+            href="/projects/krisumi/waterside-residences"
+            variant="outline"
+            className="border-brand/30 text-brand"
+          >
+            Waterside Residences
+          </LinkButton>
+          <LinkButton
+            href="/projects/krisumi/forest-reserve"
+            variant="outline"
+            className="border-brand/30 text-brand"
+          >
+            Forest Reserve
+          </LinkButton>
+          <LinkButton
+            href="/projects/krisumi/forest-reserve-ii"
+            variant="outline"
+            className="border-brand/30 text-brand"
+          >
+            Forest Reserve II
           </LinkButton>
         </div>
       </section>
@@ -160,13 +273,13 @@ export default function HomePage() {
             Tell us what you are looking for
           </h2>
           <p className="mt-4 max-w-md text-base leading-relaxed text-muted-foreground">
-            Share your name and phone. Default interest is Krsumi — change it if
+            Share your name and phone. Default interest is Krisumi — change it if
             you want comparable options in Gurugram.
           </p>
           <div className="mt-8 overflow-hidden rounded-2xl">
             <Image
-              src={krsumi.gallery[1].src}
-              alt={krsumi.gallery[1].alt}
+              src={krisumi.gallery[1].src}
+              alt={krisumi.gallery[1].alt}
               width={900}
               height={700}
               className="h-64 w-full object-cover sm:h-80"
@@ -194,7 +307,7 @@ export default function HomePage() {
             Questions buyers ask before they visit
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {krsumi.faqs.map((faq) => (
+            {krisumi.faqs.map((faq) => (
               <div key={faq.q} className="rounded-xl bg-white/80 p-5 sm:p-6">
                 <h3 className="text-base font-semibold text-ink">{faq.q}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
@@ -211,7 +324,7 @@ export default function HomePage() {
           <div className="absolute -right-10 -top-10 h-48 w-48 rounded-full bg-sage/40 blur-2xl" />
           <div className="relative max-w-xl">
             <h2 className="font-display text-3xl tracking-tight sm:text-4xl">
-              Ready for a Krsumi site visit?
+              Ready for a Krisumi site visit?
             </h2>
             <p className="mt-3 text-base text-white/80">
               Spandaman will confirm inventory, share price on request, and
@@ -226,7 +339,7 @@ export default function HomePage() {
                 Contact Spandaman
               </LinkButton>
               <LinkButton
-                href="/projects/krsumi"
+                href="/projects/krisumi"
                 size="lg"
                 variant="outline"
                 className="border-white/40 bg-transparent text-white hover:bg-white/10 hover:text-white"

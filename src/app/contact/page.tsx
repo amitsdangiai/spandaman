@@ -6,7 +6,7 @@ import { site, telUrl, whatsappUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact & Enquire",
   description:
-    "Contact Spandaman to enquire on Krsumi in Sector 36A, Gurugram — call, WhatsApp, or request a callback.",
+    "Contact Spandaman to enquire on Krisumi in Sector 36A, Gurugram — call, WhatsApp, or request a callback.",
 };
 
 export default function ContactPage() {
@@ -21,7 +21,7 @@ export default function ContactPage() {
         </h1>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
           Prefer a quick chat? Call or WhatsApp. Prefer a structured follow-up?
-          Use the form — interest defaults to Krsumi, Sector 36A.
+          Use the form — interest defaults to Krisumi, Sector 36A.
         </p>
       </div>
 

@@ -19,7 +19,7 @@ export function SiteFooter() {
           </div>
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/70">
             Independent real estate brokerage for Gurugram buyers. Currently
-            prioritising enquiries for Krsumi in Sector 36A.
+            prioritising enquiries for Krisumi in Sector 36A.
           </p>
         </div>
         <div>
@@ -28,8 +28,56 @@ export function SiteFooter() {
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>
-              <Link href="/projects/krsumi" className="hover:text-white">
-                Krsumi project
+              <Link href="/projects/krisumi" className="hover:text-white">
+                Krisumi overview
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/projects/krisumi/waterfall-residences"
+                className="hover:text-white"
+              >
+                Waterfall Residences
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/projects/krisumi/waterfall-suites"
+                className="hover:text-white"
+              >
+                Waterfall Suites
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/projects/krisumi/waterfall-suites-ii"
+                className="hover:text-white"
+              >
+                Waterfall Suites II
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/projects/krisumi/waterside-residences"
+                className="hover:text-white"
+              >
+                Waterside Residences
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/projects/krisumi/forest-reserve"
+                className="hover:text-white"
+              >
+                Forest Reserve
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/projects/krisumi/forest-reserve-ii"
+                className="hover:text-white"
+              >
+                Forest Reserve II
               </Link>
             </li>
             <li>

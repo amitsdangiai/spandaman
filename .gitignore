@@ -44,3 +44,6 @@ next-env.d.ts
 /data/leads/*.json
 /data/leads/*.ndjson
 !/data/leads/.gitkeep
+
+# local packaging artifacts
+/media/

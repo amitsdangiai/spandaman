@@ -1,6 +1,6 @@
-# Spandaman — Krsumi lead site
+# Spandaman — Krisumi lead site
 
-Marketing site for **Spandaman**, a Gurugram real estate brokerage, focused on generating phone / WhatsApp / form leads for **Krsumi** in Sector 36A.
+Marketing site for **Spandaman**, a Gurugram real estate brokerage, focused on generating phone / WhatsApp / form leads for **Krisumi** in Sector 36A.
 
 ## Stack
 
@@ -28,8 +28,10 @@ npm run start
 
 | Route | Purpose |
 | --- | --- |
-| `/` | Home — Spandaman + Krsumi hero, highlights, form, FAQ |
-| `/projects/krsumi` | Dedicated Krsumi project page + enquiry |
+| `/` | Home — Spandaman + Krisumi hero, highlights, form, FAQ |
+| `/projects/krisumi` | Dedicated Krisumi project page + enquiry |
+| `/projects/krisumi/waterfall-residences` | Krisumi Waterfall Residences project page |
+| `/projects/krsumi` | Permanent redirect → `/projects/krisumi` |
 | `/contact` | Contact / enquire |
 | `/thank-you` | Post-submit success |
 
@@ -42,6 +44,13 @@ v1 stores each lead as:
 - console log `[lead]`
 
 To wire a CRM / WhatsApp Business / Google Sheet later, edit `src/app/api/leads/route.ts` and forward the same payload to your webhook after validation. Update phone / WhatsApp / email in `src/lib/site.ts`.
+
+## Hero VR tour
+
+The homepage embeds a local Pano2VR tour under `public/hero/vr/` (~150MB, ~3900 panorama tiles). Hotspots open Spandaman project pages (`/projects/krisumi/...`), not external krisumi.com URLs.
+
+- **Production / full clone:** deploy from git so `public/hero/vr/tiles/` is present — without tiles the tour will not render.
+- **Thin zip handoff:** Agent Store `media/spandaman-latest.zip` omits the tile set for size; pull branch `cursor/hero-internal-hotspots-f276` (or merge to main) for the complete VR assets.
 
 ## Notes
 

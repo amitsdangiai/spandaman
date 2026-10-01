@@ -13,7 +13,7 @@ type LeadFormProps = {
 };
 
 export function LeadForm({
-  defaultProject = "Krsumi, Sector 36A",
+  defaultProject = "Krisumi, Sector 36A",
   compact = false,
 }: LeadFormProps) {
   const router = useRouter();
@@ -138,7 +138,7 @@ export function LeadForm({
         {pending ? "Sending…" : "Request a callback"}
       </Button>
       <p className="text-xs leading-relaxed text-muted-foreground">
-        Spandaman will call or WhatsApp you with current Krsumi availability.
+        Spandaman will call or WhatsApp you with current Krisumi availability.
         No spam — just a broker follow-up.
       </p>
     </form>

@@ -25,11 +25,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Spandaman | Krsumi, Sector 36A Gurugram",
+    default: "Spandaman | Krisumi, Sector 36A Gurugram",
     template: "%s | Spandaman",
   },
   description:
-    "Spandaman is a Gurugram real estate brokerage helping buyers enquire on Krsumi in Sector 36A — site visits, pricing on request, and clear next steps.",
+    "Spandaman is a Gurugram real estate brokerage helping buyers enquire on Krisumi in Sector 36A — site visits, pricing on request, and clear next steps.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

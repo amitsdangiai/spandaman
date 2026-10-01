@@ -3,16 +3,21 @@
 import { useEffect, useRef, useState } from "react";
 import { HeroVideo } from "@/components/hero-video";
 
-const VR_SRC = "https://nsventures.in/Krisumi-Gurugram-VR-New-V06/";
+/**
+ * Locally hosted Pano2VR tour with hotspots remapped to Spandaman project routes.
+ * Use index.html explicitly — Next may 308 `/hero/vr/` in a way that breaks the iframe.
+ */
+const VR_BASE = "/hero/vr";
+const VR_SRC = `${VR_BASE}/index.html`;
 /** Abort VR attempt if the tour has not become usable by this deadline. */
-const VR_LOAD_TIMEOUT_MS = 4500;
+const VR_LOAD_TIMEOUT_MS = 6000;
 
 type HeroMode = "pending" | "vr" | "fallback";
 
 /**
- * Full-bleed hero media: try the 360° VR iframe, fall back to local video.
+ * Full-bleed hero media: try the local 360° VR iframe, fall back to local video.
  * Video/poster paint immediately so LCP and desktop preview are never blocked
- * by a hung or sandboxed third-party tour.
+ * by a hung tour load.
  */
 export function HeroVr() {
   const [mode, setMode] = useState<HeroMode>("pending");
@@ -33,16 +38,18 @@ export function HeroVr() {
       settle("fallback");
     }, VR_LOAD_TIMEOUT_MS);
 
-    // Reachability probe (opaque ok). Avoid mounting a hung iframe when
-    // nsventures is blocked, slow, or offline in preview sandboxes.
-    fetch(VR_SRC, {
+    // Reachability probe for local tour assets (pano.xml is small + cacheable).
+    fetch(`${VR_BASE}/pano.xml`, {
       method: "GET",
-      mode: "no-cors",
-      cache: "no-store",
+      cache: "force-cache",
       signal: controller.signal,
     })
-      .then(() => {
+      .then((res) => {
         if (settledRef.current) return;
+        if (!res.ok) {
+          settle("fallback");
+          return;
+        }
         setMountIframe(true);
       })
       .catch(() => {
@@ -74,7 +81,7 @@ export function HeroVr() {
           className={`absolute inset-0 z-0 h-full w-full border-0 transition-opacity duration-500 ${
             showVr ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
-          title="Krsumi 360° Virtual Tour"
+          title="Krisumi 360° Virtual Tour"
           allow="accelerometer; gyroscope; xr-spatial-tracking"
           loading="eager"
           onLoad={() => {

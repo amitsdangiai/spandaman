@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour apprev="18043" start="node2" appversion="6.1.11">
+  <panorama id="node2" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-44.9173" fovmode="0">
+      <start tilt="-46.49" fov="77" pan="83.49" projection="4"/>
+      <flyin tilt="-90" fov="270" pan="-164.22" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node2" heading="-44.9173" info="" datetime="24-04-2026 11:41" copyright="" author="" tags="01" latitude="28.420413" longitude="76.973732" altitude="453.98" title="130 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point01" tilt="0.06" url="" id="Point01" target="_blank" pan="-85.68" title=""/>
+      <hotspot description="" skinid="Point02" tilt="-0.46" url="" id="Point02" target="_blank" pan="-111.06" title=""/>
+      <hotspot description="" skinid="Point03" tilt="-1.52" url="" id="Point03" target="_blank" pan="-117.78" title=""/>
+      <hotspot description="" skinid="Point04" tilt="-0.98" url="" id="Point04" target="_blank" pan="-169.65" title=""/>
+      <hotspot description="" skinid="Point05" tilt="-2.93" url="" id="Point05" target="_blank" pan="-180.49" title=""/>
+      <hotspot description="" skinid="Point06" tilt="-0.6" url="" id="Point06" target="_blank" pan="-243.52" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-5.67" url="" id="Point07" target="_blank" pan="-286.67" title=""/>
+      <hotspot description="" skinid="Point08" tilt="-1.29" url="" id="Point08" target="_blank" pan="-310.35" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-13.34" url="" id="Point09" target="_blank" pan="-29.09" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-4.5" url="" id="Point10" target="_blank" pan="-1.75" title=""/>
+      <hotspot description="" skinid="Point11" tilt="0.11" url="" id="Point11" target="_blank" pan="-63.29" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-17.98" url="" id="Point12" target="_blank" pan="-298.42" title=""/>
+      <hotspot description="" skinid="Point13" tilt="-14.25" url="" id="Point13" target="_blank" pan="-214.93" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-74.54" url="" id="Point14" target="_blank" pan="-65.32" title=""/>
+      <hotspot description="" skinid="Point15" tilt="-66.8" url="" id="Point15" target="_blank" pan="1.01" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-69.99" url="" id="Point16" target="_blank" pan="-120.63" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-48.15" url="" id="Point17" target="_blank" pan="-95.73" title=""/>
+      <hotspot description="" skinid="Point18" tilt="-0.03" url="" id="Point18" target="_blank" pan="-123.7" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-26.08" url="" id="Point19" target="_blank" pan="-274.59" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-19.12" url="" id="Point20" target="_blank" pan="-245.77" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-26.81" url="" id="Point21" target="_blank" pan="-260.21" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-63" url="" id="Point22" target="_blank" pan="-251.94" title=""/>
+      <hotspot description="" skinid="Point23" tilt="-3.2" url="" id="Point23" target="_blank" pan="-257.68" title=""/>
+      <hotspot description="" skinid="Point24" tilt="-1.52" url="" id="Point24" target="_blank" pan="-219.57" title=""/>
+      <hotspot description="" skinid="Point25" tilt="-1.09" url="" id="Point25" target="_blank" pan="-211.2" title=""/>
+      <hotspot description="" skinid="Point26" tilt="-1.1" url="" id="Point26" target="_blank" pan="-286.67" title=""/>
+      <polyhotspot description="" bordercolor="0xff0000" url="" borderalpha="1" id="Poly01" backgroundalpha="0.25098" target="_blank" backgroundcolor="0xffffff" title="">
+        <polystring>-135.26/-47.72|-91.16/-36.98|-68.33/-44.96|-85.35/-58.73|-38.74/-64.51|-39.68/-60.2|-0.23/-49.71|-328.49/-57.91|-320.92/-31.89|-290.37/-29.58|-308.22/-17.78|-294.89/-13.79|-292.82/-14.89|-287.92/-14.57|-273.28/-19.07|-251.63/-20.09|-252.59/-25.09|-232.19/-27.43|-240.29/-52.43|-207.74/-62.8|-129.86/-54.13</polystring>
+      </polyhotspot>
+    </hotspots>
+    <media>
+      <image rotz="-2.000" tilt="-5.360" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="0.000" fov="26.720" rotx="0.000" pan="-320.370" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-7.000" tilt="-13.960" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="22.201" rotx="-5.000" pan="-264.850" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="16.000" tilt="-7.680" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="35.000" fov="17.535" rotx="-9.000" pan="-196.970" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="-2.880" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="22.538" rotx="1.000" pan="-166.520" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.180" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.710" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node3" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-45.53" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.31" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node3" heading="-45.53" info="" datetime="24-04-2026 11:40" copyright="" author="" tags="01" latitude="28.420407" longitude="76.973731" altitude="444.08" title="120 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-66.8" url="" id="Point15" target="_blank" pan="1.01" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-69.99" url="" id="Point16" target="_blank" pan="-120.63" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-47.17" url="" id="Point17" target="_blank" pan="-94.88" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-74.83" url="" id="Point14" target="_blank" pan="-60.94" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-62.06" url="" id="Point22" target="_blank" pan="-253.11" title=""/>
+      <hotspot description="" skinid="Point13" tilt="-12.86" url="" id="Point13" target="_blank" pan="-214.96" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-19.31" url="" id="Point20" target="_blank" pan="-245.57" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-25.11" url="" id="Point21" target="_blank" pan="-258.14" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-24.58" url="" id="Point19" target="_blank" pan="-272.24" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-5.54" url="" id="Point07" target="_blank" pan="-285.82" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-16.99" url="" id="Point12" target="_blank" pan="-298.58" title=""/>
+      <hotspot description="" skinid="Point08" tilt="-0.66" url="" id="Point08" target="_blank" pan="-309.16" title=""/>
+      <hotspot description="" skinid="Point26" tilt="-0.65" url="" id="Point26" target="_blank" pan="-286.51" title=""/>
+      <hotspot description="" skinid="Point23" tilt="-2.59" url="" id="Point23" target="_blank" pan="-257.61" title=""/>
+      <hotspot description="" skinid="Point24" tilt="-1.6" url="" id="Point24" target="_blank" pan="-217.18" title=""/>
+      <hotspot description="" skinid="Point06" tilt="-1.11" url="" id="Point06" target="_blank" pan="-242.06" title=""/>
+      <hotspot description="" skinid="Point25" tilt="-1.9" url="" id="Point25" target="_blank" pan="-208.18" title=""/>
+      <hotspot description="" skinid="Point05" tilt="-3.54" url="" id="Point05" target="_blank" pan="-179.18" title=""/>
+      <hotspot description="" skinid="Point03" tilt="-2.13" url="" id="Point03" target="_blank" pan="-117.49" title=""/>
+      <hotspot description="" skinid="Point04" tilt="-2.05" url="" id="Point04" target="_blank" pan="-169.65" title=""/>
+      <hotspot description="" skinid="Point02" tilt="-0.79" url="" id="Point02" target="_blank" pan="-110.52" title=""/>
+      <hotspot description="" skinid="Point18" tilt="-0.97" url="" id="Point18" target="_blank" pan="-125.12" title=""/>
+      <hotspot description="" skinid="Point01" tilt="-0.3" url="" id="Point01" target="_blank" pan="-83.19" title=""/>
+      <hotspot description="" skinid="Point11" tilt="0.17" url="" id="Point11" target="_blank" pan="-60.88" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-11.29" url="" id="Point09" target="_blank" pan="-28.12" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-3.7" url="" id="Point10" target="_blank" pan="-0.99" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="-2.000" tilt="-4.270" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="0.000" fov="26.720" rotx="-2.000" pan="-319.770" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-7.000" tilt="-14.020" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="22.201" rotx="-5.000" pan="-263.560" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="16.000" tilt="-7.900" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="35.000" fov="17.535" rotx="-9.000" pan="-196.390" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="-2.880" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="20.892" rotx="1.000" pan="-166.520" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.550" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.800" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node4" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-39.0773" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.32" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node4" heading="-39.0773" info="" datetime="24-04-2026 11:38" copyright="" author="" tags="01" latitude="28.420407" longitude="76.973731" altitude="434.58" title="110 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-64.39" url="" id="Point15" target="_blank" pan="8.02" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-68.06" url="" id="Point16" target="_blank" pan="-119.56" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-45.3" url="" id="Point17" target="_blank" pan="-90.7" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-74.61" url="" id="Point14" target="_blank" pan="-62.21" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-59.9" url="" id="Point22" target="_blank" pan="-247.1" title=""/>
+      <hotspot description="" skinid="Point13" tilt="-10.15" url="" id="Point13" target="_blank" pan="-209.86" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-13.16" url="" id="Point20" target="_blank" pan="-240.5" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-23.76" url="" id="Point21" target="_blank" pan="-253.6" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-23.47" url="" id="Point19" target="_blank" pan="-266.47" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-15.63" url="" id="Point12" target="_blank" pan="-294.05" title=""/>
+      <hotspot description="" skinid="Point08" tilt="-0.94" url="" id="Point08" target="_blank" pan="-304.39" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-4.68" url="" id="Point07" target="_blank" pan="-281.65" title=""/>
+      <hotspot description="" skinid="Point26" tilt="-0.71" url="" id="Point26" target="_blank" pan="-281.88" title=""/>
+      <hotspot description="" skinid="Point23" tilt="-2.06" url="" id="Point23" target="_blank" pan="-252.67" title=""/>
+      <hotspot description="" skinid="Point24" tilt="-0.68" url="" id="Point24" target="_blank" pan="-213.17" title=""/>
+      <hotspot description="" skinid="Point06" tilt="-0.16" url="" id="Point06" target="_blank" pan="-236.77" title=""/>
+      <hotspot description="" skinid="Point25" tilt="-1.16" url="" id="Point25" target="_blank" pan="-203.63" title=""/>
+      <hotspot description="" skinid="Point05" tilt="-2.72" url="" id="Point05" target="_blank" pan="-176.84" title=""/>
+      <hotspot description="" skinid="Point04" tilt="-1.09" url="" id="Point04" target="_blank" pan="-165.53" title=""/>
+      <hotspot description="" skinid="Point03" tilt="-1.49" url="" id="Point03" target="_blank" pan="-111.79" title=""/>
+      <hotspot description="" skinid="Point02" tilt="-0.16" url="" id="Point02" target="_blank" pan="-105.73" title=""/>
+      <hotspot description="" skinid="Point18" tilt="-0.21" url="" id="Point18" target="_blank" pan="-118.82" title=""/>
+      <hotspot description="" skinid="Point01" tilt="-0.59" url="" id="Point01" target="_blank" pan="-78.81" title=""/>
+      <hotspot description="" skinid="Point11" tilt="-0.06" url="" id="Point11" target="_blank" pan="-56.69" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-11.93" url="" id="Point09" target="_blank" pan="-21.61" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-3.79" url="" id="Point10" target="_blank" pan="-356.21" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="-2.000" tilt="-4.420" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="-10.000" fov="23.861" rotx="-1.000" pan="-319.800" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-5.000" tilt="-12.850" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="22.201" rotx="7.000" pan="-258.220" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="16.000" tilt="-6.780" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="35.000" fov="17.535" rotx="-9.000" pan="-192.530" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="-2.580" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="20.892" rotx="1.000" pan="-161.050" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.500" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.430" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node5" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-55.6351" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.32" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node5" heading="-55.6351" info="" datetime="24-04-2026 11:29" copyright="" author="" tags="01" latitude="28.420445" longitude="76.973738" altitude="420.71" title="100 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-58.91" url="" id="Point15" target="_blank" pan="-8.48" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-64.31" url="" id="Point16" target="_blank" pan="-145.06" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-39.46" url="" id="Point17" target="_blank" pan="-101.55" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-73.92" url="" id="Point14" target="_blank" pan="-73.49" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-55.76" url="" id="Point22" target="_blank" pan="-261.63" title=""/>
+      <hotspot description="" skinid="Point13" tilt="-8.32" url="" id="Point13" target="_blank" pan="-223.61" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-10.39" url="" id="Point20" target="_blank" pan="-254.52" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-19.57" url="" id="Point21" target="_blank" pan="-268.51" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-19.06" url="" id="Point19" target="_blank" pan="-281.03" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-12.98" url="" id="Point12" target="_blank" pan="-307.42" title=""/>
+      <hotspot description="" skinid="Point08" tilt="0.48" url="" id="Point08" target="_blank" pan="-317.78" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-3.1" url="" id="Point07" target="_blank" pan="-294.5" title=""/>
+      <hotspot description="" skinid="Point26" tilt="0.41" url="" id="Point26" target="_blank" pan="-295.99" title=""/>
+      <hotspot description="" skinid="Point23" tilt="-0.91" url="" id="Point23" target="_blank" pan="-266.27" title=""/>
+      <hotspot description="" skinid="Point24" tilt="-0.4" url="" id="Point24" target="_blank" pan="-226.77" title=""/>
+      <hotspot description="" skinid="Point06" tilt="0.58" url="" id="Point06" target="_blank" pan="-250.62" title=""/>
+      <hotspot description="" skinid="Point25" tilt="-1.1" url="" id="Point25" target="_blank" pan="-217.06" title=""/>
+      <hotspot description="" skinid="Point05" tilt="-3.13" url="" id="Point05" target="_blank" pan="-190.16" title=""/>
+      <hotspot description="" skinid="Point04" tilt="-1.59" url="" id="Point04" target="_blank" pan="-179.48" title=""/>
+      <hotspot description="" skinid="Point03" tilt="-2.71" url="" id="Point03" target="_blank" pan="-127.49" title=""/>
+      <hotspot description="" skinid="Point02" tilt="-1.14" url="" id="Point02" target="_blank" pan="-120.74" title=""/>
+      <hotspot description="" skinid="Point18" tilt="-1.37" url="" id="Point18" target="_blank" pan="-135.85" title=""/>
+      <hotspot description="" skinid="Point01" tilt="-1.17" url="" id="Point01" target="_blank" pan="-92.72" title=""/>
+      <hotspot description="" skinid="Point11" tilt="-0.35" url="" id="Point11" target="_blank" pan="-70.47" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-9.97" url="" id="Point09" target="_blank" pan="-35.75" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-2.31" url="" id="Point10" target="_blank" pan="-9.53" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="0.000" tilt="-2.660" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="-10.000" fov="23.861" rotx="-1.000" pan="-326.150" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-5.000" tilt="-10.810" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="20.469" rotx="-5.000" pan="-270.450" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="11.000" tilt="-6.240" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="27.000" fov="17.535" rotx="2.000" pan="-205.090" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="-3.370" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="18.120" rotx="-5.000" pan="-174.500" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.520" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.560" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node6" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-51.3887" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.32" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node6" heading="-51.3887" info="" datetime="24-04-2026 11:28" copyright="" author="" tags="01" latitude="28.420439" longitude="76.973738" altitude="410.51" title="90 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-57.12" url="" id="Point15" target="_blank" pan="1.92" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-64.63" url="" id="Point16" target="_blank" pan="-137.3" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-38.67" url="" id="Point17" target="_blank" pan="-101.13" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-76.82" url="" id="Point14" target="_blank" pan="-66.55" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-47.5" url="" id="Point22" target="_blank" pan="-260.76" title=""/>
+      <hotspot description="" skinid="Point13" tilt="-8.11" url="" id="Point13" target="_blank" pan="-221.58" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-8.38" url="" id="Point20" target="_blank" pan="-252.27" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-17.62" url="" id="Point21" target="_blank" pan="-265.16" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-17.52" url="" id="Point19" target="_blank" pan="-277.9" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-12.18" url="" id="Point12" target="_blank" pan="-304.71" title=""/>
+      <hotspot description="" skinid="Point08" tilt="0.03" url="" id="Point08" target="_blank" pan="-316.12" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-2.62" url="" id="Point07" target="_blank" pan="-292.45" title=""/>
+      <hotspot description="" skinid="Point26" tilt="0.19" url="" id="Point26" target="_blank" pan="-293.6" title=""/>
+      <hotspot description="" skinid="Point23" tilt="-1.08" url="" id="Point23" target="_blank" pan="-263.64" title=""/>
+      <hotspot description="" skinid="Point24" tilt="-0.11" url="" id="Point24" target="_blank" pan="-227.27" title=""/>
+      <hotspot description="" skinid="Point06" tilt="0.57" url="" id="Point06" target="_blank" pan="-244.76" title=""/>
+      <hotspot description="" skinid="Point25" tilt="-0.75" url="" id="Point25" target="_blank" pan="-214.03" title=""/>
+      <hotspot description="" skinid="Point05" tilt="-2.32" url="" id="Point05" target="_blank" pan="-186.89" title=""/>
+      <hotspot description="" skinid="Point03" tilt="-2.12" url="" id="Point03" target="_blank" pan="-124.86" title=""/>
+      <hotspot description="" skinid="Point04" tilt="-1.37" url="" id="Point04" target="_blank" pan="-176.87" title=""/>
+      <hotspot description="" skinid="Point02" tilt="-0.9" url="" id="Point02" target="_blank" pan="-117.53" title=""/>
+      <hotspot description="" skinid="Point18" tilt="-0.9" url="" id="Point18" target="_blank" pan="-133.46" title=""/>
+      <hotspot description="" skinid="Point01" tilt="-0.94" url="" id="Point01" target="_blank" pan="-89.34" title=""/>
+      <hotspot description="" skinid="Point11" tilt="-0.29" url="" id="Point11" target="_blank" pan="-67.79" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-9.56" url="" id="Point09" target="_blank" pan="-33.03" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-2.36" url="" id="Point10" target="_blank" pan="-7.6" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="0.000" tilt="-2.470" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="-10.000" fov="20.050" rotx="-1.000" pan="-327.460" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-5.000" tilt="-9.180" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="20.469" rotx="-5.000" pan="-269.390" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="8.000" tilt="-5.750" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="27.000" fov="17.535" rotx="2.000" pan="-205.370" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="-2.690" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="18.120" rotx="-5.000" pan="-173.980" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.740" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.580" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node7" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-52.2353" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.32" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node7" heading="-52.2353" info="" datetime="24-04-2026 11:26" copyright="" author="" tags="01" latitude="28.420436" longitude="76.973733" altitude="401.31" title="80 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-53.36" url="" id="Point15" target="_blank" pan="-357.71" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-62.56" url="" id="Point16" target="_blank" pan="-134.83" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-37.51" url="" id="Point17" target="_blank" pan="-99.79" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-74.04" url="" id="Point14" target="_blank" pan="-60.4" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-45.38" url="" id="Point22" target="_blank" pan="-262.82" title=""/>
+      <hotspot description="" skinid="Point13" tilt="-6.52" url="" id="Point13" target="_blank" pan="-221.82" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-8.19" url="" id="Point20" target="_blank" pan="-253.29" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-17.68" url="" id="Point21" target="_blank" pan="-266.89" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-17.31" url="" id="Point19" target="_blank" pan="-279.61" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-11.56" url="" id="Point12" target="_blank" pan="-306.1" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-3.24" url="" id="Point07" target="_blank" pan="-293.01" title=""/>
+      <hotspot description="" skinid="Point08" tilt="-0.53" url="" id="Point08" target="_blank" pan="-316.82" title=""/>
+      <hotspot description="" skinid="Point26" tilt="-0.48" url="" id="Point26" target="_blank" pan="-294.71" title=""/>
+      <hotspot description="" skinid="Point23" tilt="-0.8" url="" id="Point23" target="_blank" pan="-264.55" title=""/>
+      <hotspot description="" skinid="Point24" tilt="0.51" url="" id="Point24" target="_blank" pan="-229.4" title=""/>
+      <hotspot description="" skinid="Point06" tilt="1.17" url="" id="Point06" target="_blank" pan="-245.57" title=""/>
+      <hotspot description="" skinid="Point25" tilt="-0.46" url="" id="Point25" target="_blank" pan="-214.71" title=""/>
+      <hotspot description="" skinid="Point05" tilt="-1.56" url="" id="Point05" target="_blank" pan="-187.33" title=""/>
+      <hotspot description="" skinid="Point04" tilt="-0.05" url="" id="Point04" target="_blank" pan="-177.39" title=""/>
+      <hotspot description="" skinid="Point03" tilt="-1.14" url="" id="Point03" target="_blank" pan="-125.82" title=""/>
+      <hotspot description="" skinid="Point02" tilt="0.13" url="" id="Point02" target="_blank" pan="-118.65" title=""/>
+      <hotspot description="" skinid="Point18" tilt="0.13" url="" id="Point18" target="_blank" pan="-133.6" title=""/>
+      <hotspot description="" skinid="Point01" tilt="-0.36" url="" id="Point01" target="_blank" pan="-90.53" title=""/>
+      <hotspot description="" skinid="Point11" tilt="0.29" url="" id="Point11" target="_blank" pan="-68.57" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-8.92" url="" id="Point09" target="_blank" pan="-33.05" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-2.96" url="" id="Point10" target="_blank" pan="-8.02" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="0.000" tilt="-2.660" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="-10.000" fov="23.861" rotx="-1.000" pan="-326.150" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-5.000" tilt="-8.640" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="20.469" rotx="-5.000" pan="-270.260" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="11.000" tilt="-4.770" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="27.000" fov="17.535" rotx="2.000" pan="-204.490" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="-1.760" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="18.120" rotx="-5.000" pan="-173.010" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.540" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.680" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node8" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-44.7882" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.32" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node8" heading="-44.7882" info="" datetime="24-04-2026 11:24" copyright="" author="" tags="01" latitude="28.420435" longitude="76.973735" altitude="390.71" title="70 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-51.3" url="" id="Point15" target="_blank" pan="5.64" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-57.8" url="" id="Point16" target="_blank" pan="-130.08" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-32.34" url="" id="Point17" target="_blank" pan="-95.42" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-72.02" url="" id="Point14" target="_blank" pan="-63.69" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-42.53" url="" id="Point22" target="_blank" pan="-253.74" title=""/>
+      <hotspot description="" skinid="Point13" tilt="-4.68" url="" id="Point13" target="_blank" pan="-215.89" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-6.74" url="" id="Point20" target="_blank" pan="-246.46" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-15.28" url="" id="Point21" target="_blank" pan="-258.99" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-15.06" url="" id="Point19" target="_blank" pan="-271.82" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-10.06" url="" id="Point12" target="_blank" pan="-299.18" title=""/>
+      <hotspot description="" skinid="Point08" tilt="0.2" url="" id="Point08" target="_blank" pan="-310.92" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-2.18" url="" id="Point07" target="_blank" pan="-287.18" title=""/>
+      <hotspot description="" skinid="Point26" tilt="0.42" url="" id="Point26" target="_blank" pan="-287.67" title=""/>
+      <hotspot description="" skinid="Point23" tilt="-0.16" url="" id="Point23" target="_blank" pan="-258.2" title=""/>
+      <hotspot description="" skinid="Point24" tilt="0.9" url="" id="Point24" target="_blank" pan="-223.82" title=""/>
+      <hotspot description="" skinid="Point06" tilt="1.57" url="" id="Point06" target="_blank" pan="-238.81" title=""/>
+      <hotspot description="" skinid="Point25" tilt="-0.41" url="" id="Point25" target="_blank" pan="-208.29" title=""/>
+      <hotspot description="" skinid="Point05" tilt="-1.27" url="" id="Point05" target="_blank" pan="-180.12" title=""/>
+      <hotspot description="" skinid="Point04" tilt="-0.23" url="" id="Point04" target="_blank" pan="-170.62" title=""/>
+      <hotspot description="" skinid="Point03" tilt="-1.43" url="" id="Point03" target="_blank" pan="-119.53" title=""/>
+      <hotspot description="" skinid="Point02" tilt="-0.33" url="" id="Point02" target="_blank" pan="-112.35" title=""/>
+      <hotspot description="" skinid="Point18" tilt="-0.38" url="" id="Point18" target="_blank" pan="-127.89" title=""/>
+      <hotspot description="" skinid="Point01" tilt="-0.59" url="" id="Point01" target="_blank" pan="-84.52" title=""/>
+      <hotspot description="" skinid="Point11" tilt="-0.17" url="" id="Point11" target="_blank" pan="-61.99" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-7.65" url="" id="Point09" target="_blank" pan="-26.6" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-1.95" url="" id="Point10" target="_blank" pan="-1.37" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="0.000" tilt="-1.620" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="-10.000" fov="23.861" rotx="-6.000" pan="-325.200" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-5.000" tilt="-7.300" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="20.469" rotx="-5.000" pan="-263.870" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="10.000" tilt="-4.080" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="27.000" fov="17.535" rotx="2.000" pan="-198.030" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="-1.650" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="18.120" rotx="-5.000" pan="-165.770" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.360" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.850" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node9" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-35.5506" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.32" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node9" heading="-35.5506" info="" datetime="24-04-2026 11:17" copyright="" author="" tags="01" latitude="28.420400" longitude="76.973706" altitude="380.50" title="60 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-48.85" url="" id="Point15" target="_blank" pan="9.2" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-52.64" url="" id="Point16" target="_blank" pan="-136.07" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-29.29" url="" id="Point17" target="_blank" pan="-92.13" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-62.59" url="" id="Point14" target="_blank" pan="-76.98" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-39.29" url="" id="Point22" target="_blank" pan="-239.35" title=""/>
+      <hotspot description="" skinid="Point13" tilt="-3.47" url="" id="Point13" target="_blank" pan="-205" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-4.69" url="" id="Point20" target="_blank" pan="-235.5" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-12.8" url="" id="Point21" target="_blank" pan="-248.04" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-12.95" url="" id="Point19" target="_blank" pan="-261.68" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-9.17" url="" id="Point12" target="_blank" pan="-289.46" title=""/>
+      <hotspot description="" skinid="Point08" tilt="-0.54" url="" id="Point08" target="_blank" pan="-300.97" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-1.83" url="" id="Point07" target="_blank" pan="-276.18" title=""/>
+      <hotspot description="" skinid="Point26" tilt="0.48" url="" id="Point26" target="_blank" pan="-277.99" title=""/>
+      <hotspot description="" skinid="Point23" tilt="0.25" url="" id="Point23" target="_blank" pan="-248.15" title=""/>
+      <hotspot description="" skinid="Point24" tilt="2.32" url="" id="Point24" target="_blank" pan="-213" title=""/>
+      <hotspot description="" skinid="Point06" tilt="2.92" url="" id="Point06" target="_blank" pan="-227.86" title=""/>
+      <hotspot description="" skinid="Point25" tilt="1.16" url="" id="Point25" target="_blank" pan="-197.32" title=""/>
+      <hotspot description="" skinid="Point05" tilt="0.23" url="" id="Point05" target="_blank" pan="-170.24" title=""/>
+      <hotspot description="" skinid="Point04" tilt="1.2" url="" id="Point04" target="_blank" pan="-160.82" title=""/>
+      <hotspot description="" skinid="Point03" tilt="-0.73" url="" id="Point03" target="_blank" pan="-109.59" title=""/>
+      <hotspot description="" skinid="Point02" tilt="0.42" url="" id="Point02" target="_blank" pan="-102.44" title=""/>
+      <hotspot description="" skinid="Point18" tilt="0.47" url="" id="Point18" target="_blank" pan="-118.15" title=""/>
+      <hotspot description="" skinid="Point01" tilt="-0.82" url="" id="Point01" target="_blank" pan="-75.29" title=""/>
+      <hotspot description="" skinid="Point11" tilt="-0.35" url="" id="Point11" target="_blank" pan="-51.38" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-7.88" url="" id="Point09" target="_blank" pan="-16.42" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-2.68" url="" id="Point10" target="_blank" pan="-351.8" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="0.000" tilt="-1.850" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="-10.000" fov="21.349" rotx="5.000" pan="-317.220" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-5.000" tilt="-5.710" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="20.469" rotx="-5.000" pan="-256.010" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="8.000" tilt="-2.150" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="27.000" fov="17.535" rotx="2.000" pan="-187.710" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="-0.050" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="18.120" rotx="-5.000" pan="-153.950" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.400" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.500" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node10" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-35.4562" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.32" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node10" heading="-35.4562" info="" datetime="24-04-2026 11:16" copyright="" author="" tags="01" latitude="28.420398" longitude="76.973709" altitude="370.70" title="50 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-43.94" url="" id="Point15" target="_blank" pan="15.95" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-52.31" url="" id="Point16" target="_blank" pan="-133.92" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-25.5" url="" id="Point17" target="_blank" pan="-82.36" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-62.65" url="" id="Point14" target="_blank" pan="-70.22" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-35.61" url="" id="Point22" target="_blank" pan="-242" title=""/>
+      <hotspot description="" skinid="Point13" tilt="-2.57" url="" id="Point13" target="_blank" pan="-203.73" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-5.26" url="" id="Point20" target="_blank" pan="-234.64" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-11.35" url="" id="Point21" target="_blank" pan="-247.24" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-11.45" url="" id="Point19" target="_blank" pan="-260.17" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-7.9" url="" id="Point12" target="_blank" pan="-287.6" title=""/>
+      <hotspot description="" skinid="Point08" tilt="-0.49" url="" id="Point08" target="_blank" pan="-299.87" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-1.7" url="" id="Point07" target="_blank" pan="-274.46" title=""/>
+      <hotspot description="" skinid="Point26" tilt="-0.03" url="" id="Point26" target="_blank" pan="-277" title=""/>
+      <hotspot description="" skinid="Point23" tilt="-0.1" url="" id="Point23" target="_blank" pan="-246.96" title=""/>
+      <hotspot description="" skinid="Point24" tilt="1.88" url="" id="Point24" target="_blank" pan="-211.29" title=""/>
+      <hotspot description="" skinid="Point06" tilt="1.98" url="" id="Point06" target="_blank" pan="-226.97" title=""/>
+      <hotspot description="" skinid="Point25" tilt="0.52" url="" id="Point25" target="_blank" pan="-195.78" title=""/>
+      <hotspot description="" skinid="Point05" tilt="0.35" url="" id="Point05" target="_blank" pan="-168.99" title=""/>
+      <hotspot description="" skinid="Point04" tilt="1.33" url="" id="Point04" target="_blank" pan="-159.72" title=""/>
+      <hotspot description="" skinid="Point03" tilt="-0.51" url="" id="Point03" target="_blank" pan="-108.69" title=""/>
+      <hotspot description="" skinid="Point02" tilt="0.53" url="" id="Point02" target="_blank" pan="-100.69" title=""/>
+      <hotspot description="" skinid="Point18" tilt="0.87" url="" id="Point18" target="_blank" pan="-116.3" title=""/>
+      <hotspot description="" skinid="Point01" tilt="-0.25" url="" id="Point01" target="_blank" pan="-73.86" title=""/>
+      <hotspot description="" skinid="Point11" tilt="0.29" url="" id="Point11" target="_blank" pan="-50.7" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-6.26" url="" id="Point09" target="_blank" pan="-15.39" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-2.18" url="" id="Point10" target="_blank" pan="-350.74" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="0.000" tilt="-1.420" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="-10.000" fov="21.003" rotx="-1.000" pan="-308.790" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-5.000" tilt="-5.140" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="20.469" rotx="-5.000" pan="-254.730" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="7.000" tilt="-2.110" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="27.000" fov="17.535" rotx="2.000" pan="-187.230" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="0.250" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="18.120" rotx="-5.000" pan="-152.510" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.590" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.760" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node11" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-35.2022" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.32" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node11" heading="-35.2022" info="" datetime="24-04-2026 11:14" copyright="" author="" tags="01" latitude="28.420401" longitude="76.973705" altitude="361.30" title="40 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-38.18" url="" id="Point15" target="_blank" pan="-340.86" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-46.25" url="" id="Point16" target="_blank" pan="-133.39" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-22.59" url="" id="Point17" target="_blank" pan="-83.09" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-60.74" url="" id="Point14" target="_blank" pan="-65.99" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-32.81" url="" id="Point22" target="_blank" pan="-239.01" title=""/>
+      <hotspot description="" skinid="Point13" tilt="-2.98" url="" id="Point13" target="_blank" pan="-203.41" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-4.88" url="" id="Point20" target="_blank" pan="-234.37" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-9.98" url="" id="Point21" target="_blank" pan="-246.94" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-10.18" url="" id="Point19" target="_blank" pan="-261.04" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-6.55" url="" id="Point12" target="_blank" pan="-288.05" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-0.87" url="" id="Point07" target="_blank" pan="-274.38" title=""/>
+      <hotspot description="" skinid="Point08" tilt="0.14" url="" id="Point08" target="_blank" pan="-299.83" title=""/>
+      <hotspot description="" skinid="Point26" tilt="0.7" url="" id="Point26" target="_blank" pan="-276.99" title=""/>
+      <hotspot description="" skinid="Point23" tilt="0.01" url="" id="Point23" target="_blank" pan="-246.99" title=""/>
+      <hotspot description="" skinid="Point24" tilt="1.53" url="" id="Point24" target="_blank" pan="-211.76" title=""/>
+      <hotspot description="" skinid="Point06" tilt="1.65" url="" id="Point06" target="_blank" pan="-226.66" title=""/>
+      <hotspot description="" skinid="Point25" tilt="0.35" url="" id="Point25" target="_blank" pan="-195.87" title=""/>
+      <hotspot description="" skinid="Point05" tilt="0.23" url="" id="Point05" target="_blank" pan="-168.21" title=""/>
+      <hotspot description="" skinid="Point04" tilt="0.79" url="" id="Point04" target="_blank" pan="-159.63" title=""/>
+      <hotspot description="" skinid="Point03" tilt="-0.27" url="" id="Point03" target="_blank" pan="-108.72" title=""/>
+      <hotspot description="" skinid="Point02" tilt="0.7" url="" id="Point02" target="_blank" pan="-100.66" title=""/>
+      <hotspot description="" skinid="Point18" tilt="0.59" url="" id="Point18" target="_blank" pan="-116.5" title=""/>
+      <hotspot description="" skinid="Point01" tilt="0.22" url="" id="Point01" target="_blank" pan="-74.13" title=""/>
+      <hotspot description="" skinid="Point11" tilt="1.1" url="" id="Point11" target="_blank" pan="-49.98" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-4.35" url="" id="Point09" target="_blank" pan="-15.03" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-0.98" url="" id="Point10" target="_blank" pan="-351" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="0.000" tilt="-0.140" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="-10.000" fov="23.861" rotx="-1.000" pan="-308.550" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-3.000" tilt="-4.090" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="20.469" rotx="1.000" pan="-254.190" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="6.000" tilt="-2.010" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="25.000" fov="14.677" rotx="-3.000" pan="-185.350" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="-0.670" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="13.000" fov="18.120" rotx="-5.000" pan="-152.120" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.710" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.790" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node12" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-45.5753" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.32" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node12" heading="-45.5753" info="" datetime="24-04-2026 11:06" copyright="" author="" tags="01" latitude="28.420491" longitude="76.973642" altitude="350.17" title="30 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-37.97" url="" id="Point15" target="_blank" pan="2.59" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-32.89" url="" id="Point16" target="_blank" pan="-145.73" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-16.56" url="" id="Point17" target="_blank" pan="-95.79" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-50.92" url="" id="Point14" target="_blank" pan="-89.68" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-26.65" url="" id="Point22" target="_blank" pan="-235.59" title=""/>
+      <hotspot description="" skinid="Point13" tilt="-0.63" url="" id="Point13" target="_blank" pan="-212.11" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-1.9" url="" id="Point20" target="_blank" pan="-241.33" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-7.11" url="" id="Point21" target="_blank" pan="-251.72" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-7.39" url="" id="Point19" target="_blank" pan="-264.93" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-5.42" url="" id="Point12" target="_blank" pan="-294.98" title=""/>
+      <hotspot description="" skinid="Point08" tilt="0.25" url="" id="Point08" target="_blank" pan="-308.57" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-0.31" url="" id="Point07" target="_blank" pan="-282.95" title=""/>
+      <hotspot description="" skinid="Point26" tilt="0.64" url="" id="Point26" target="_blank" pan="-286.2" title=""/>
+      <hotspot description="" skinid="Point24" tilt="2.06" url="" id="Point24" target="_blank" pan="-219.78" title=""/>
+      <hotspot description="" skinid="Point23" tilt="0.65" url="" id="Point23" target="_blank" pan="-255.69" title=""/>
+      <hotspot description="" skinid="Point06" tilt="1.73" url="" id="Point06" target="_blank" pan="-233.98" title=""/>
+      <hotspot description="" skinid="Point25" tilt="1.16" url="" id="Point25" target="_blank" pan="-205.15" title=""/>
+      <hotspot description="" skinid="Point05" tilt="1.27" url="" id="Point05" target="_blank" pan="-178.01" title=""/>
+      <hotspot description="" skinid="Point04" tilt="1.65" url="" id="Point04" target="_blank" pan="-168.54" title=""/>
+      <hotspot description="" skinid="Point03" tilt="0.36" url="" id="Point03" target="_blank" pan="-117.02" title=""/>
+      <hotspot description="" skinid="Point02" tilt="0.94" url="" id="Point02" target="_blank" pan="-109.39" title=""/>
+      <hotspot description="" skinid="Point18" tilt="1.28" url="" id="Point18" target="_blank" pan="-125.39" title=""/>
+      <hotspot description="" skinid="Point01" tilt="0.16" url="" id="Point01" target="_blank" pan="-82.54" title=""/>
+      <hotspot description="" skinid="Point11" tilt="0.52" url="" id="Point11" target="_blank" pan="-59.03" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-4.23" url="" id="Point09" target="_blank" pan="-23.84" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-1.16" url="" id="Point10" target="_blank" pan="-359.47" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="0.000" tilt="-0.200" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="-10.000" fov="18.058" rotx="-5.000" pan="-319.780" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-5.000" tilt="-2.520" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="20.469" rotx="-5.000" pan="-263.760" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="5.000" tilt="-1.070" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="27.000" fov="15.976" rotx="4.000" pan="-194.750" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="0.420" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="16.128" rotx="9.000" pan="-162.540" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.550" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.950" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node13" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-44.0221" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.32" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node13" heading="-44.0221" info="" datetime="24-04-2026 11:04" copyright="" author="" tags="01" latitude="28.420499" longitude="76.973641" altitude="339.56" title="20 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-28.98" url="" id="Point15" target="_blank" pan="-350.82" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-27.79" url="" id="Point16" target="_blank" pan="-143.92" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-12.95" url="" id="Point17" target="_blank" pan="-94.11" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-56.61" url="" id="Point14" target="_blank" pan="-89.48" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-21.19" url="" id="Point22" target="_blank" pan="-236.04" title=""/>
+      <hotspot description="" skinid="Point13" tilt="0.2" url="" id="Point13" target="_blank" pan="-211.66" title=""/>
+      <hotspot description="" skinid="Point20" tilt="-0.2" url="" id="Point20" target="_blank" pan="-240.71" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-5.75" url="" id="Point21" target="_blank" pan="-252.37" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-5.61" url="" id="Point19" target="_blank" pan="-265.7" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-3.86" url="" id="Point12" target="_blank" pan="-293.48" title=""/>
+      <hotspot description="" skinid="Point08" tilt="0.65" url="" id="Point08" target="_blank" pan="-307.52" title=""/>
+      <hotspot description="" skinid="Point07" tilt="-0.14" url="" id="Point07" target="_blank" pan="-282.57" title=""/>
+      <hotspot description="" skinid="Point26" tilt="0.87" url="" id="Point26" target="_blank" pan="-285.8" title=""/>
+      <hotspot description="" skinid="Point23" tilt="0.77" url="" id="Point23" target="_blank" pan="-255.4" title=""/>
+      <hotspot description="" skinid="Point24" tilt="1.71" url="" id="Point24" target="_blank" pan="-219.63" title=""/>
+      <hotspot description="" skinid="Point06" tilt="1.63" url="" id="Point06" target="_blank" pan="-233.43" title=""/>
+      <hotspot description="" skinid="Point25" tilt="0.81" url="" id="Point25" target="_blank" pan="-204.75" title=""/>
+      <hotspot description="" skinid="Point05" tilt="1.56" url="" id="Point05" target="_blank" pan="-178.25" title=""/>
+      <hotspot description="" skinid="Point03" tilt="0.94" url="" id="Point03" target="_blank" pan="-117.14" title=""/>
+      <hotspot description="" skinid="Point04" tilt="1.53" url="" id="Point04" target="_blank" pan="-168.18" title=""/>
+      <hotspot description="" skinid="Point02" tilt="1.28" url="" id="Point02" target="_blank" pan="-109.53" title=""/>
+      <hotspot description="" skinid="Point18" tilt="1.45" url="" id="Point18" target="_blank" pan="-124.64" title=""/>
+      <hotspot description="" skinid="Point01" tilt="0.91" url="" id="Point01" target="_blank" pan="-81.91" title=""/>
+      <hotspot description="" skinid="Point11" tilt="1.27" url="" id="Point11" target="_blank" pan="-57.87" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-2.55" url="" id="Point09" target="_blank" pan="-22.15" title=""/>
+      <hotspot description="" skinid="Point10" tilt="-0.11" url="" id="Point10" target="_blank" pan="-359.49" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="0.000" tilt="0.420" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="-10.000" fov="19.097" rotx="-3.000" pan="-322.020" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-3.000" tilt="-1.620" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-5.000" fov="20.469" rotx="-5.000" pan="-265.260" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="3.000" tilt="-0.640" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="27.000" fov="14.504" rotx="2.000" pan="-194.360" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="0.390" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="13.182" rotx="-5.000" pan="-161.620" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.520" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.970" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <panorama id="node14" hideabout="1">
+    <input levelingroll="0" levelbias="0.400" leveltilesize="510" width="3000" levelingpitch="0" leveltileurl="tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3000" levelbiashidpi="1.000" overlap="1">
+      <level predecode="0" width="3000" height="3000" preload="0"/>
+      <level predecode="0" width="1500" height="1500" preload="0"/>
+      <level predecode="0" width="750" height="750" preload="0"/>
+      <level predecode="1" width="375" height="375" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="-56.3002" fovmode="0">
+      <start tilt="-5.15" fov="76.67" pan="78.32" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" pan="0" fovpixel="2"/>
+      <max tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1" fovfisheye="360"/>
+    </view>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="node14" heading="-56.3002" info="" datetime="24-04-2026 11:03" copyright="" author="" tags="01" latitude="28.420499" longitude="76.973643" altitude="329.96" title="10 Mtr"/>
+    <hotspots width="180" wordwrap="1" height="20">
+      <label enabled="1" textalpha="1" background="1" bordercolor="0x000000" borderalpha="1" border="1" borderradius="1" backgroundalpha="1" width="180" wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="2" backgroundcolor="0x0000ff"/>
+      <hotspot description="" skinid="Point15" tilt="-25.6" url="" id="Point15" target="_blank" pan="0.109999" title=""/>
+      <hotspot description="" skinid="Point16" tilt="-20.5" url="" id="Point16" target="_blank" pan="-151.21" title=""/>
+      <hotspot description="" skinid="Point17" tilt="-10.4" url="" id="Point17" target="_blank" pan="-103.43" title=""/>
+      <hotspot description="" skinid="Point14" tilt="-42.67" url="" id="Point14" target="_blank" pan="-112.73" title=""/>
+      <hotspot description="" skinid="Point22" tilt="-18.89" url="" id="Point22" target="_blank" pan="-236.85" title=""/>
+      <hotspot description="" skinid="Point13" tilt="3.32" url="" id="Point13" target="_blank" pan="-215.96" title=""/>
+      <hotspot description="" skinid="Point20" tilt="3.85" url="" id="Point20" target="_blank" pan="-245.46" title=""/>
+      <hotspot description="" skinid="Point21" tilt="-4.53" url="" id="Point21" target="_blank" pan="-259.27" title=""/>
+      <hotspot description="" skinid="Point19" tilt="-4.14" url="" id="Point19" target="_blank" pan="-272.44" title=""/>
+      <hotspot description="" skinid="Point12" tilt="-2.84" url="" id="Point12" target="_blank" pan="-299.6" title=""/>
+      <hotspot description="" skinid="Point08" tilt="1.01" url="" id="Point08" target="_blank" pan="-313.54" title=""/>
+      <hotspot description="" skinid="Point07" tilt="0.5" url="" id="Point07" target="_blank" pan="-287.12" title=""/>
+      <hotspot description="" skinid="Point26" tilt="1.12" url="" id="Point26" target="_blank" pan="-292.25" title=""/>
+      <hotspot description="" skinid="Point23" tilt="1.27" url="" id="Point23" target="_blank" pan="-259.51" title=""/>
+      <hotspot description="" skinid="Point24" tilt="5.17" url="" id="Point24" target="_blank" pan="-224.22" title=""/>
+      <hotspot description="" skinid="Point06" tilt="4.56" url="" id="Point06" target="_blank" pan="-237.5" title=""/>
+      <hotspot description="" skinid="Point25" tilt="3.41" url="" id="Point25" target="_blank" pan="-208.73" title=""/>
+      <hotspot description="" skinid="Point05" tilt="2.46" url="" id="Point05" target="_blank" pan="-182.65" title=""/>
+      <hotspot description="" skinid="Point04" tilt="1.59" url="" id="Point04" target="_blank" pan="-172.41" title=""/>
+      <hotspot description="" skinid="Point03" tilt="0.94" url="" id="Point03" target="_blank" pan="-122.04" title=""/>
+      <hotspot description="" skinid="Point02" tilt="1.14" url="" id="Point02" target="_blank" pan="-114.35" title=""/>
+      <hotspot description="" skinid="Point18" tilt="1.35" url="" id="Point18" target="_blank" pan="-129.01" title=""/>
+      <hotspot description="" skinid="Point01" tilt="0.9" url="" id="Point01" target="_blank" pan="-86.12" title=""/>
+      <hotspot description="" skinid="Point11" tilt="0.96" url="" id="Point11" target="_blank" pan="-62.34" title=""/>
+      <hotspot description="" skinid="Point09" tilt="-1.71" url="" id="Point09" target="_blank" pan="-25.76" title=""/>
+      <hotspot description="" skinid="Point10" tilt="0.07" url="" id="Point10" target="_blank" pan="-3.28" title=""/>
+    </hotspots>
+    <media>
+      <image rotz="0.000" tilt="0.500" handcursor="0" id="Element01" width="2407" stretch="1.000" clickmode="0" roty="-10.000" fov="18.751" rotx="7.000" pan="-332.620" height="206">
+        <source url="media/Road Name New.png"/>
+      </image>
+      <image rotz="-1.000" tilt="-0.840" handcursor="0" id="Element02" width="2407" stretch="1.000" clickmode="0" roty="-2.000" fov="15.185" rotx="-5.000" pan="-265.270" height="206">
+        <source url="media/Road Name New 2.png"/>
+      </image>
+      <image rotz="1.000" tilt="-0.100" handcursor="0" id="Element03" width="2877" stretch="1.000" clickmode="0" roty="27.000" fov="14.244" rotx="2.000" pan="-198.240" height="206">
+        <source url="media/Road Name New 3.png"/>
+      </image>
+      <image rotz="0.000" tilt="0.490" handcursor="0" id="Element04" width="2877" stretch="1.000" clickmode="0" roty="8.000" fov="12.316" rotx="-5.000" pan="-166.120" height="206">
+        <source url="media/Road Name New 4.png"/>
+      </image>
+      <lensflare tilt="40.370" blinding="50.000" id="Lensflare01" alpha="80.000" type="1" pan="-68.780" color="0xffffff"/>
+    </media>
+    <transition enabled="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" zoomafterinfov="90" zoomafteroutfov="20" zoomfov="20" blendtime="1" type="crossdissolve" softedge="0" blendcolor="0x000000"/>
+    <autorotate enabled="1" startloaded="0" useanimation="0" delay="4.00" returntohorizon="2.000" noderandom="1" nodedelay="0.00" speed="0.050" nodefilter=""/>
+    <flyintransition enabled="1" speed="2.00"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control dblclickfullscreen="0" invertcontrol="1" sensitivity="8" speedwheel="1" contextfullscreen="0" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" invertwheel="0" hideabout="1" lockedkeyboardzoom="0" lockedkeyboard="0"/>
+  </panorama>
+  <masternode>
+    <userdata description="" comment="" customnodeid="" source="" nodeid="master" heading="0" info="" datetime="" copyright="" author="" tags="" latitude="" longitude="" title=""/>
+  </masternode>
+</tour>

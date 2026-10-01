@@ -23,7 +23,7 @@ export async function POST(request: Request) {
   const phone = String(body.phone || "").trim();
   const email = String(body.email || "").trim();
   const message = String(body.message || "").trim();
-  const project = String(body.project || "Krsumi, Sector 36A").trim();
+  const project = String(body.project || "Krisumi, Sector 36A").trim();
 
   if (!name || name.length < 2) {
     return NextResponse.json({ error: "Please enter your name." }, { status: 400 });
