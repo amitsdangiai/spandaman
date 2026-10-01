@@ -177,6 +177,12 @@ export default function WaterfallSuitesPage() {
             >
               Waterfall Residences →
             </Link>
+            <Link
+              href="/projects/krisumi/waterfall-suites-ii"
+              className="text-brand underline-offset-2 hover:underline"
+            >
+              Waterfall Suites II →
+            </Link>
           </div>
         </div>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -263,12 +269,19 @@ export default function WaterfallSuitesPage() {
               schedule a walkthrough that fits your day — including a side-by-side
               look at{" "}
               <Link
+                href="/projects/krisumi/waterfall-suites-ii"
+                className="underline underline-offset-2 hover:text-white"
+              >
+                Waterfall Suites II
+              </Link>{" "}
+              or{" "}
+              <Link
                 href="/projects/krisumi/waterfall-residences"
                 className="underline underline-offset-2 hover:text-white"
               >
                 Waterfall Residences
               </Link>{" "}
-              if you want larger layouts.
+              if you want to compare footprints.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <LinkButton

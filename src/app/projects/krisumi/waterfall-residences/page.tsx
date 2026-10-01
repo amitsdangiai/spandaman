@@ -176,6 +176,12 @@ export default function WaterfallResidencesPage() {
             >
               Waterfall Suites →
             </Link>
+            <Link
+              href="/projects/krisumi/waterfall-suites-ii"
+              className="text-brand underline-offset-2 hover:underline"
+            >
+              Waterfall Suites II →
+            </Link>
           </div>
         </div>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -265,6 +271,13 @@ export default function WaterfallResidencesPage() {
                 className="underline underline-offset-2 hover:text-white"
               >
                 Waterfall Suites
+              </Link>{" "}
+              or{" "}
+              <Link
+                href="/projects/krisumi/waterfall-suites-ii"
+                className="underline underline-offset-2 hover:text-white"
+              >
+                Waterfall Suites II
               </Link>{" "}
               if you want compact 1 LDK living.
             </p>

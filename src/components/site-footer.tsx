@@ -49,6 +49,14 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link
+                href="/projects/krisumi/waterfall-suites-ii"
+                className="hover:text-white"
+              >
+                Waterfall Suites II
+              </Link>
+            </li>
+            <li>
               <Link href="/#enquire" className="hover:text-white">
                 Lead enquiry form
               </Link>

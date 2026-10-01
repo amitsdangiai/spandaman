@@ -245,6 +245,88 @@ export const projects = {
       },
     ],
   },
+  waterfallSuitesII: {
+    slug: "waterfall-suites-ii",
+    name: "Krisumi Waterfall Suites II",
+    parentSlug: "krisumi",
+    location: "Sector 36A, Gurugram",
+    shortLocation: "Sector 36A · Dwarka Expressway",
+    headline: "Next-chapter suite living with wellness-led design",
+    support:
+      "1 LDK suite and penthouse options in Sector 36A — Spandaman coordinates site visits and shares current availability on request.",
+    priceLabel: "Price on request",
+    typologies: ["1 LDK + 1T", "1 LDK + 2T", "Penthouse"],
+    highlights: [
+      {
+        title: "Crafted with Nikken Housing System",
+        body: "Public project materials frame Waterfall Suites II around modern architecture and design collaboration — a measured luxury you verify on a Spandaman walkthrough, not a brochure-only promise.",
+      },
+      {
+        title: "Wellness beside Dwarka Expressway",
+        body: "Positioned for premium comforts and greenery in Sector 36A — suite living aimed at buyers who want convenience without giving up calm communal spaces.",
+      },
+      {
+        title: "Green-belt neighbourhood framing",
+        body: "Developer materials highlight proximity to a wide green zone and green belt along Gurugram’s NPR / CPR corridors — context Spandaman maps against your commute on enquiry.",
+      },
+      {
+        title: "Broker-led clarity",
+        body: "Spandaman is an independent brokerage. We confirm inventory, walk configurations, and share price on request — no invented rates, RERA numbers, or developer spin.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Where is Krisumi Waterfall Suites II?",
+        a: "In Sector 36A, Gurugram on the Dwarka Expressway belt — framed for connectivity toward Delhi and other Gurugram sectors within the wider Krisumi address.",
+      },
+      {
+        q: "What configurations are available?",
+        a: "Public project information lists 1 LDK + 1T, 1 LDK + 2T suite layouts, and penthouse floor options. Spandaman will confirm what is currently available for your visit.",
+      },
+      {
+        q: "What is the price?",
+        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified rates.",
+      },
+      {
+        q: "How is Waterfall Suites II different from Waterfall Suites?",
+        a: "Suites II is marketed as a follow-on suite offering in the same Sector 36A Krisumi pocket, with its own unit mix and amenity framing. Spandaman helps you compare Suites, Suites II, and Residences on the same visit.",
+      },
+      {
+        q: "Is Spandaman the developer of Waterfall Suites II?",
+        a: "No. Krisumi is the developer. Spandaman is an independent real estate brokerage helping buyers enquire, visit, and shortlist inventory.",
+      },
+      {
+        q: "Can I schedule a site visit?",
+        a: "Yes. Call, WhatsApp, or submit the enquire form. We coordinate visits around your schedule, including weekends where possible.",
+      },
+    ],
+    gallery: [
+      {
+        src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80",
+        alt: "Contemporary residential tower facade with glass balconies",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
+        alt: "Bright modern suite living room with soft furnishings",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
+        alt: "Luxury residential lobby with layered lighting",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80",
+        alt: "Outdoor pool and deck with landscaped planting",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
+        alt: "Green courtyard seating in a residential community",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1630699144867-37acec97df5f?auto=format&fit=crop&w=1200&q=80",
+        alt: "Compact luxury bedroom with contemporary finishes",
+      },
+    ],
+  },
 } as const;
 
 export function whatsappUrl(message?: string) {
