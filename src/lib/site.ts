@@ -327,6 +327,95 @@ export const projects = {
       },
     ],
   },
+  watersideResidences: {
+    slug: "waterside-residences",
+    name: "Krisumi Waterside Residences",
+    parentSlug: "krisumi",
+    location: "Sector 36A, Gurugram",
+    shortLocation: "Sector 36A · Dwarka Expressway",
+    headline: "Wellness-led luxury with Japanese design partners",
+    support:
+      "2 LDK and 3 LDK Waterside living in Sector 36A — Spandaman coordinates site visits and shares current availability on request.",
+    priceLabel: "Price on request",
+    typologies: [
+      "2 LDK",
+      "2 LDK + study",
+      "2 LDK + S",
+      "3 LDK",
+      "3 LDK + S",
+      "Penthouse",
+    ],
+    highlights: [
+      {
+        title: "Nikken exteriors, A.N.D interiors",
+        body: "Developer materials market exteriors crafted with Nikken Housing System and interiors envisioned by Aoyama Nomura Design (A.N.D) — craft you verify on a Spandaman walkthrough, not from brochure alone.",
+      },
+      {
+        title: "Sector 36A on Dwarka Expressway",
+        body: "Nestled in Sector 36A with framing toward Delhi and other Gurugram sectors — practical connectivity Spandaman maps against your commute when you enquire.",
+      },
+      {
+        title: "Amenities built for daily use",
+        body: "Public materials highlight main and kids pools, lake and water features, landscaped greens, seating, AC lobbies, and convenience retail — amenity depth you confirm on site.",
+      },
+      {
+        title: "Broker-led clarity",
+        body: "Spandaman is an independent brokerage. We confirm inventory, walk configurations, and share price on request — no Crore list prices, invented RERA digits, or developer spin.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Where is Krisumi Waterside Residences?",
+        a: "In Sector 36A, Gurugram on the Dwarka Expressway belt — within the wider Krisumi campus Spandaman markets to buyers seeking practical Delhi–Gurugram connectivity.",
+      },
+      {
+        q: "What configurations are available?",
+        a: "Public project materials list 2 LDK, 2 LDK + study, 2 LDK + servant, 3 LDK, 3 LDK + servant, and penthouse floorplan options. Spandaman will confirm what is currently available for your visit.",
+      },
+      {
+        q: "What is the price?",
+        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified Crore list rates from developer sites.",
+      },
+      {
+        q: "How is Waterside Residences different from Waterfall Residences or Forest Reserve?",
+        a: "Waterside Residences is marketed as the wellness-and-waterscape line with Nikken / A.N.D framing and 2 LDK / 3 LDK focus. Forest Reserve and Forest Reserve II sit in that Waterside family with a greener, larger-home emphasis; Waterfall Residences and Suites are separate Krisumi offerings. Spandaman helps you compare on the same Sector 36A visit.",
+      },
+      {
+        q: "Is Spandaman the developer of Waterside Residences?",
+        a: "No. Krisumi is the developer. Spandaman is an independent real estate brokerage helping buyers enquire, visit, and shortlist inventory.",
+      },
+      {
+        q: "Can I schedule a site visit?",
+        a: "Yes. Call, WhatsApp, or submit the enquire form. We coordinate visits around your schedule, including weekends where possible.",
+      },
+    ],
+    gallery: [
+      {
+        src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80",
+        alt: "Luxury waterside residence exterior with reflective pool",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+        alt: "Bright living room with large windows and contemporary finishes",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80",
+        alt: "Resort-style residential pool and landscaped deck",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1200&q=80",
+        alt: "Elegant master bedroom with soft natural light",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80",
+        alt: "Landscaped outdoor leisure space in a residential community",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=1200&q=80",
+        alt: "Contemporary residential lobby with soft natural light",
+      },
+    ],
+  },
   forestReserve: {
     slug: "forest-reserve",
     name: "Waterside Residences — The Forest Reserve",
@@ -402,6 +491,92 @@ export const projects = {
       {
         src: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
         alt: "Green courtyard seating in a residential community",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+        alt: "Open-plan kitchen and dining in a luxury home",
+      },
+    ],
+  },
+  forestReserveII: {
+    slug: "forest-reserve-ii",
+    name: "Waterside Residences — The Forest Reserve II",
+    parentSlug: "krisumi",
+    location: "Sector 36A, Gurugram",
+    shortLocation: "Sector 36A · Gurugram",
+    headline: "Next Forest Reserve chapter for green, wellness-led living",
+    support:
+      "A later Waterside / Forest Reserve phase in Krisumi City, Sector 36A — Spandaman coordinates site visits and shares current availability on request.",
+    priceLabel: "Price on request",
+    typologies: ["3 LDK + S", "Related Waterside layouts"],
+    highlights: [
+      {
+        title: "Forest Reserve line, next chapter",
+        body: "Public materials position Forest Reserve II as a follow-on Waterside Residences phase within Krisumi City in Sector 36A — wellness and green lifestyle framing you verify with Spandaman on site.",
+      },
+      {
+        title: "Soft typology, confirmed on visit",
+        body: "Developer floorplan labels for Forest Reserve II emphasise 3 LDK + servant Waterside layouts. Spandaman confirms what is currently offered rather than inventing unit counts or mix.",
+      },
+      {
+        title: "Green lifestyle in Sector 36A",
+        body: "Marketed within the same Krisumi campus story of landscaped living and Dwarka Expressway–linked reach — commute and neighbourhood context Spandaman maps when you enquire.",
+      },
+      {
+        title: "Broker-led clarity",
+        body: "Spandaman is an independent brokerage. We confirm inventory, walk configurations, and share price on request — no invented rates, RERA digits, or hard possession promises without verification.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Where is Krisumi Waterside Residences — The Forest Reserve II?",
+        a: "In Sector 36A, Gurugram — a phase of the Krisumi City / Forest Reserve Waterside line Spandaman markets beside The Forest Reserve.",
+      },
+      {
+        q: "What configurations are available?",
+        a: "Public floorplan materials for Forest Reserve II highlight 3 LDK + servant Waterside layouts and related configurations as marketed. Spandaman will confirm current inventory for your visit rather than invent unit counts.",
+      },
+      {
+        q: "What is the price?",
+        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified rates.",
+      },
+      {
+        q: "When is possession?",
+        a: "Possession timelines are as marketed by the developer and subject to confirmation — Spandaman will share the latest stated schedule on enquiry rather than publish dates that can change.",
+      },
+      {
+        q: "How is Forest Reserve II different from The Forest Reserve?",
+        a: "Forest Reserve II is marketed as a subsequent Waterside / Forest Reserve phase in the same Sector 36A Krisumi pocket. Spandaman helps you compare both — and Waterfall residences or suites — on the same visit.",
+      },
+      {
+        q: "Is Spandaman the developer of Forest Reserve II?",
+        a: "No. Krisumi is the developer. Spandaman is an independent real estate brokerage helping buyers enquire, visit, and shortlist inventory. Ask us for current registration details rather than relying on outdated brochure digits.",
+      },
+      {
+        q: "Can I schedule a site visit?",
+        a: "Yes. Call, WhatsApp, or submit the enquire form. We coordinate visits around your schedule, including weekends where possible.",
+      },
+    ],
+    gallery: [
+      {
+        src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&q=80",
+        alt: "Misty green hillside landscape at dawn",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        alt: "Luxury residence exterior with landscaped entrance",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=80",
+        alt: "Modern living room opening toward outdoor greenery",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
+        alt: "Green courtyard seating in a residential community",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80",
+        alt: "Resort-style pool with landscaped deck planting",
       },
       {
         src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",

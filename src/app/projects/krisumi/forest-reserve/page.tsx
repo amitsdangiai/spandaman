@@ -166,10 +166,16 @@ export default function ForestReservePage() {
           </div>
           <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
             <Link
-              href="/projects/krisumi/waterfall-suites-ii"
+              href="/projects/krisumi/waterside-residences"
               className="text-brand underline-offset-2 hover:underline"
             >
-              ← Waterfall Suites II
+              ← Waterside Residences
+            </Link>
+            <Link
+              href="/projects/krisumi/forest-reserve-ii"
+              className="text-brand underline-offset-2 hover:underline"
+            >
+              Forest Reserve II →
             </Link>
             <Link
               href="/projects/krisumi/waterfall-residences"
@@ -263,24 +269,24 @@ export default function ForestReservePage() {
               schedule a walkthrough that fits your day — including a
               side-by-side look at{" "}
               <Link
+                href="/projects/krisumi/forest-reserve-ii"
+                className="underline underline-offset-2 hover:text-white"
+              >
+                Forest Reserve II
+              </Link>
+              ,{" "}
+              <Link
+                href="/projects/krisumi/waterside-residences"
+                className="underline underline-offset-2 hover:text-white"
+              >
+                Waterside Residences
+              </Link>
+              , or{" "}
+              <Link
                 href="/projects/krisumi/waterfall-residences"
                 className="underline underline-offset-2 hover:text-white"
               >
                 Waterfall Residences
-              </Link>
-              ,{" "}
-              <Link
-                href="/projects/krisumi/waterfall-suites"
-                className="underline underline-offset-2 hover:text-white"
-              >
-                Waterfall Suites
-              </Link>
-              , or{" "}
-              <Link
-                href="/projects/krisumi/waterfall-suites-ii"
-                className="underline underline-offset-2 hover:text-white"
-              >
-                Waterfall Suites II
               </Link>{" "}
               if you want to compare footprints.
             </p>

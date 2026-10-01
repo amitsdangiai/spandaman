@@ -177,6 +177,12 @@ export default function WaterfallSuitesIIPage() {
               Waterfall Residences →
             </Link>
             <Link
+              href="/projects/krisumi/waterside-residences"
+              className="text-brand underline-offset-2 hover:underline"
+            >
+              Waterside Residences →
+            </Link>
+            <Link
               href="/projects/krisumi/forest-reserve"
               className="text-brand underline-offset-2 hover:underline"
             >
@@ -279,6 +285,13 @@ export default function WaterfallSuitesIIPage() {
                 className="underline underline-offset-2 hover:text-white"
               >
                 Waterfall Residences
+              </Link>
+              ,{" "}
+              <Link
+                href="/projects/krisumi/waterside-residences"
+                className="underline underline-offset-2 hover:text-white"
+              >
+                Waterside Residences
               </Link>
               , or{" "}
               <Link

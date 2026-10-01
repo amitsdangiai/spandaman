@@ -125,12 +125,26 @@ export default function KrisumiProjectPage() {
               >
                 Krisumi Waterfall Suites II
               </Link>
-              , or{" "}
+              ,{" "}
+              <Link
+                href="/projects/krisumi/waterside-residences"
+                className="font-medium text-brand underline-offset-2 hover:underline"
+              >
+                Krisumi Waterside Residences
+              </Link>
+              ,{" "}
               <Link
                 href="/projects/krisumi/forest-reserve"
                 className="font-medium text-brand underline-offset-2 hover:underline"
               >
                 Waterside Residences — The Forest Reserve
+              </Link>
+              , or{" "}
+              <Link
+                href="/projects/krisumi/forest-reserve-ii"
+                className="font-medium text-brand underline-offset-2 hover:underline"
+              >
+                Waterside Residences — The Forest Reserve II
               </Link>
               ? Explore configurations, location framing, and dedicated enquiry
               forms for each.

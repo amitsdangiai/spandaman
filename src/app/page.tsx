@@ -115,12 +115,26 @@ export default function HomePage() {
             >
               Waterfall Suites II
             </a>
-            , and{" "}
+            ,{" "}
+            <a
+              href="/projects/krisumi/waterside-residences"
+              className="font-medium text-brand underline-offset-2 hover:underline"
+            >
+              Waterside Residences
+            </a>
+            ,{" "}
             <a
               href="/projects/krisumi/forest-reserve"
               className="font-medium text-brand underline-offset-2 hover:underline"
             >
               Forest Reserve
+            </a>
+            , and{" "}
+            <a
+              href="/projects/krisumi/forest-reserve-ii"
+              className="font-medium text-brand underline-offset-2 hover:underline"
+            >
+              Forest Reserve II
             </a>
             .
           </p>
@@ -170,11 +184,25 @@ export default function HomePage() {
             Waterfall Suites II
           </LinkButton>
           <LinkButton
+            href="/projects/krisumi/waterside-residences"
+            variant="outline"
+            className="border-brand/30 text-brand"
+          >
+            Waterside Residences
+          </LinkButton>
+          <LinkButton
             href="/projects/krisumi/forest-reserve"
             variant="outline"
             className="border-brand/30 text-brand"
           >
             Forest Reserve
+          </LinkButton>
+          <LinkButton
+            href="/projects/krisumi/forest-reserve-ii"
+            variant="outline"
+            className="border-brand/30 text-brand"
+          >
+            Forest Reserve II
           </LinkButton>
         </div>
       </section>

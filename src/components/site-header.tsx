@@ -23,8 +23,16 @@ const krisumiLinks = [
     label: "Waterfall Suites II",
   },
   {
+    href: "/projects/krisumi/waterside-residences",
+    label: "Waterside Residences",
+  },
+  {
     href: "/projects/krisumi/forest-reserve",
     label: "Forest Reserve",
+  },
+  {
+    href: "/projects/krisumi/forest-reserve-ii",
+    label: "Forest Reserve II",
   },
 ];
 

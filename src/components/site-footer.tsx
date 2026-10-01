@@ -58,10 +58,26 @@ export function SiteFooter() {
             </li>
             <li>
               <Link
+                href="/projects/krisumi/waterside-residences"
+                className="hover:text-white"
+              >
+                Waterside Residences
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/projects/krisumi/forest-reserve"
                 className="hover:text-white"
               >
                 Forest Reserve
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/projects/krisumi/forest-reserve-ii"
+                className="hover:text-white"
+              >
+                Forest Reserve II
               </Link>
             </li>
             <li>
