@@ -23,6 +23,13 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    // Serve the Pano2VR entry without trailing-slash 308→404 from Next.
+    return [
+      { source: "/hero/vr", destination: "/hero/vr/index.html" },
+      { source: "/hero/vr/", destination: "/hero/vr/index.html" },
+    ];
+  },
 };
 
 export default nextConfig;

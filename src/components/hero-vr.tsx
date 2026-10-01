@@ -3,10 +3,14 @@
 import { useEffect, useRef, useState } from "react";
 import { HeroVideo } from "@/components/hero-video";
 
-/** Locally hosted Pano2VR tour with hotspots remapped to Spandaman project routes. */
-const VR_SRC = "/hero/vr/";
+/**
+ * Locally hosted Pano2VR tour with hotspots remapped to Spandaman project routes.
+ * Use index.html explicitly — Next may 308 `/hero/vr/` in a way that breaks the iframe.
+ */
+const VR_BASE = "/hero/vr";
+const VR_SRC = `${VR_BASE}/index.html`;
 /** Abort VR attempt if the tour has not become usable by this deadline. */
-const VR_LOAD_TIMEOUT_MS = 4500;
+const VR_LOAD_TIMEOUT_MS = 6000;
 
 type HeroMode = "pending" | "vr" | "fallback";
 
@@ -35,7 +39,7 @@ export function HeroVr() {
     }, VR_LOAD_TIMEOUT_MS);
 
     // Reachability probe for local tour assets (pano.xml is small + cacheable).
-    fetch(`${VR_SRC}pano.xml`, {
+    fetch(`${VR_BASE}/pano.xml`, {
       method: "GET",
       cache: "force-cache",
       signal: controller.signal,

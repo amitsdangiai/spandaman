@@ -5723,7 +5723,7 @@ function pano2vrSkin(player,base) {
 			return me.ggNodeId;
 		}
 		me._image_12.onclick=function (e) {
-			player.openUrl("/projects/krisumi/forest-reserve-ii","_top");
+			player.openUrl("/projects/krisumi","_top");
 		}
 		me._image_12.ggUpdatePosition=function (useTransition) {
 		}
