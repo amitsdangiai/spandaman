@@ -183,6 +183,12 @@ export default function WaterfallSuitesPage() {
             >
               Waterfall Suites II →
             </Link>
+            <Link
+              href="/projects/krisumi/forest-reserve"
+              className="text-brand underline-offset-2 hover:underline"
+            >
+              Forest Reserve →
+            </Link>
           </div>
         </div>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -273,13 +279,20 @@ export default function WaterfallSuitesPage() {
                 className="underline underline-offset-2 hover:text-white"
               >
                 Waterfall Suites II
-              </Link>{" "}
-              or{" "}
+              </Link>
+              ,{" "}
               <Link
                 href="/projects/krisumi/waterfall-residences"
                 className="underline underline-offset-2 hover:text-white"
               >
                 Waterfall Residences
+              </Link>
+              , or{" "}
+              <Link
+                href="/projects/krisumi/forest-reserve"
+                className="underline underline-offset-2 hover:text-white"
+              >
+                Forest Reserve
               </Link>{" "}
               if you want to compare footprints.
             </p>

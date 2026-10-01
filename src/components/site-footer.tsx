@@ -57,6 +57,14 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link
+                href="/projects/krisumi/forest-reserve"
+                className="hover:text-white"
+              >
+                Forest Reserve
+              </Link>
+            </li>
+            <li>
               <Link href="/#enquire" className="hover:text-white">
                 Lead enquiry form
               </Link>

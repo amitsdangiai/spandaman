@@ -108,12 +108,19 @@ export default function HomePage() {
             >
               Waterfall Suites
             </a>
-            , and{" "}
+            ,{" "}
             <a
               href="/projects/krisumi/waterfall-suites-ii"
               className="font-medium text-brand underline-offset-2 hover:underline"
             >
               Waterfall Suites II
+            </a>
+            , and{" "}
+            <a
+              href="/projects/krisumi/forest-reserve"
+              className="font-medium text-brand underline-offset-2 hover:underline"
+            >
+              Forest Reserve
             </a>
             .
           </p>
@@ -161,6 +168,13 @@ export default function HomePage() {
             className="border-brand/30 text-brand"
           >
             Waterfall Suites II
+          </LinkButton>
+          <LinkButton
+            href="/projects/krisumi/forest-reserve"
+            variant="outline"
+            className="border-brand/30 text-brand"
+          >
+            Forest Reserve
           </LinkButton>
         </div>
       </section>

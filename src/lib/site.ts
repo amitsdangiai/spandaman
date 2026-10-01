@@ -327,6 +327,88 @@ export const projects = {
       },
     ],
   },
+  forestReserve: {
+    slug: "forest-reserve",
+    name: "Waterside Residences — The Forest Reserve",
+    parentSlug: "krisumi",
+    location: "Sector 36A, Gurugram",
+    shortLocation: "Sector 36A · Gurugram",
+    headline: "Luxury living framed by green space and wellness",
+    support:
+      "3 LDK, 4 LDK, and penthouse options in Krisumi’s Waterside Residences — The Forest Reserve — Spandaman coordinates site visits and shares current availability on request.",
+    priceLabel: "Price on request",
+    typologies: ["3 LDK", "3 LDK + S", "4 LDK + S", "Penthouse"],
+    highlights: [
+      {
+        title: "Waterside living beside open green",
+        body: "Public materials frame The Forest Reserve around lush landscapes, open green spaces, and a calm residential setting in Sector 36A — atmosphere you verify on a Spandaman visit.",
+      },
+      {
+        title: "Japanese design partners",
+        body: "Developer materials highlight Japanese architectural and project-management collaboration — measured craft you walk through on site rather than take from a brochure alone.",
+      },
+      {
+        title: "Thoughtful masterplan and amenities",
+        body: "Waterscape, pool bar, outdoor gazebo, multipurpose hall, and family leisure spaces are part of the public amenity story — Spandaman helps you map what matters for daily use.",
+      },
+      {
+        title: "Broker-led clarity",
+        body: "Spandaman is an independent brokerage. We confirm inventory, walk configurations, and share price on request — no invented rates, RERA numbers, or developer spin.",
+      },
+    ],
+    faqs: [
+      {
+        q: "Where is Krisumi Waterside Residences — The Forest Reserve?",
+        a: "In Sector 36A, Gurugram — within the wider Krisumi address Spandaman markets to buyers seeking Dwarka Expressway–linked connectivity.",
+      },
+      {
+        q: "What configurations are available?",
+        a: "Public project materials show 3 LDK, 3 LDK + servant, 4 LDK + servant, and penthouse floorplan options across Forest Reserve phases. Spandaman will confirm what is currently available for your visit.",
+      },
+      {
+        q: "What is the price?",
+        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified rates.",
+      },
+      {
+        q: "How is The Forest Reserve different from Waterfall Residences or Suites?",
+        a: "Forest Reserve is marketed as a Waterside Residences offering with larger 3 LDK / 4 LDK and penthouse emphasis and a green, wellness-led framing. Suites lean compact 1 LDK; Waterfall Residences emphasise mid-size LDK homes. Spandaman helps you compare on the same Sector 36A visit.",
+      },
+      {
+        q: "Is Spandaman the developer of The Forest Reserve?",
+        a: "No. Krisumi is the developer. Spandaman is an independent real estate brokerage helping buyers enquire, visit, and shortlist inventory.",
+      },
+      {
+        q: "Can I schedule a site visit?",
+        a: "Yes. Call, WhatsApp, or submit the enquire form. We coordinate visits around your schedule, including weekends where possible.",
+      },
+    ],
+    gallery: [
+      {
+        src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80",
+        alt: "Sunlit forest canopy with calm woodland path",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        alt: "Luxury residence exterior with landscaped entrance",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=80",
+        alt: "Modern living room opening toward outdoor greenery",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80",
+        alt: "Resort-style pool with landscaped deck planting",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
+        alt: "Green courtyard seating in a residential community",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+        alt: "Open-plan kitchen and dining in a luxury home",
+      },
+    ],
+  },
 } as const;
 
 export function whatsappUrl(message?: string) {
