@@ -46,11 +46,17 @@
 			pano=new pano2vrPlayer("container");
 			// add the skin object
 			skin=new pano2vrSkin(pano);
-			// load the configuration
-		
-			window.addEventListener("load", function() {
+			// load the configuration — if the document is already complete
+			// (common when the parent mounts this tour in a late iframe), a
+			// plain "load" listener never fires and the canvas stays blank.
+			function startPano() {
 				pano.readConfigUrlAsync("pano.xml");
-			});
+			}
+			if (document.readyState === "complete") {
+				startPano();
+			} else {
+				window.addEventListener("load", startPano);
+			}
 		</script>
 		<noscript>
 			<p><b>Please enable Javascript!</b></p>

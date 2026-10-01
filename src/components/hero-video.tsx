@@ -52,7 +52,7 @@ export function HeroVideo({ src, poster, className }: HeroVideoProps) {
       muted
       loop
       playsInline
-      preload="metadata"
+      preload="auto"
       poster={poster}
       aria-hidden
     >

@@ -14,17 +14,17 @@ export default function HomePage() {
         <h1 className="sr-only">
           Spandaman — Enquire on Krisumi, Sector 36A Gurugram
         </h1>
-        {/* Local video paints immediately; VR iframe swaps in only if it loads in time */}
+        {/* Local video paints immediately; VR may enhance only after a safe settle */}
         <HeroVr />
 
         {/* Soft vignette only — no marketing text overlay after welcome dialog closes */}
-        <div className="pointer-events-none absolute inset-0 z-[1] bg-[linear-gradient(180deg,rgba(15,22,28,0.35)_0%,transparent_28%,transparent_72%,rgba(15,22,28,0.45)_100%)]" />
+        <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(180deg,rgba(15,22,28,0.35)_0%,transparent_28%,transparent_72%,rgba(15,22,28,0.45)_100%)]" />
 
         <HeroWelcomeDialog />
 
         <a
           href="#enquire"
-          className="hero-scroll-hint pointer-events-auto absolute bottom-24 left-1/2 z-[2] -translate-x-1/2 text-white/55 transition-colors hover:text-white/90 md:bottom-8"
+          className="hero-scroll-hint pointer-events-auto absolute bottom-24 left-1/2 z-[3] -translate-x-1/2 text-white/55 transition-colors hover:text-white/90 md:bottom-8"
           aria-label="Scroll to enquire form"
         >
           <span className="sr-only">Scroll down</span>

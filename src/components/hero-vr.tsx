@@ -9,55 +9,79 @@ import { HeroVideo } from "@/components/hero-video";
  */
 const VR_BASE = "/hero/vr";
 const VR_SRC = `${VR_BASE}/index.html`;
+/** Small probe assets — prefer a real tile so a thin zip without tiles fails closed to video. */
+const VR_PROBE_XML = `${VR_BASE}/pano.xml`;
+const VR_PROBE_TILE = `${VR_BASE}/tiles/node2/cf_0/l_0/c_0/tile_0.jpg`;
 /** Abort VR attempt if the tour has not become usable by this deadline. */
-const VR_LOAD_TIMEOUT_MS = 6000;
+const VR_LOAD_TIMEOUT_MS = 8000;
+/** Extra settle after iframe onLoad so Pano2VR can paint before we hide video. */
+const VR_PAINT_GRACE_MS = 1800;
 
-type HeroMode = "pending" | "vr" | "fallback";
+type HeroMode = "video" | "vr";
 
 /**
- * Full-bleed hero media: try the local 360° VR iframe, fall back to local video.
- * Video/poster paint immediately so LCP and desktop preview are never blocked
- * by a hung tour load.
+ * Full-bleed hero media: local video/poster always paint first.
+ * VR iframe may enhance on top only after assets + iframe settle; if anything
+ * fails, video stays visible so the hero is never a black screen.
  */
 export function HeroVr() {
-  const [mode, setMode] = useState<HeroMode>("pending");
+  const [mode, setMode] = useState<HeroMode>("video");
   const [mountIframe, setMountIframe] = useState(false);
-  const settledRef = useRef(false);
+  const promotedRef = useRef(false);
+  const abandonedRef = useRef(false);
+  const paintTimerRef = useRef<number | null>(null);
+  const abandonTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
-    const settle = (next: HeroMode) => {
-      if (settledRef.current) return;
-      settledRef.current = true;
-      setMode(next);
-      if (next === "fallback") setMountIframe(false);
+    const abandonVr = () => {
+      if (promotedRef.current) return;
+      abandonedRef.current = true;
+      setMode("video");
+      setMountIframe(false);
+      if (paintTimerRef.current != null) {
+        window.clearTimeout(paintTimerRef.current);
+        paintTimerRef.current = null;
+      }
     };
 
     const controller = new AbortController();
-    const timer = window.setTimeout(() => {
+    abandonTimerRef.current = window.setTimeout(() => {
       controller.abort();
-      settle("fallback");
+      abandonVr();
     }, VR_LOAD_TIMEOUT_MS);
 
-    // Reachability probe for local tour assets (pano.xml is small + cacheable).
-    fetch(`${VR_BASE}/pano.xml`, {
-      method: "GET",
-      cache: "force-cache",
-      signal: controller.signal,
-    })
-      .then((res) => {
-        if (settledRef.current) return;
-        if (!res.ok) {
-          settle("fallback");
+    // Require both config + a sample tile so missing tile packs never promote VR.
+    Promise.all([
+      fetch(VR_PROBE_XML, {
+        method: "GET",
+        cache: "force-cache",
+        signal: controller.signal,
+      }),
+      fetch(VR_PROBE_TILE, {
+        method: "GET",
+        cache: "force-cache",
+        signal: controller.signal,
+      }),
+    ])
+      .then(([xmlRes, tileRes]) => {
+        if (abandonedRef.current || promotedRef.current) return;
+        if (!xmlRes.ok || !tileRes.ok) {
+          abandonVr();
           return;
         }
         setMountIframe(true);
       })
       .catch(() => {
-        settle("fallback");
+        abandonVr();
       });
 
     return () => {
-      window.clearTimeout(timer);
+      if (abandonTimerRef.current != null) {
+        window.clearTimeout(abandonTimerRef.current);
+      }
+      if (paintTimerRef.current != null) {
+        window.clearTimeout(paintTimerRef.current);
+      }
       controller.abort();
     };
   }, []);
@@ -66,33 +90,48 @@ export function HeroVr() {
 
   return (
     <>
-      {/* Local media always present for instant paint / fallback */}
+      {/*
+        Local video+poster always remain mounted and fully opaque under any VR
+        attempt. Missing tiles never promote the iframe (probe fails → video only).
+        When VR does promote, the iframe sits above; video stays as a live underlay
+        so we never blank the hero to pure black while waiting on VR.
+      */}
       <HeroVideo
         src="/hero/krisumi-hero.mp4"
         poster="/hero/krisumi-hero-poster.jpg"
-        className={`absolute inset-0 z-0 h-full w-full object-cover hero-video-zoom transition-opacity duration-500 ${
-          showVr ? "opacity-0" : "opacity-100"
-        }`}
+        className="absolute inset-0 z-0 h-full w-full object-cover hero-video-zoom"
       />
 
       {mountIframe ? (
         <iframe
           src={VR_SRC}
-          className={`absolute inset-0 z-0 h-full w-full border-0 transition-opacity duration-500 ${
+          className={`absolute inset-0 z-[1] h-full w-full border-0 bg-transparent transition-opacity duration-700 ${
             showVr ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
           title="Krisumi 360° Virtual Tour"
           allow="accelerometer; gyroscope; xr-spatial-tracking"
           loading="eager"
           onLoad={() => {
-            if (settledRef.current) return;
-            settledRef.current = true;
-            setMode("vr");
+            if (abandonedRef.current || promotedRef.current) return;
+            // Give Pano2VR time to paint; clear the hard abandon so grace can finish.
+            if (abandonTimerRef.current != null) {
+              window.clearTimeout(abandonTimerRef.current);
+              abandonTimerRef.current = null;
+            }
+            if (paintTimerRef.current != null) {
+              window.clearTimeout(paintTimerRef.current);
+            }
+            paintTimerRef.current = window.setTimeout(() => {
+              if (abandonedRef.current || promotedRef.current) return;
+              promotedRef.current = true;
+              setMode("vr");
+              paintTimerRef.current = null;
+            }, VR_PAINT_GRACE_MS);
           }}
           onError={() => {
-            if (settledRef.current) return;
-            settledRef.current = true;
-            setMode("fallback");
+            if (promotedRef.current) return;
+            abandonedRef.current = true;
+            setMode("video");
             setMountIframe(false);
           }}
         />
