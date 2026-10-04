@@ -80,9 +80,8 @@ export function HeroVr() {
         setMountIframe(true);
       })
       .catch(() => {
-        // Ignore AbortError from Strict Mode cleanup / intentional timeout abort
-        // handled above; only real network failures fall through after abort flag.
-        if (controller.signal.aborted && !abandonedRef.current) return;
+        // Ignore AbortError from Strict Mode cleanup. The hard timeout calls
+        // abandonToVideo itself; only real probe failures should fall back.
         if (controller.signal.aborted) return;
         abandonToVideo();
       });
@@ -112,7 +111,7 @@ export function HeroVr() {
       {!showVideo ? (
         <div
           aria-hidden
-          className={`absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,#2a3540_0%,#0f161c_70%)] transition-opacity duration-700 ${
+          className={`pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,#2a3540_0%,#0f161c_70%)] transition-opacity duration-700 ${
             showVr ? "opacity-0" : "opacity-100"
           }`}
         />
