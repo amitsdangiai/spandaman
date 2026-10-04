@@ -47,10 +47,14 @@ To wire a CRM / WhatsApp Business / Google Sheet later, edit `src/app/api/leads/
 
 ## Hero VR tour
 
-The homepage embeds a local Pano2VR tour under `public/hero/vr/` (~150MB, ~3900 panorama tiles). Hotspots open Spandaman project pages (`/projects/krisumi/...`), not external krisumi.com URLs.
+The homepage hero loads the live nsventures aerial Krisumi tour
+(`https://nsventures.in/Krisumi-Gurugram-VR-New-V06/`) so production works
+**without** shipping ~140MB of panorama tiles. If a full local tile set exists
+under `public/hero/vr/tiles/`, that iframe is preferred (internal hotspot remap).
 
-- **Production / full clone:** deploy from git so `public/hero/vr/tiles/` is present — without tiles the tour will not render.
-- **Thin zip handoff:** Agent Store `media/spandaman-latest.zip` omits the tile set for size; pull branch `cursor/hero-internal-hotspots-f276` (or merge to main) for the complete VR assets.
+- **Thin deploy (recommended handoff):** `media/spandaman-thin-vr.zip` — code + logo + small assets; tiles excluded; hero uses the live nsventures iframe.
+- **Explore projects chips** on the hero link all six `/projects/krisumi/*` pages (cross-origin red-dot hotspots cannot be rewritten).
+- **Optional full clone:** keep `public/hero/vr/tiles/` for remapped local hotspots; video is last-resort fallback only.
 
 ## Notes
 

@@ -4,30 +4,34 @@ import { useEffect, useRef, useState } from "react";
 import { HeroVideo } from "@/components/hero-video";
 
 /**
- * Locally hosted Pano2VR tour (nsventures aerial Krisumi package) with hotspots
- * remapped to Spandaman project routes.
- * Use index.html explicitly — Next may 308 `/hero/vr/` in a way that breaks the iframe.
+ * Homepage hero VR: prefer live nsventures aerial tour so thin deploys work
+ * without shipping ~140MB of tiles. If a full local tile set is present
+ * (git clone / fat zip), use that instead so remapped internal hotspots work.
  */
-const VR_BASE = "/hero/vr";
-const VR_SRC = `${VR_BASE}/index.html`;
-/** Require config + a real tile so thin zips without tiles fail closed to video. */
-const VR_PROBE_XML = `${VR_BASE}/pano.xml`;
-const VR_PROBE_TILE = `${VR_BASE}/tiles/node2/cf_0/l_0/c_0/tile_0.jpg`;
-/** Abort VR attempt if the tour has not become usable by this deadline. */
-const VR_LOAD_TIMEOUT_MS = 12000;
-/** Extra settle after iframe onLoad so Pano2VR can paint before we hide the loader. */
+const LOCAL_VR_BASE = "/hero/vr";
+const LOCAL_VR_SRC = `${LOCAL_VR_BASE}/index.html`;
+const LOCAL_PROBE_XML = `${LOCAL_VR_BASE}/pano.xml`;
+const LOCAL_PROBE_TILE = `${LOCAL_VR_BASE}/tiles/node2/cf_0/l_0/c_0/tile_0.jpg`;
+
+/** Live nsventures tour — primary reliable path when local tiles are absent. */
+const REMOTE_VR_SRC =
+  "https://nsventures.in/Krisumi-Gurugram-VR-New-V06/index.html";
+
+const LOCAL_PROBE_MS = 2500;
+const VR_LOAD_TIMEOUT_MS = 14000;
 const VR_PAINT_GRACE_MS = 1200;
 
 type HeroMode = "loading" | "vr" | "video";
+type VrSource = "local" | "remote";
 
 /**
- * Full-bleed hero media: local aerial VR tour is the primary visual whenever
- * tiles are present. A brief dark loading plane covers boot — not the looping
- * waterfall film. Video is last-resort fallback only when the tour cannot load.
+ * Full-bleed hero media: nsventures (or local) aerial VR is primary.
+ * Video is last-resort fallback only when the iframe cannot load.
  */
 export function HeroVr() {
   const [mode, setMode] = useState<HeroMode>("loading");
-  const [mountIframe, setMountIframe] = useState(false);
+  const [vrSrc, setVrSrc] = useState<string | null>(null);
+  const [vrSource, setVrSource] = useState<VrSource | null>(null);
   const promotedRef = useRef(false);
   const abandonedRef = useRef(false);
   const paintTimerRef = useRef<number | null>(null);
@@ -39,54 +43,73 @@ export function HeroVr() {
     promotedRef.current = false;
     abandonedRef.current = false;
     setMode("loading");
-    setMountIframe(false);
+    setVrSrc(null);
+    setVrSource(null);
 
     const abandonToVideo = () => {
       if (promotedRef.current) return;
       abandonedRef.current = true;
       setMode("video");
-      setMountIframe(false);
+      setVrSrc(null);
+      setVrSource(null);
       if (paintTimerRef.current != null) {
         window.clearTimeout(paintTimerRef.current);
         paintTimerRef.current = null;
       }
     };
 
-    const controller = new AbortController();
+    const mountVr = (src: string, source: VrSource) => {
+      if (abandonedRef.current || promotedRef.current) return;
+      setVrSource(source);
+      setVrSrc(src);
+    };
+
+    let cancelled = false;
     abandonTimerRef.current = window.setTimeout(() => {
-      controller.abort();
       abandonToVideo();
     }, VR_LOAD_TIMEOUT_MS);
 
-    Promise.all([
-      fetch(VR_PROBE_XML, {
-        method: "GET",
-        cache: "force-cache",
-        signal: controller.signal,
-      }),
-      fetch(VR_PROBE_TILE, {
-        method: "GET",
-        cache: "force-cache",
-        signal: controller.signal,
-      }),
-    ])
-      .then(([xmlRes, tileRes]) => {
-        if (abandonedRef.current || promotedRef.current) return;
-        if (!xmlRes.ok || !tileRes.ok) {
-          abandonToVideo();
-          return;
-        }
-        // Tiles exist — mount the VR iframe immediately as the primary hero.
-        setMountIframe(true);
-      })
-      .catch(() => {
-        // Ignore AbortError from Strict Mode cleanup. The hard timeout calls
-        // abandonToVideo itself; only real probe failures should fall back.
-        if (controller.signal.aborted) return;
-        abandonToVideo();
-      });
+    const probeLocal = async (): Promise<boolean> => {
+      const probeController = new AbortController();
+      const timeout = window.setTimeout(
+        () => probeController.abort(),
+        LOCAL_PROBE_MS,
+      );
+      try {
+        const [xmlRes, tileRes] = await Promise.all([
+          fetch(LOCAL_PROBE_XML, {
+            method: "GET",
+            cache: "force-cache",
+            signal: probeController.signal,
+          }),
+          fetch(LOCAL_PROBE_TILE, {
+            method: "GET",
+            cache: "force-cache",
+            signal: probeController.signal,
+          }),
+        ]);
+        return xmlRes.ok && tileRes.ok;
+      } catch {
+        return false;
+      } finally {
+        window.clearTimeout(timeout);
+      }
+    };
+
+    void (async () => {
+      const hasLocal = await probeLocal();
+      if (cancelled || abandonedRef.current || promotedRef.current) return;
+      if (hasLocal) {
+        // Full local tile set — remapped internal hotspots available.
+        mountVr(LOCAL_VR_SRC, "local");
+        return;
+      }
+      // Thin / production without tiles: live nsventures tour is the primary path.
+      mountVr(REMOTE_VR_SRC, "remote");
+    })();
 
     return () => {
+      cancelled = true;
       if (abandonTimerRef.current != null) {
         window.clearTimeout(abandonTimerRef.current);
         abandonTimerRef.current = null;
@@ -95,7 +118,6 @@ export function HeroVr() {
         window.clearTimeout(paintTimerRef.current);
         paintTimerRef.current = null;
       }
-      controller.abort();
     };
   }, []);
 
@@ -106,7 +128,7 @@ export function HeroVr() {
     <>
       {/*
         Brief atmospheric loader while Pano2VR boots. Intentionally NOT the
-        shutterstock waterfall mp4 — that film is fallback-only when tiles fail.
+        shutterstock waterfall mp4 — that film is fallback-only when VR fails.
       */}
       {!showVideo ? (
         <div
@@ -125,15 +147,17 @@ export function HeroVr() {
         />
       ) : null}
 
-      {mountIframe ? (
+      {vrSrc ? (
         <iframe
-          src={VR_SRC}
+          src={vrSrc}
           className={`absolute inset-0 z-[1] h-full w-full border-0 bg-transparent transition-opacity duration-700 ${
             showVr ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
           title="Krisumi 360° Virtual Tour"
-          allow="accelerometer; gyroscope; xr-spatial-tracking"
+          allow="accelerometer; gyroscope; xr-spatial-tracking; fullscreen"
+          referrerPolicy="no-referrer-when-downgrade"
           loading="eager"
+          data-vr-source={vrSource ?? undefined}
           onLoad={() => {
             if (abandonedRef.current || promotedRef.current) return;
             if (abandonTimerRef.current != null) {
@@ -154,7 +178,8 @@ export function HeroVr() {
             if (promotedRef.current) return;
             abandonedRef.current = true;
             setMode("video");
-            setMountIframe(false);
+            setVrSrc(null);
+            setVrSource(null);
           }}
         />
       ) : null}

@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <>
       <section className="relative min-h-[100svh] overflow-hidden text-white">
-        {/* Local aerial VR tour is primary; video only if tiles fail */}
+        {/* nsventures aerial VR (or local tiles if present); video only if iframe fails */}
         <HeroVr />
 
         {/* Gradient overlays for readability — above VR (iframe is z-[1]); clicks pass through */}
@@ -56,13 +56,13 @@ export default function HomePage() {
                 Call {site.phoneDisplay}
               </LinkButton>
             </div>
-            {/* Always-visible project shortcuts — VR hotspots cover all six, but the tour labels
-                Sales Office / combined Forest for some dots; chips stay useful when VR falls back. */}
+            {/* Cross-origin nsventures hotspots cannot be rewritten — these chips are the
+                reliable path to all six Spandaman project pages (not only red-dot externals). */}
             <nav
               aria-label="Explore Krisumi projects"
-              className="hero-cue hero-cue-delay-3 mt-5 flex max-w-2xl flex-wrap items-center justify-center gap-2"
+              className="hero-cue hero-cue-delay-3 mt-6 flex max-w-3xl flex-wrap items-center justify-center gap-2 rounded-md border border-white/25 bg-black/40 px-3 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-sm"
             >
-              <span className="w-full text-center text-[0.7rem] font-semibold tracking-[0.16em] text-white/70 uppercase sm:w-auto sm:mr-1">
+              <span className="w-full text-center text-[0.72rem] font-semibold tracking-[0.16em] text-white/85 uppercase sm:w-auto sm:mr-1">
                 Explore projects
               </span>
               {(
@@ -78,7 +78,7 @@ export default function HomePage() {
                 <a
                   key={href}
                   href={href}
-                  className="rounded-sm border border-white/35 bg-black/25 px-2.5 py-1 text-[0.7rem] font-medium tracking-wide text-white/90 backdrop-blur-[2px] transition-colors hover:border-white/60 hover:bg-black/40 hover:text-white"
+                  className="rounded-sm border border-white/45 bg-white/10 px-2.5 py-1.5 text-[0.72rem] font-medium tracking-wide text-white shadow-sm transition-colors hover:border-white/80 hover:bg-white/20"
                 >
                   {label}
                 </a>
