@@ -8,6 +8,10 @@ type HeroVideoProps = {
   className?: string;
 };
 
+/**
+ * Looping muted hero video. Poster is a fallback only (reduced motion / autoplay
+ * failure) — the <video> element is what paints for normal visitors.
+ */
 export function HeroVideo({ src, poster, className }: HeroVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [reduceMotion, setReduceMotion] = useState(false);
@@ -21,6 +25,7 @@ export function HeroVideo({ src, poster, className }: HeroVideoProps) {
       if (media.matches) {
         el.pause();
       } else {
+        el.muted = true;
         void el.play().catch(() => {
           /* Autoplay can fail on some browsers; poster remains visible. */
         });
@@ -30,6 +35,26 @@ export function HeroVideo({ src, poster, className }: HeroVideoProps) {
     media.addEventListener("change", apply);
     return () => media.removeEventListener("change", apply);
   }, []);
+
+  // Retry play once the element can start (handles late hydration / decode).
+  useEffect(() => {
+    if (reduceMotion) return;
+    const el = videoRef.current;
+    if (!el) return;
+
+    const tryPlay = () => {
+      el.muted = true;
+      void el.play().catch(() => {});
+    };
+
+    tryPlay();
+    el.addEventListener("loadeddata", tryPlay);
+    el.addEventListener("canplay", tryPlay);
+    return () => {
+      el.removeEventListener("loadeddata", tryPlay);
+      el.removeEventListener("canplay", tryPlay);
+    };
+  }, [reduceMotion, src]);
 
   if (reduceMotion) {
     return (
@@ -52,7 +77,7 @@ export function HeroVideo({ src, poster, className }: HeroVideoProps) {
       muted
       loop
       playsInline
-      preload="metadata"
+      preload="auto"
       poster={poster}
       aria-hidden
     >
