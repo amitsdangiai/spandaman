@@ -10,14 +10,14 @@ export default function HomePage() {
   return (
     <>
       <section className="relative min-h-[100svh] overflow-hidden text-white">
-        {/* Local looping video paints immediately; VR may enhance only after a safe settle */}
+        {/* Local aerial VR tour is primary; video only if tiles fail */}
         <HeroVr />
 
-        {/* Gradient overlays for readability — above video/VR (iframe is z-[1]) */}
+        {/* Gradient overlays for readability — above VR (iframe is z-[1]); clicks pass through */}
         <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(180deg,rgba(15,22,28,0.65)_0%,rgba(15,22,28,0.25)_42%,rgba(15,22,28,0.78)_100%)]" />
         <div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(15,22,28,0.55)_100%)]" />
 
-        {/* Wrapper passes clicks through to VR when active; panel restores CTA hit targets */}
+        {/* Wrapper passes clicks through to VR; panel restores CTA hit targets */}
         <div className="pointer-events-none relative z-[3] mx-auto flex min-h-[100svh] max-w-5xl flex-col items-center justify-center px-4 pb-28 pt-28 text-center sm:px-6 sm:pb-24">
           <div className="hero-cue-group pointer-events-auto max-w-3xl">
             <p className="hero-cue font-display text-5xl tracking-tight text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.45)] sm:text-6xl md:text-7xl">
