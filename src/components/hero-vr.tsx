@@ -34,6 +34,13 @@ export function HeroVr() {
   const abandonTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
+    // React Strict Mode re-runs effects; reset so a cleaned-up probe cannot
+    // permanently lock us into the waterfall video fallback.
+    promotedRef.current = false;
+    abandonedRef.current = false;
+    setMode("loading");
+    setMountIframe(false);
+
     const abandonToVideo = () => {
       if (promotedRef.current) return;
       abandonedRef.current = true;
@@ -73,15 +80,21 @@ export function HeroVr() {
         setMountIframe(true);
       })
       .catch(() => {
+        // Ignore AbortError from Strict Mode cleanup / intentional timeout abort
+        // handled above; only real network failures fall through after abort flag.
+        if (controller.signal.aborted && !abandonedRef.current) return;
+        if (controller.signal.aborted) return;
         abandonToVideo();
       });
 
     return () => {
       if (abandonTimerRef.current != null) {
         window.clearTimeout(abandonTimerRef.current);
+        abandonTimerRef.current = null;
       }
       if (paintTimerRef.current != null) {
         window.clearTimeout(paintTimerRef.current);
+        paintTimerRef.current = null;
       }
       controller.abort();
     };
