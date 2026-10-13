@@ -11,9 +11,9 @@ export function SiteFooter() {
             <Image
               src="/brand/spandaman-logo.png"
               alt="Spandaman Realtors"
-              width={40}
-              height={30}
-              className="h-8 w-auto brightness-110 contrast-105 drop-shadow-sm"
+              width={478}
+              height={530}
+              className="h-12 w-auto"
             />
             <p className="font-display text-3xl tracking-tight">{site.name}</p>
           </div>

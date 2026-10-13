@@ -92,12 +92,12 @@ export function SiteHeader() {
           <Image
             src="/brand/spandaman-logo.png"
             alt="Spandaman Realtors"
-            width={48}
-            height={36}
+            width={478}
+            height={530}
             priority
             className={cn(
-              "h-9 w-auto sm:h-11",
-              overHero && "brightness-110 contrast-105",
+              "h-11 w-auto sm:h-14",
+              overHero && "drop-shadow-[0_1px_6px_rgba(0,0,0,0.35)]",
             )}
           />
           <span

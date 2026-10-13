@@ -13,58 +13,49 @@ export default function HomePage() {
         {/* nsventures aerial VR (or local tiles if present); video only if iframe fails */}
         <HeroVr />
 
-        {/* Gradient overlays for readability — above VR (iframe is z-[1]); clicks pass through */}
-        <div className="pointer-events-none absolute inset-0 z-[2] bg-[linear-gradient(180deg,rgba(15,22,28,0.65)_0%,rgba(15,22,28,0.25)_42%,rgba(15,22,28,0.78)_100%)]" />
-        <div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(15,22,28,0.55)_100%)]" />
+        {/* Edge scrims only — the center of the tour stays clear. Clicks pass through. */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-[2] h-24 bg-gradient-to-b from-black/50 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[2] h-48 bg-gradient-to-t from-black/55 to-transparent sm:h-40" />
 
-        {/* Wrapper passes clicks through to VR; panel restores CTA hit targets */}
-        <div className="pointer-events-none relative z-[3] mx-auto flex min-h-[100svh] max-w-5xl flex-col items-center justify-center px-4 pb-28 pt-28 text-center sm:px-6 sm:pb-24">
-          <div className="hero-cue-group pointer-events-auto max-w-3xl">
-            <p className="hero-cue font-display text-5xl tracking-tight text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.45)] sm:text-6xl md:text-7xl">
-              {site.name}
-            </p>
-            <h1 className="hero-cue hero-cue-delay-1 mt-5 text-balance text-xl font-medium leading-snug text-white/95 sm:text-2xl md:text-[1.85rem]">
+        {/* Copy sits along the bottom so the aerial view remains the focus. */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[3] px-4 pb-20 sm:px-6 sm:pb-6">
+          <div className="hero-cue-group pointer-events-auto mx-auto max-w-3xl text-center">
+            <h1 className="hero-cue text-balance text-lg font-medium leading-snug text-white drop-shadow-[0_1px_8px_rgba(0,0,0,0.65)] sm:text-2xl">
               Enquire on Krisumi — Sector 36A, Gurugram
             </h1>
-            <p className="hero-cue hero-cue-delay-2 mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/85 drop-shadow-[0_1px_8px_rgba(0,0,0,0.6)] sm:text-lg">
-              Broker-led site visits, current inventory, and price on request —
-              clear next steps without brochure fog.
+            <p className="hero-cue hero-cue-delay-1 mx-auto mt-1.5 max-w-xl text-sm leading-relaxed text-white/90 drop-shadow-[0_1px_6px_rgba(0,0,0,0.7)]">
+              Broker-led site visits, current inventory, and price on request.
             </p>
-            <div className="hero-cue hero-cue-delay-3 mt-8 flex flex-wrap items-center justify-center gap-3">
+            <div className="hero-cue hero-cue-delay-2 mt-3 flex flex-wrap items-center justify-center gap-2">
               <LinkButton
                 href="#enquire"
-                size="lg"
-                className="h-12 bg-white px-7 text-ink hover:bg-white/90"
+                size="sm"
+                className="bg-white text-ink hover:bg-white/90"
               >
                 Enquire now
               </LinkButton>
               <LinkButton
                 href={whatsappUrl()}
                 external
-                size="lg"
+                size="sm"
                 variant="outline"
-                className="h-12 border-white/55 bg-transparent px-6 text-white hover:bg-white/10 hover:text-white"
+                className="hidden border-white/55 bg-black/25 text-white hover:bg-white/10 hover:text-white sm:inline-flex"
               >
                 WhatsApp
               </LinkButton>
               <LinkButton
                 href={telUrl()}
-                size="lg"
+                size="sm"
                 variant="ghost"
-                className="h-12 px-4 text-white hover:bg-white/10 hover:text-white"
+                className="hidden text-white hover:bg-white/10 hover:text-white md:inline-flex"
               >
                 Call {site.phoneDisplay}
               </LinkButton>
             </div>
-            {/* Cross-origin nsventures hotspots cannot be rewritten — these chips are the
-                reliable path to all six Spandaman project pages (not only red-dot externals). */}
             <nav
               aria-label="Explore Krisumi projects"
-              className="hero-cue hero-cue-delay-3 mt-6 flex max-w-3xl flex-wrap items-center justify-center gap-2 rounded-md border border-white/25 bg-black/40 px-3 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-sm"
+              className="hero-cue hero-cue-delay-3 mt-3 flex flex-wrap items-center justify-center gap-1.5"
             >
-              <span className="w-full text-center text-[0.72rem] font-semibold tracking-[0.16em] text-white/85 uppercase sm:w-auto sm:mr-1">
-                Explore projects
-              </span>
               {(
                 [
                   ["Waterfall Residences", "/projects/krisumi/waterfall-residences"],
@@ -78,35 +69,13 @@ export default function HomePage() {
                 <a
                   key={href}
                   href={href}
-                  className="rounded-sm border border-white/45 bg-white/10 px-2.5 py-1.5 text-[0.72rem] font-medium tracking-wide text-white shadow-sm transition-colors hover:border-white/80 hover:bg-white/20"
+                  className="rounded-full border border-white/35 bg-black/35 px-2.5 py-1 text-[0.68rem] font-medium tracking-wide text-white shadow-sm backdrop-blur-sm transition-colors hover:border-white/70 hover:bg-black/50"
                 >
                   {label}
                 </a>
               ))}
             </nav>
           </div>
-
-          <a
-            href="#enquire"
-            className="hero-scroll-hint pointer-events-auto absolute bottom-24 left-1/2 -translate-x-1/2 text-white/70 transition-colors hover:text-white md:bottom-8"
-            aria-label="Scroll to enquire form"
-          >
-            <span className="sr-only">Scroll down</span>
-            <svg
-              aria-hidden
-              viewBox="0 0 24 24"
-              className="h-7 w-7"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.75"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 5v14m0 0-5-5m5 5 5-5"
-              />
-            </svg>
-          </a>
         </div>
       </section>
 

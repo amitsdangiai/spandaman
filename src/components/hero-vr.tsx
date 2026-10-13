@@ -4,112 +4,57 @@ import { useEffect, useRef, useState } from "react";
 import { HeroVideo } from "@/components/hero-video";
 
 /**
- * Homepage hero VR: prefer live nsventures aerial tour so thin deploys work
- * without shipping ~140MB of tiles. If a full local tile set is present
- * (git clone / fat zip), use that instead so remapped internal hotspots work.
+ * Homepage hero VR uses the local Pano2VR player so project pins navigate to
+ * Spandaman pages. Tiles and marker art that are not in the repo are proxied
+ * from the hosted tour (see next.config rewrites).
  */
-const LOCAL_VR_BASE = "/hero/vr";
-const LOCAL_VR_SRC = `${LOCAL_VR_BASE}/index.html`;
-const LOCAL_PROBE_XML = `${LOCAL_VR_BASE}/pano.xml`;
-const LOCAL_PROBE_TILE = `${LOCAL_VR_BASE}/tiles/node2/cf_0/l_0/c_0/tile_0.jpg`;
+const LOCAL_VR_SRC = "/hero/vr/index.html";
 
-/** Live nsventures tour — primary reliable path when local tiles are absent. */
-const REMOTE_VR_SRC =
-  "https://nsventures.in/Krisumi-Gurugram-VR-New-V06/index.html";
-
-const LOCAL_PROBE_MS = 2500;
 const VR_LOAD_TIMEOUT_MS = 14000;
 const VR_PAINT_GRACE_MS = 1200;
 
 type HeroMode = "loading" | "vr" | "video";
-type VrSource = "local" | "remote";
 
 /**
- * Full-bleed hero media: nsventures (or local) aerial VR is primary.
- * Video is last-resort fallback only when the iframe cannot load.
+ * Full-bleed hero media: local aerial VR is primary so hotspot clicks stay
+ * on this site. Video is last-resort fallback only when the iframe cannot load.
  */
 export function HeroVr() {
   const [mode, setMode] = useState<HeroMode>("loading");
   const [vrSrc, setVrSrc] = useState<string | null>(null);
-  const [vrSource, setVrSource] = useState<VrSource | null>(null);
   const promotedRef = useRef(false);
   const abandonedRef = useRef(false);
   const paintTimerRef = useRef<number | null>(null);
   const abandonTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
-    // React Strict Mode re-runs effects; reset so a cleaned-up probe cannot
+    // React Strict Mode re-runs effects; reset so a cleaned-up timer cannot
     // permanently lock us into the waterfall video fallback.
     promotedRef.current = false;
     abandonedRef.current = false;
     setMode("loading");
     setVrSrc(null);
-    setVrSource(null);
 
     const abandonToVideo = () => {
       if (promotedRef.current) return;
       abandonedRef.current = true;
       setMode("video");
       setVrSrc(null);
-      setVrSource(null);
       if (paintTimerRef.current != null) {
         window.clearTimeout(paintTimerRef.current);
         paintTimerRef.current = null;
       }
     };
 
-    const mountVr = (src: string, source: VrSource) => {
-      if (abandonedRef.current || promotedRef.current) return;
-      setVrSource(source);
-      setVrSrc(src);
-    };
-
-    let cancelled = false;
     abandonTimerRef.current = window.setTimeout(() => {
       abandonToVideo();
     }, VR_LOAD_TIMEOUT_MS);
 
-    const probeLocal = async (): Promise<boolean> => {
-      const probeController = new AbortController();
-      const timeout = window.setTimeout(
-        () => probeController.abort(),
-        LOCAL_PROBE_MS,
-      );
-      try {
-        const [xmlRes, tileRes] = await Promise.all([
-          fetch(LOCAL_PROBE_XML, {
-            method: "GET",
-            cache: "force-cache",
-            signal: probeController.signal,
-          }),
-          fetch(LOCAL_PROBE_TILE, {
-            method: "GET",
-            cache: "force-cache",
-            signal: probeController.signal,
-          }),
-        ]);
-        return xmlRes.ok && tileRes.ok;
-      } catch {
-        return false;
-      } finally {
-        window.clearTimeout(timeout);
-      }
-    };
-
-    void (async () => {
-      const hasLocal = await probeLocal();
-      if (cancelled || abandonedRef.current || promotedRef.current) return;
-      if (hasLocal) {
-        // Full local tile set — remapped internal hotspots available.
-        mountVr(LOCAL_VR_SRC, "local");
-        return;
-      }
-      // Thin / production without tiles: live nsventures tour is the primary path.
-      mountVr(REMOTE_VR_SRC, "remote");
-    })();
+    if (!abandonedRef.current && !promotedRef.current) {
+      setVrSrc(LOCAL_VR_SRC);
+    }
 
     return () => {
-      cancelled = true;
       if (abandonTimerRef.current != null) {
         window.clearTimeout(abandonTimerRef.current);
         abandonTimerRef.current = null;
@@ -157,7 +102,7 @@ export function HeroVr() {
           allow="accelerometer; gyroscope; xr-spatial-tracking; fullscreen"
           referrerPolicy="no-referrer-when-downgrade"
           loading="eager"
-          data-vr-source={vrSource ?? undefined}
+          data-vr-source="local"
           onLoad={() => {
             if (abandonedRef.current || promotedRef.current) return;
             if (abandonTimerRef.current != null) {
@@ -179,7 +124,6 @@ export function HeroVr() {
             abandonedRef.current = true;
             setMode("video");
             setVrSrc(null);
-            setVrSource(null);
           }}
         />
       ) : null}
