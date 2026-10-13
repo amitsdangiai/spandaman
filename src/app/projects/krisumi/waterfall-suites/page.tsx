@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
 import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
+import { breadcrumbJsonLd, faqJsonLd, pageMetadata } from "@/lib/seo";
 import { projects, site, telUrl, whatsappUrl } from "@/lib/site";
 
 const suites = projects.waterfallSuites;
@@ -10,15 +11,33 @@ const suites = projects.waterfallSuites;
 const whatsappMessage =
   "Hi Spandaman, I want to enquire about Krisumi Waterfall Suites in Sector 36A, Gurugram.";
 
-export const metadata: Metadata = {
-  title: "Krisumi Waterfall Suites, Sector 36A Gurugram",
+export const metadata = pageMetadata({
+  title: "Krisumi Waterfall Suites",
   description:
-    "Enquire on Krisumi Waterfall Suites in Sector 36A, Gurugram with Spandaman — 1 LDK studio suites and penthouse options, site visits, and price on request from an independent broker.",
-};
+    "Krisumi Waterfall Suites in Sector 36A, Gurugram. Spandaman arranges site visits for 1 LDK studio suites and penthouses, and shares price on request.",
+  path: "/projects/krisumi/waterfall-suites",
+  keywords: [
+    "Krisumi Waterfall Suites",
+    "Waterfall Suites Gurugram",
+    "Krisumi 1 LDK",
+    "Krisumi Sector 36A",
+  ],
+});
 
 export default function WaterfallSuitesPage() {
   return (
     <>
+      <JsonLd data={faqJsonLd(suites.faqs)} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Krisumi", path: "/projects/krisumi" },
+          {
+            name: "Waterfall Suites",
+            path: "/projects/krisumi/waterfall-suites",
+          },
+        ])}
+      />
       <section className="relative min-h-[100svh] overflow-hidden text-white">
         <Image
           src={suites.gallery[0].src}

@@ -1,21 +1,35 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
 import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 import { projects, site, telUrl, whatsappUrl } from "@/lib/site";
 
 const krisumi = projects.krisumi;
 
-export const metadata: Metadata = {
-  title: "Krisumi, Sector 36A Gurugram",
+export const metadata = pageMetadata({
+  title: "Krisumi Homes in Sector 36A",
   description:
-    "Enquire on Krisumi in Sector 36A, Gurugram with Spandaman — residences, site visits, and price on request from an independent broker.",
-};
+    "Krisumi in Sector 36A, Gurugram, with Spandaman. Review the residential collection, book a site visit, and request current pricing from an independent broker.",
+  path: "/projects/krisumi",
+  keywords: [
+    "Krisumi Sector 36A",
+    "Krisumi Gurugram",
+    "Krisumi residences",
+    "Spandaman Krisumi",
+  ],
+});
 
 export default function KrisumiProjectPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Krisumi", path: "/projects/krisumi" },
+        ])}
+      />
       <section className="relative min-h-[70svh] overflow-hidden text-white">
         <Image
           src={krisumi.gallery[2].src}
@@ -31,7 +45,7 @@ export default function KrisumiProjectPage() {
             {krisumi.shortLocation}
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl tracking-tight sm:text-5xl md:text-6xl animate-rise">
-            {krisumi.name}
+            Krisumi in Sector 36A, Gurugram
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg animate-rise-delay">
             {krisumi.headline}. {krisumi.support}

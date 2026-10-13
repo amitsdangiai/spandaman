@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
 import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
+import { breadcrumbJsonLd, faqJsonLd, pageMetadata } from "@/lib/seo";
 import { projects, site, telUrl, whatsappUrl } from "@/lib/site";
 
 const forest = projects.forestReserve;
@@ -10,15 +11,30 @@ const forest = projects.forestReserve;
 const whatsappMessage =
   "Hi Spandaman, I want to enquire about Krisumi Waterside Residences — The Forest Reserve in Sector 36A, Gurugram.";
 
-export const metadata: Metadata = {
-  title: "Krisumi Waterside Residences — The Forest Reserve, Sector 36A Gurugram",
+export const metadata = pageMetadata({
+  title: "Krisumi Forest Reserve",
   description:
-    "Enquire on Krisumi Waterside Residences — The Forest Reserve in Sector 36A, Gurugram with Spandaman — 3 LDK, 4 LDK, and penthouse options, site visits, and price on request from an independent broker.",
-};
+    "Krisumi Forest Reserve in Sector 36A, Gurugram. Spandaman books site visits for 3 LDK, 4 LDK, and penthouse homes, and shares the current price on request.",
+  path: "/projects/krisumi/forest-reserve",
+  keywords: [
+    "Krisumi Forest Reserve",
+    "Waterside Residences Forest Reserve",
+    "Krisumi 4 LDK",
+    "Krisumi Sector 36A",
+  ],
+});
 
 export default function ForestReservePage() {
   return (
     <>
+      <JsonLd data={faqJsonLd(forest.faqs)} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Krisumi", path: "/projects/krisumi" },
+          { name: "Forest Reserve", path: "/projects/krisumi/forest-reserve" },
+        ])}
+      />
       <section className="relative min-h-[100svh] overflow-hidden text-white">
         <Image
           src={forest.gallery[0].src}
@@ -35,7 +51,7 @@ export default function ForestReservePage() {
             {forest.shortLocation}
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl tracking-tight sm:text-5xl md:text-6xl animate-rise">
-            {forest.name}
+            Krisumi {forest.name}
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg animate-rise-delay">
             {forest.headline}. {forest.support}

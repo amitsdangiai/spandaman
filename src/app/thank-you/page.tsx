@@ -1,12 +1,15 @@
-import type { Metadata } from "next";
 import { LinkButton } from "@/components/link-button";
+import { pageMetadata } from "@/lib/seo";
 import { site, telUrl, whatsappUrl } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Thank you",
-  description: "Your enquiry was received by Spandaman. We will follow up shortly.",
-  robots: { index: false, follow: false },
-};
+export const metadata = pageMetadata({
+  title: "Enquiry received",
+  description:
+    "Spandaman has your Krisumi enquiry. Expect a call or WhatsApp during business hours with current availability and next steps for Sector 36A, Gurugram.",
+  path: "/thank-you",
+  keywords: ["Spandaman enquiry", "Krisumi callback"],
+  index: false,
+});
 
 export default function ThankYouPage() {
   return (

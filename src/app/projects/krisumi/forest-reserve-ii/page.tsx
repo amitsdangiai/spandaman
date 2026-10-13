@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
 import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
+import { breadcrumbJsonLd, faqJsonLd, pageMetadata } from "@/lib/seo";
 import { projects, site, telUrl, whatsappUrl } from "@/lib/site";
 
 const forestII = projects.forestReserveII;
@@ -10,16 +11,33 @@ const forestII = projects.forestReserveII;
 const whatsappMessage =
   "Hi Spandaman, I want to enquire about Krisumi Waterside Residences — The Forest Reserve II in Sector 36A, Gurugram.";
 
-export const metadata: Metadata = {
-  title:
-    "Krisumi Waterside Residences — The Forest Reserve II, Sector 36A Gurugram",
+export const metadata = pageMetadata({
+  title: "Krisumi Forest Reserve II",
   description:
-    "Enquire on Krisumi Waterside Residences — The Forest Reserve II in Sector 36A, Gurugram with Spandaman — wellness-led Waterside living, site visits, and price on request from an independent broker.",
-};
+    "Krisumi Forest Reserve II in Sector 36A, Gurugram. Spandaman books site visits for this wellness-led Waterside chapter and shares the current price on request.",
+  path: "/projects/krisumi/forest-reserve-ii",
+  keywords: [
+    "Krisumi Forest Reserve II",
+    "Waterside Residences Forest Reserve II",
+    "Krisumi Sector 36A",
+    "Krisumi Gurugram",
+  ],
+});
 
 export default function ForestReserveIIPage() {
   return (
     <>
+      <JsonLd data={faqJsonLd(forestII.faqs)} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Krisumi", path: "/projects/krisumi" },
+          {
+            name: "Forest Reserve II",
+            path: "/projects/krisumi/forest-reserve-ii",
+          },
+        ])}
+      />
       <section className="relative min-h-[100svh] overflow-hidden text-white">
         <Image
           src={forestII.gallery[0].src}
@@ -36,7 +54,7 @@ export default function ForestReserveIIPage() {
             {forestII.shortLocation}
           </p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl tracking-tight sm:text-5xl md:text-6xl animate-rise">
-            {forestII.name}
+            Krisumi {forestII.name}
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg animate-rise-delay">
             {forestII.headline}. {forestII.support}

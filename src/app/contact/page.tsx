@@ -1,23 +1,37 @@
-import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
 import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
+import { breadcrumbJsonLd, pageMetadata } from "@/lib/seo";
 import { site, telUrl, whatsappUrl } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Contact & Enquire",
+export const metadata = pageMetadata({
+  title: "Contact Spandaman on Krisumi",
   description:
-    "Contact Spandaman to enquire on Krisumi in Sector 36A, Gurugram — call, WhatsApp, or request a callback.",
-};
+    "Contact Spandaman to enquire on Krisumi in Sector 36A, Gurugram. Call, WhatsApp, or request a callback for inventory, site visits, and price on request.",
+  path: "/contact",
+  keywords: [
+    "contact Spandaman",
+    "Krisumi enquiry",
+    "Krisumi Gurugram broker",
+    "Spandaman WhatsApp",
+  ],
+});
 
 export default function ContactPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 pb-24 pt-10 sm:px-6 sm:pt-14">
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Contact", path: "/contact" },
+        ])}
+      />
       <div className="max-w-2xl">
         <p className="text-sm font-semibold tracking-[0.14em] text-sage uppercase">
           Contact
         </p>
         <h1 className="mt-3 font-display text-4xl tracking-tight text-ink sm:text-5xl">
-          Talk to Spandaman
+          Contact Spandaman about Krisumi
         </h1>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
           Prefer a quick chat? Call or WhatsApp. Prefer a structured follow-up?

@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
 import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
+import { breadcrumbJsonLd, faqJsonLd, pageMetadata } from "@/lib/seo";
 import { projects, site, telUrl, whatsappUrl } from "@/lib/site";
 
 const waterside = projects.watersideResidences;
@@ -10,15 +11,33 @@ const waterside = projects.watersideResidences;
 const whatsappMessage =
   "Hi Spandaman, I want to enquire about Krisumi Waterside Residences in Sector 36A, Gurugram.";
 
-export const metadata: Metadata = {
-  title: "Krisumi Waterside Residences, Sector 36A Gurugram",
+export const metadata = pageMetadata({
+  title: "Krisumi Waterside Residences",
   description:
-    "Enquire on Krisumi Waterside Residences in Sector 36A, Gurugram with Spandaman — 2 LDK and 3 LDK options, Nikken / A.N.D design framing, site visits, and price on request from an independent broker.",
-};
+    "Krisumi Waterside Residences in Sector 36A, Gurugram. Spandaman books site visits for 2 LDK and 3 LDK homes, and shares the current price on request.",
+  path: "/projects/krisumi/waterside-residences",
+  keywords: [
+    "Krisumi Waterside Residences",
+    "Waterside Residences Gurugram",
+    "Krisumi 3 LDK",
+    "Krisumi Sector 36A",
+  ],
+});
 
 export default function WatersideResidencesPage() {
   return (
     <>
+      <JsonLd data={faqJsonLd(waterside.faqs)} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Krisumi", path: "/projects/krisumi" },
+          {
+            name: "Waterside Residences",
+            path: "/projects/krisumi/waterside-residences",
+          },
+        ])}
+      />
       <section className="relative min-h-[100svh] overflow-hidden text-white">
         <Image
           src={waterside.gallery[0].src}

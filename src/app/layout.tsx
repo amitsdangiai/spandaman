@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Figtree, Fraunces, Geist_Mono } from "next/font/google";
+import { JsonLd } from "@/components/json-ld";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { StickyCta } from "@/components/sticky-cta";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+import { site } from "@/lib/site";
 import "./globals.css";
 
 const figtree = Figtree({
@@ -24,12 +27,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: {
-    default: "Spandaman | Krisumi, Sector 36A Gurugram",
+    default: "Krisumi Sector 36A Gurugram | Spandaman",
     template: "%s | Spandaman",
   },
   description:
-    "Spandaman is a Gurugram real estate brokerage helping buyers enquire on Krisumi in Sector 36A — site visits, pricing on request, and clear next steps.",
+    "Enquire on Krisumi in Sector 36A, Gurugram with Spandaman. Compare homes, book a broker-led site visit, and get the current price on request.",
+  robots: { index: true, follow: true },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -46,6 +51,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${figtree.variable} ${fraunces.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col atmosphere font-sans">
+        <JsonLd data={organizationJsonLd()} />
+        <JsonLd data={websiteJsonLd()} />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />

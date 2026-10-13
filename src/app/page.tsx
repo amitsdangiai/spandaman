@@ -1,14 +1,30 @@
 import Image from "next/image";
 import { HeroVr } from "@/components/hero-vr";
+import { JsonLd } from "@/components/json-ld";
 import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
+import { faqJsonLd, pageMetadata } from "@/lib/seo";
 import { projects, site, telUrl, whatsappUrl } from "@/lib/site";
 
 const krisumi = projects.krisumi;
 
+export const metadata = pageMetadata({
+  title: "Krisumi Sector 36A Gurugram",
+  description:
+    "Enquire on Krisumi in Sector 36A, Gurugram with Spandaman. Compare homes, book a broker-led site visit, and get the current price on request.",
+  path: "/",
+  keywords: [
+    "Krisumi Sector 36A",
+    "Krisumi Gurugram",
+    "Spandaman",
+    "Krisumi site visit",
+  ],
+});
+
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={faqJsonLd(krisumi.faqs)} />
       <section className="relative min-h-[100svh] overflow-hidden text-white">
         {/* nsventures aerial VR (or local tiles if present); video only if iframe fails */}
         <HeroVr />

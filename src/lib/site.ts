@@ -1,5 +1,6 @@
 export const site = {
   name: "Spandaman",
+  url: "https://spandaman.in",
   tagline: "Real estate brokerage for Gurugram buyers",
   phoneDisplay: "+91 99929 89289",
   phoneTel: "+919992989289",
