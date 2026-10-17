@@ -171,15 +171,251 @@ export default function WaterfallResidencesPage() {
         </div>
       </section>
 
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              What is inside the Waterfall Residences clubhouse?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              The Sudare clubhouse is 3,344.48 square metres (36,000 sq ft),
+              with a gym, restaurant, bar lounge, spa, salon, theatre, and
+              tennis court.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["clubhouse-dropoff.png", "Drop-off", "Arrival court in front of the clubhouse"],
+              ["clubhouse-lobby.png", "Lobby", "Clubhouse lobby"],
+              ["restaurant.png", "Restaurant", "Clubhouse restaurant"],
+              ["bar-lounge.png", "Bar lounge", "Clubhouse bar lounge"],
+              ["theatre.png", "Theatre", "Clubhouse theatre"],
+              ["spa.png", "Spa and salon", "Spa and salon"],
+              ["gym.png", "Gymnasium", "Clubhouse gym"],
+              ["tennis-court.png", "Tennis court", "Tennis court"],
+            ].map(([file, title, alt]) => (
+              <figure key={file}>
+                <Image
+                  src={`/projects/waterfall-residences/${file}`}
+                  alt={`Krisumi Waterfall Residences ${alt}`}
+                  width={1080}
+                  height={540}
+                  className="h-40 w-full rounded-xl object-cover"
+                />
+                <figcaption className="mt-2 text-sm font-medium text-ink">
+                  {title}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+            Which unit plans does Waterfall Residences offer?
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Krisumi publishes five plans: 3 LDK + S (A1), 3 LDK (B5), 2 LDK
+            (C3), penthouse (A1), and penthouse with pool (A2).
+          </p>
+        </div>
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
+          {[
+            ["plan-3ldk-s-a1.png", "3 LDK + S (A1)", 1346, 1169],
+            ["plan-3ldk-b5.png", "3 LDK (B5)", 1274, 1235],
+            ["plan-2ldk-c3.png", "2 LDK (C3)", 1190, 1322],
+            ["plan-penthouse-a1.png", "Penthouse (A1)", 1644, 957],
+            ["plan-penthouse-pool-a2.png", "Penthouse + pool (A2)", 1637, 961],
+          ].map(([file, title, width, height]) => (
+            <figure
+              key={file}
+              className="rounded-xl border border-border/80 bg-white p-3"
+            >
+              <Image
+                src={`/projects/waterfall-residences/${file}`}
+                alt={`Krisumi Waterfall Residences floor plan, ${title}`}
+                width={Number(width)}
+                height={Number(height)}
+                className="h-auto w-full"
+              />
+              <figcaption className="mt-3 text-sm font-medium text-ink">
+                {title}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              How are the landscapes planned?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              The landscape uses water, stone, and garden rooms rather than
+              ornamental planting, with the pool, terrace garden, and
+              children&apos;s play set into that sequence.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              ["alfresco-pool.png", "Alfresco dining with pool"],
+              ["pool-area.png", "Pool area"],
+              ["landscape-pool.png", "Landscape near the pool"],
+              ["terrace-garden.png", "Terrace garden"],
+              ["kids-playroom.png", "Kids playroom and playground"],
+              ["tower-ab-dropoff.jpg", "Tower A and B drop-off"],
+            ].map(([file, title]) => (
+              <figure key={file}>
+                <Image
+                  src={`/projects/waterfall-residences/${file}`}
+                  alt={`Krisumi Waterfall Residences ${title}`}
+                  width={1080}
+                  height={540}
+                  className="h-48 w-full rounded-xl object-cover"
+                />
+                <figcaption className="mt-2 text-sm font-medium text-ink">
+                  {title}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+            Which Japanese ideas shape the design?
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Waterfall Residences is organised around eight Japanese ideas, from
+            the waterfall landscape to the security sequence at the gate.
+          </p>
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            ["concept-kekkai.png", "Kekkai", "Transition between outside and inside, using water and bridges."],
+            ["concept-tsuboniwa.png", "Tsuboniwa", "A small garden, kept spare so the planting stays the focus."],
+            ["concept-stroll.png", "Kaiyuusei", "A stroll garden made from natural materials, without ornament."],
+            ["concept-anzen.png", "Anzen", "Layered security, access control, and high-speed shuttle lifts."],
+            ["concept-taihi.jpg", "Taihi", "Contrast in colour and material, used to mark a change of space."],
+          ].map(([file, title, body]) => (
+            <figure key={file} className="overflow-hidden rounded-xl border border-border/80 bg-white">
+              <Image
+                src={`/projects/waterfall-residences/${file}`}
+                alt={`Krisumi Waterfall Residences concept, ${title}`}
+                width={1070}
+                height={378}
+                className="h-40 w-full object-cover"
+              />
+              <figcaption className="p-4">
+                <h3 className="font-display text-xl text-ink">{title}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  {body}
+                </p>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+        <ul className="mt-8 grid gap-3 text-sm text-ink sm:grid-cols-3">
+          <li className="border-l-2 border-sage pl-4">
+            Taki — the waterfall, used on the façade and in the landscape.
+          </li>
+          <li className="border-l-2 border-sage pl-4">
+            Hikari and Kage — light and shadow across walls and openings.
+          </li>
+          <li className="border-l-2 border-sage pl-4">
+            Engawa — the link that joins the rooms to the garden outside.
+          </li>
+        </ul>
+      </section>
+
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              What do the towers and sample apartment look like?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Towers A, B, and C are on site in Sector 36A, and Krisumi shows a
+              furnished sample with a living-dining room, kitchen, and master
+              bedroom.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              ["facade-towers.jpg", "Towers A, B and C", 1200, 800],
+              ["facade-june-2024.webp", "Façade during construction", 1024, 768],
+              ["tower-c-lobby.jpg", "Tower C lobby", 1667, 937],
+              ["tower-ab-lobby.jpg", "Tower A and B lobby", 1667, 937],
+              ["living-dining.jpg", "Living and dining", 1000, 800],
+              ["kitchen.jpg", "Kitchen", 1000, 800],
+              ["master-bedroom.jpg", "Master bedroom", 1000, 800],
+              ["site-photo-1.jpg", "Refreshment counter", 2048, 1362],
+            ].map(([file, title, width, height]) => (
+              <figure key={file}>
+                <Image
+                  src={`/projects/waterfall-residences/${file}`}
+                  alt={`Krisumi Waterfall Residences ${title}`}
+                  width={Number(width)}
+                  height={Number(height)}
+                  className="h-52 w-full rounded-xl object-cover"
+                />
+                <figcaption className="mt-2 text-sm font-medium text-ink">
+                  {title}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+            What price list does Krisumi publish?
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Krisumi’s list gives all-inclusive price bands by configuration.
+            Stamp duty and registration sit outside those bands, and Spandaman
+            checks the current figure before you visit.
+          </p>
+        </div>
+        <div className="mt-8 space-y-8">
+          {[
+            ["price-list.png", "Homes excluding fully furnished apartments", 1121, 373],
+            ["price-2ldk.png", "2 LDK with a personal workspace", 1121, 175],
+            ["price-furnished.png", "Fully furnished apartments", 1121, 366],
+            ["price-penthouse.png", "Penthouses", 1121, 175],
+            ["payment-plan.png", "Possession-linked payment plan, 75:25", 2224, 780],
+          ].map(([file, title, width, height]) => (
+            <figure key={file}>
+              <h3 className="font-display text-xl text-ink">{title}</h3>
+              <Image
+                src={`/projects/waterfall-residences/${file}`}
+                alt={`Krisumi Waterfall Residences ${title}`}
+                width={Number(width)}
+                height={Number(height)}
+                className="mt-3 h-auto w-full rounded-xl border border-border/80 bg-white"
+              />
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
-              Gallery
+              Compare other Krisumi homes
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Atmosphere references for luxury residential living — confirm
-              actual inventory and finishes on your visit with Spandaman.
+              Waterfall Residences is the larger 2 and 3 LDK home at Sector
+              36A. The suites and forest projects sit on the same visit.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
@@ -215,18 +451,6 @@ export default function WaterfallResidencesPage() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {waterfall.gallery.slice(1).map((image) => (
-            <Image
-              key={image.src}
-              src={image.src}
-              alt={image.alt}
-              width={900}
-              height={700}
-              className="h-52 w-full rounded-xl object-cover sm:h-56"
-            />
-          ))}
-        </div>
       </section>
 
       <section
@@ -242,8 +466,9 @@ export default function WaterfallResidencesPage() {
               Request Waterfall Residences details
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Tell Spandaman your preferred configuration and budget band. Price
-              on request — we share current options personally. Or call{" "}
+              Tell Spandaman your preferred configuration. The published
+              bands are on this page — we confirm which home and price are
+              open now. Or call{" "}
               <a
                 className="font-medium text-brand underline-offset-2 hover:underline"
                 href={telUrl()}

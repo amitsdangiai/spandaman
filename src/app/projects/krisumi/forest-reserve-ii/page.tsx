@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ForestReserveContent } from "@/components/forest-reserve-content";
 import { JsonLd } from "@/components/json-ld";
 import { LeadForm } from "@/components/lead-form";
 import { LinkButton } from "@/components/link-button";
@@ -14,7 +15,7 @@ const whatsappMessage =
 export const metadata = pageMetadata({
   title: "Krisumi Forest Reserve II",
   description:
-    "Krisumi Forest Reserve II in Sector 36A, Gurugram. Spandaman books site visits for this wellness-led Waterside chapter and shares the current price on request.",
+    "Krisumi Forest Reserve II in Sector 36A, Gurugram. 3 LDK and penthouse homes. Spandaman arranges site visits and confirms current availability.",
   path: "/projects/krisumi/forest-reserve-ii",
   keywords: [
     "Krisumi Forest Reserve II",
@@ -178,15 +179,17 @@ export default function ForestReserveIIPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+      <ForestReserveContent name="Forest Reserve II" />
+
+      <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
-              Gallery
+              Compare other Krisumi homes
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Atmosphere references for green, waterside residential living —
-              confirm actual inventory and finishes on your visit with Spandaman.
+              Forest Reserve II is the later Waterside phase at Sector 36A.
+              Forest Reserve and Waterside Residences sit on the same visit.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
@@ -204,18 +207,6 @@ export default function ForestReserveIIPage() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {forestII.gallery.slice(1).map((image) => (
-            <Image
-              key={image.src}
-              src={image.src}
-              alt={image.alt}
-              width={900}
-              height={700}
-              className="h-52 w-full rounded-xl object-cover sm:h-56"
-            />
-          ))}
-        </div>
       </section>
 
       <section
@@ -231,10 +222,9 @@ export default function ForestReserveIIPage() {
               Request Forest Reserve II details
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Tell Spandaman your preferred configuration and budget band. Price
-              on request — we share current options personally. Ask us for
-              current registration details rather than relying on outdated
-              brochure digits. Or call{" "}
+              Tell Spandaman your preferred configuration. Krisumi has not
+              published a price list for this project — we confirm the current
+              figure. Or call{" "}
               <a
                 className="font-medium text-brand underline-offset-2 hover:underline"
                 href={telUrl()}
@@ -286,7 +276,7 @@ export default function ForestReserveIIPage() {
               Ready for a Forest Reserve II site visit?
             </h2>
             <p className="mt-3 text-base text-white/80">
-              Spandaman will confirm inventory, share price on request, and
+              Spandaman will confirm which published homes are open and
               schedule a walkthrough that fits your day — including a
               side-by-side look at{" "}
               <Link

@@ -14,7 +14,7 @@ const whatsappMessage =
 export const metadata = pageMetadata({
   title: "Krisumi Waterfall Suites",
   description:
-    "Krisumi Waterfall Suites in Sector 36A, Gurugram. Spandaman arranges site visits for 1 LDK studio suites and penthouses, and shares price on request.",
+    "Krisumi Waterfall Suites in Sector 36A, Gurugram. 1 LDK suites from ₹2.30 crore. Spandaman arranges site visits and confirms current availability.",
   path: "/projects/krisumi/waterfall-suites",
   keywords: [
     "Krisumi Waterfall Suites",
@@ -172,15 +172,254 @@ export default function WaterfallSuitesPage() {
         </div>
       </section>
 
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              How is the Waterfall Suites tower designed?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Krisumi’s Shiraito concept maps a waterfall onto the tower: a
+              white crown, a vertical facade of water threads, and a black
+              reflective podium.
+            </p>
+          </div>
+          <figure className="mt-8">
+            <Image
+              src="/projects/waterfall-suites/building.png"
+              alt="Diagram of the Waterfall Suites facade, from white crown to black podium"
+              width={977}
+              height={518}
+              className="h-auto w-full rounded-xl border border-border/80 bg-white"
+            />
+          </figure>
+          <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            {[
+              ["origami.png", "Origami stream", "Folded water-stream motif on the facade", 297, 220],
+              ["silk-yarn.png", "Silk thread", "Vertical threads standing in for falling water", 287, 219],
+              ["clear-handrail.png", "Clear rail", "Transparent balcony rail so the facade stays clean", 290, 216],
+            ].map(([file, title, alt, width, height]) => (
+              <figure key={file as string}>
+                <Image
+                  src={`/projects/waterfall-suites/${file}`}
+                  alt={alt as string}
+                  width={width as number}
+                  height={height as number}
+                  className="h-40 w-full rounded-xl border border-border/80 bg-white object-contain"
+                />
+                <figcaption className="mt-2 text-sm font-medium text-ink">
+                  {title as string}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <figure>
+              <Image
+                src="/projects/waterfall-suites/crown.jpg"
+                alt="White glowing crown at the top of Waterfall Suites"
+                width={543}
+                height={396}
+                className="h-64 w-full rounded-xl object-cover"
+              />
+              <figcaption className="mt-2 text-sm font-medium text-ink">
+                White glowing crown
+              </figcaption>
+            </figure>
+            <figure>
+              <Image
+                src="/projects/waterfall-suites/podium.jpg"
+                alt="Black reflective podium at the base of Waterfall Suites"
+                width={845}
+                height={380}
+                className="h-64 w-full rounded-xl object-cover"
+              />
+              <figcaption className="mt-2 text-sm font-medium text-ink">
+                Black reflective podium
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+            What do the Waterfall Suites landscapes look like?
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            The published landscapes are a tower drop-off, a main garden with
+            a waterfall, a podium rooftop, and a penthouse terrace.
+          </p>
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          {[
+            ["drop-off.jpg", "Tower drop-off", "Arrival court under the Waterfall Suites tower", 2048, 1152],
+            ["main-garden.jpg", "Main garden", "Main garden with waterfall", 1000, 563],
+            ["waterfall.jpg", "Waterfall", "Waterfall in the main garden", 2048, 1152],
+            ["terrace-garden.png", "Terrace garden", "Penthouse rooftop terrace garden", 1080, 540],
+          ].map(([file, title, alt, width, height]) => (
+            <figure key={file as string}>
+              <Image
+                src={`/projects/waterfall-suites/${file}`}
+                alt={alt as string}
+                width={width as number}
+                height={height as number}
+                className="h-64 w-full rounded-xl object-cover sm:h-72"
+              />
+              <figcaption className="mt-2 text-sm font-medium text-ink">
+                {title as string}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              What amenities are inside Waterfall Suites?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Krisumi shows an entrance lobby, restaurant, meeting rooms, lift
+              lobby, corridor, and a gym with spa.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              ["entrance-lobby.jpg", "Entrance lobby", 2560, 1524],
+              ["restaurant.jpg", "Restaurant", 2048, 1280],
+              ["meeting-room.jpg", "Meeting room", 800, 597],
+              ["lift-lobby.jpg", "Lift lobby", 1000, 750],
+              ["corridor.jpg", "Corridor", 2048, 1364],
+              ["gym.jpg", "Gym and spa", 2048, 1276],
+            ].map(([file, title, width, height]) => (
+              <figure key={file as string}>
+                <Image
+                  src={`/projects/waterfall-suites/${file}`}
+                  alt={`Krisumi Waterfall Suites ${title}`}
+                  width={width as number}
+                  height={height as number}
+                  className="h-48 w-full rounded-xl object-cover"
+                />
+                <figcaption className="mt-2 text-sm font-medium text-ink">
+                  {title as string}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+            Which unit plans does Waterfall Suites offer?
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Three published plans: 1 LDK + 1T Type 1 (464 sq ft carpet), 1 LDK
+            + 1T Type 2 (494 sq ft carpet), and 1 LDK + 2T (592 sq ft carpet).
+          </p>
+        </div>
+        <div className="mt-8 grid gap-6 lg:grid-cols-3">
+          {[
+            ["plan-1ldk-1t.jpg", "1 LDK + 1T, Type 1"],
+            ["plan-1ldk-1t-type2.jpg", "1 LDK + 1T, Type 2"],
+            ["plan-1ldk-2t.jpg", "1 LDK + 2T"],
+          ].map(([file, title]) => (
+            <figure key={file}>
+              <figcaption className="text-sm font-medium text-ink">
+                {title}
+              </figcaption>
+              <Image
+                src={`/projects/waterfall-suites/${file}`}
+                alt={`Krisumi Waterfall Suites floor plan, ${title}`}
+                width={843}
+                height={596}
+                className="mt-3 h-auto w-full rounded-xl border border-border/80 bg-white"
+              />
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              What is the published price and payment plan?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Krisumi’s list shows all-inclusive prices of ₹2.30 crore, ₹2.44
+              crore, and ₹2.95 crore. Stamp duty and registration are extra,
+              and Spandaman confirms the suite that is actually open.
+            </p>
+          </div>
+          <div className="mt-8 space-y-6">
+            {[
+              ["price-list.png", "All-inclusive price list", 1217, 510],
+              ["payment-plan.png", "Down-payment plan: 10% booking, 80% within 60 days, 10% on possession", 1872, 630],
+              ["flexi-plan.png", "Flexi payment plan", 3074, 1420],
+            ].map(([file, title, width, height]) => (
+              <figure key={file as string}>
+                <figcaption className="text-sm font-medium text-ink">
+                  {title as string}
+                </figcaption>
+                <Image
+                  src={`/projects/waterfall-suites/${file}`}
+                  alt={`Krisumi Waterfall Suites ${title}`}
+                  width={width as number}
+                  height={height as number}
+                  className="mt-3 h-auto w-full rounded-xl border border-border/80 bg-white"
+                />
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+            What does the Waterfall Suites site look like now?
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            These aerial photographs are from Krisumi’s September 2026 site
+            update for Waterfall Suites.
+          </p>
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <figure>
+            <Image
+              src="/projects/waterfall-suites/site-drone-1.jpg"
+              alt="September 2026 aerial of the Waterfall Suites construction deck"
+              width={2048}
+              height={1550}
+              className="h-72 w-full rounded-xl object-cover sm:h-80"
+            />
+          </figure>
+          <figure>
+            <Image
+              src="/projects/waterfall-suites/site-drone-2.jpg"
+              alt="September 2026 aerial of the Waterfall Suites towers under construction"
+              width={2560}
+              height={1920}
+              className="h-72 w-full rounded-xl object-cover sm:h-80"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
-              Gallery
+              Compare other Krisumi homes
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Atmosphere references for luxury suite living — confirm actual
-              inventory and finishes on your visit with Spandaman.
+              Waterfall Suites is the 1 LDK home at Sector 36A. Residences,
+              Suites II, and Forest Reserve sit on the same visit.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
@@ -216,18 +455,6 @@ export default function WaterfallSuitesPage() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {suites.gallery.slice(1).map((image) => (
-            <Image
-              key={image.src}
-              src={image.src}
-              alt={image.alt}
-              width={900}
-              height={700}
-              className="h-52 w-full rounded-xl object-cover sm:h-56"
-            />
-          ))}
-        </div>
       </section>
 
       <section
@@ -243,8 +470,8 @@ export default function WaterfallSuitesPage() {
               Request Waterfall Suites details
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Tell Spandaman your preferred configuration and budget band. Price
-              on request — we share current options personally. Or call{" "}
+              Tell Spandaman your preferred configuration. The published bands
+              are on this page — we confirm the suite that is open. Or call{" "}
               <a
                 className="font-medium text-brand underline-offset-2 hover:underline"
                 href={telUrl()}
@@ -296,7 +523,7 @@ export default function WaterfallSuitesPage() {
               Ready for a Waterfall Suites site visit?
             </h2>
             <p className="mt-3 text-base text-white/80">
-              Spandaman will confirm inventory, share price on request, and
+              Spandaman will confirm which published suites are open and
               schedule a walkthrough that fits your day — including a side-by-side
               look at{" "}
               <Link

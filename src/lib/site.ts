@@ -90,7 +90,7 @@ export const projects = {
     headline: "Japanese-inspired luxury residences on Dwarka Expressway",
     support:
       "2 LDK, 3 LDK, and penthouse living in Sector 36A — Spandaman coordinates site visits and shares current availability on request.",
-    priceLabel: "Price on request",
+    priceLabel: "From ₹3.62 crore",
     typologies: [
       "2 LDK",
       "3 LDK",
@@ -109,7 +109,7 @@ export const projects = {
       },
       {
         title: "Clubhouse and amenity depth",
-        body: "A sprawling clubhouse with gym, spa, lounge dining, theatre, and outdoor leisure — built for daily use, not just launch-day photos.",
+        body: "The Sudare clubhouse covers 3,344.48 sq m (36,000 sq ft), with a gym, restaurant, bar lounge, spa, salon, theatre, and tennis court.",
       },
       {
         title: "Broker-led clarity",
@@ -123,11 +123,11 @@ export const projects = {
       },
       {
         q: "What configurations are available?",
-        a: "Public project information lists 2 LDK, 3 LDK, 3 LDK + servant, penthouse, and penthouse with pool options. Spandaman will confirm what is currently available for your visit.",
+        a: "Krisumi publishes 2 LDK (C3), 3 LDK (B5), 3 LDK + servant (A1), penthouse (A1), and penthouse with pool (A2). Spandaman confirms which of these are open for a visit.",
       },
       {
         q: "What is the price?",
-        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified rates.",
+        a: "Krisumi’s published list shows all-inclusive bands from about ₹3.62 crore for a 2 LDK to ₹17.08 crore for the largest penthouse, before stamp duty and registration. Spandaman confirms the figure for the home you shortlist.",
       },
       {
         q: "Is Spandaman the developer of Waterfall Residences?",
@@ -140,28 +140,28 @@ export const projects = {
     ],
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80",
-        alt: "Modern high-rise residential towers against evening sky",
+        src: "/projects/waterfall-residences/clubhouse-dropoff.png",
+        alt: "Krisumi Waterfall Residences clubhouse drop-off at dusk, with the tower behind",
       },
       {
-        src: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=1200&q=80",
-        alt: "Luxury apartment living room with floor-to-ceiling windows",
+        src: "/projects/waterfall-residences/facade-towers.jpg",
+        alt: "Waterfall Residences towers A, B and C in Sector 36A, Gurugram",
       },
       {
-        src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
-        alt: "Contemporary residence exterior with landscaped courtyard",
+        src: "/projects/waterfall-residences/pool-area.png",
+        alt: "Waterfall Residences pool and landscaped deck",
       },
       {
-        src: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80",
-        alt: "Elegant bedroom with soft natural light",
+        src: "/projects/waterfall-residences/living-dining.jpg",
+        alt: "Waterfall Residences living and dining area",
       },
       {
-        src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80",
-        alt: "Resort-style pool and landscaped outdoor space",
+        src: "/projects/waterfall-residences/clubhouse-lobby.png",
+        alt: "Waterfall Residences clubhouse lobby",
       },
       {
-        src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
-        alt: "Open plan kitchen and dining in a luxury home",
+        src: "/projects/waterfall-residences/plan-3ldk-b5.png",
+        alt: "Waterfall Residences 3 LDK unit plan",
       },
     ],
   },
@@ -174,7 +174,7 @@ export const projects = {
     headline: "Shiraito-inspired luxury suites for leaner Gurugram living",
     support:
       "1 LDK studio suites and penthouse options in Sector 36A — Spandaman coordinates site visits and shares current availability on request.",
-    priceLabel: "Price on request",
+    priceLabel: "From ₹2.30 crore",
     typologies: ["1 LDK + 1T", "1 LDK + 2T", "Penthouse"],
     highlights: [
       {
@@ -191,7 +191,7 @@ export const projects = {
       },
       {
         title: "Broker-led clarity",
-        body: "Spandaman is an independent brokerage. We confirm inventory, walk configurations, and share price on request — no invented rates or developer spin.",
+        body: "Spandaman is an independent brokerage. We confirm which of Krisumi’s published suites are open and walk the configurations — no invented rates or developer spin.",
       },
     ],
     faqs: [
@@ -201,11 +201,11 @@ export const projects = {
       },
       {
         q: "What configurations are available?",
-        a: "Public project information lists 1 LDK + 1T, 1 LDK + 2T studio-suite layouts, and penthouse options. Spandaman will confirm what is currently available for your visit.",
+        a: "Krisumi publishes 1 LDK + 1T in two types and a 1 LDK + 2T. Spandaman confirms which of these are open for a visit.",
       },
       {
         q: "What is the price?",
-        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified rates.",
+        a: "Krisumi’s published list shows all-inclusive prices of ₹2.30 crore and ₹2.44 crore for the 1 LDK + 1T types, and ₹2.95 crore for the 1 LDK + 2T, before stamp duty and registration. Spandaman confirms the figure for the suite you shortlist.",
       },
       {
         q: "How is Waterfall Suites different from Waterfall Residences?",
@@ -222,28 +222,28 @@ export const projects = {
     ],
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
-        alt: "Modern glass residential tower rising against a clear sky",
+        src: "/projects/waterfall-suites/drop-off.jpg",
+        alt: "Krisumi Waterfall Suites tower drop-off and vertical facade",
       },
       {
-        src: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
-        alt: "Bright compact luxury apartment living space",
+        src: "/projects/waterfall-suites/main-garden.jpg",
+        alt: "Waterfall Suites main garden with waterfall",
       },
       {
-        src: "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=1200&q=80",
-        alt: "Contemporary building lobby with soft natural light",
+        src: "/projects/waterfall-suites/entrance-lobby.jpg",
+        alt: "Waterfall Suites entrance lobby",
       },
       {
-        src: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-        alt: "Resort-style pool with landscaped deck seating",
+        src: "/projects/waterfall-suites/restaurant.jpg",
+        alt: "Waterfall Suites restaurant",
       },
       {
-        src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
-        alt: "Zen-inspired garden path with lush greenery",
+        src: "/projects/waterfall-suites/plan-1ldk-1t.jpg",
+        alt: "Waterfall Suites 1 LDK plus 1 toilet floor plan",
       },
       {
-        src: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80",
-        alt: "Minimal modern bedroom with city view windows",
+        src: "/projects/waterfall-suites/site-drone-1.jpg",
+        alt: "Aerial view of the Waterfall Suites site in Sector 36A",
       },
     ],
   },
@@ -256,7 +256,7 @@ export const projects = {
     headline: "Next-chapter suite living with wellness-led design",
     support:
       "1 LDK suite and penthouse options in Sector 36A — Spandaman coordinates site visits and shares current availability on request.",
-    priceLabel: "Price on request",
+    priceLabel: "From ₹2.53 crore",
     typologies: ["1 LDK + 1T", "1 LDK + 2T", "Penthouse"],
     highlights: [
       {
@@ -273,7 +273,7 @@ export const projects = {
       },
       {
         title: "Broker-led clarity",
-        body: "Spandaman is an independent brokerage. We confirm inventory, walk configurations, and share price on request — no invented rates, RERA numbers, or developer spin.",
+        body: "Spandaman is an independent brokerage. We confirm which of Krisumi’s published suites are open and walk the configurations — no invented rates or developer spin.",
       },
     ],
     faqs: [
@@ -283,11 +283,11 @@ export const projects = {
       },
       {
         q: "What configurations are available?",
-        a: "Public project information lists 1 LDK + 1T, 1 LDK + 2T suite layouts, and penthouse floor options. Spandaman will confirm what is currently available for your visit.",
+        a: "Krisumi publishes 1 LDK + 1T, 1 LDK + 2T in two types, and a two-level penthouse. Spandaman confirms which of these are open for a visit.",
       },
       {
         q: "What is the price?",
-        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified rates.",
+        a: "Krisumi’s published starting prices are ₹2.53 crore for 1 LDK T1, ₹2.73 crore for 1 LDK T2 Type 2, and ₹3.16 crore for 1 LDK T2 Type 1. Spandaman confirms the figure for the suite you shortlist.",
       },
       {
         q: "How is Waterfall Suites II different from Waterfall Suites?",
@@ -304,28 +304,28 @@ export const projects = {
     ],
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80",
-        alt: "Contemporary residential tower facade with glass balconies",
+        src: "/projects/waterfall-suites-ii/banner.webp",
+        alt: "Krisumi Waterfall Suites II tower in the Sector 36A cluster",
       },
       {
-        src: "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
-        alt: "Bright modern suite living room with soft furnishings",
+        src: "/projects/waterfall-suites-ii/entry.webp",
+        alt: "Waterfall Suites II entrance and fluted facade",
       },
       {
-        src: "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=80",
-        alt: "Luxury residential lobby with layered lighting",
+        src: "/projects/waterfall-suites-ii/living.webp",
+        alt: "Waterfall Suites II living room",
       },
       {
-        src: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80",
-        alt: "Outdoor pool and deck with landscaped planting",
+        src: "/projects/waterfall-suites-ii/gym.webp",
+        alt: "Waterfall Suites II gym",
       },
       {
-        src: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
-        alt: "Green courtyard seating in a residential community",
+        src: "/projects/waterfall-suites-ii/plan-1ldk-1t.webp",
+        alt: "Waterfall Suites II 1 LDK plus 1 toilet floor plan",
       },
       {
-        src: "https://images.unsplash.com/photo-1630699144867-37acec97df5f?auto=format&fit=crop&w=1200&q=80",
-        alt: "Compact luxury bedroom with contemporary finishes",
+        src: "/projects/waterfall-suites-ii/site-1.jpg",
+        alt: "Aerial view of the Waterfall Suites II site",
       },
     ],
   },
@@ -338,7 +338,7 @@ export const projects = {
     headline: "Wellness-led luxury with Japanese design partners",
     support:
       "2 LDK and 3 LDK Waterside living in Sector 36A — Spandaman coordinates site visits and shares current availability on request.",
-    priceLabel: "Price on request",
+    priceLabel: "From ₹4.35 crore",
     typologies: [
       "2 LDK",
       "2 LDK + study",
@@ -362,7 +362,7 @@ export const projects = {
       },
       {
         title: "Broker-led clarity",
-        body: "Spandaman is an independent brokerage. We confirm inventory, walk configurations, and share price on request — no Crore list prices, invented RERA digits, or developer spin.",
+        body: "Spandaman is an independent brokerage. We confirm which of Krisumi’s published homes are open and walk the configurations — no invented rates or developer spin.",
       },
     ],
     faqs: [
@@ -372,11 +372,11 @@ export const projects = {
       },
       {
         q: "What configurations are available?",
-        a: "Public project materials list 2 LDK, 2 LDK + study, 2 LDK + servant, 3 LDK, 3 LDK + servant, and penthouse floorplan options. Spandaman will confirm what is currently available for your visit.",
+        a: "Krisumi publishes 2 LDK, 2 LDK + study, 3 LDK, 3 LDK + servant, and penthouse plans for Towers 1, 2, and 3. Spandaman confirms which of these are open for a visit.",
       },
       {
         q: "What is the price?",
-        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified Crore list rates from developer sites.",
+        a: "Krisumi’s published starting prices are ₹4.35 crore for 2 LDK, ₹4.82 crore and ₹4.91 crore for 2 LDK + S, ₹5.65 crore for 3 LDK, and ₹6.75 crore for 3 LDK + S. Spandaman confirms the figure for the home you shortlist. Stamp duty and registration are extra.",
       },
       {
         q: "How is Waterside Residences different from Waterfall Residences or Forest Reserve?",
@@ -393,28 +393,28 @@ export const projects = {
     ],
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80",
-        alt: "Luxury waterside residence exterior with reflective pool",
+        src: "/projects/waterside-residences/concept-building.webp",
+        alt: "Krisumi Waterside Residences towers above the Sector 36A landscape",
       },
       {
-        src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
-        alt: "Bright living room with large windows and contemporary finishes",
+        src: "/projects/waterside-residences/main-pool.webp",
+        alt: "Waterside Residences main pool",
       },
       {
-        src: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80",
-        alt: "Resort-style residential pool and landscaped deck",
+        src: "/projects/waterside-residences/dining.webp",
+        alt: "Waterside Residences dining room",
       },
       {
-        src: "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1200&q=80",
-        alt: "Elegant master bedroom with soft natural light",
+        src: "/projects/waterside-residences/lobby.webp",
+        alt: "Waterside Residences elevator lobby",
       },
       {
-        src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80",
-        alt: "Landscaped outdoor leisure space in a residential community",
+        src: "/projects/waterside-residences/plan-2ldk.webp",
+        alt: "Waterside Residences 2 LDK floor plan",
       },
       {
-        src: "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=1200&q=80",
-        alt: "Contemporary residential lobby with soft natural light",
+        src: "/projects/waterside-residences/site-tower-33.jpg",
+        alt: "September 2026 aerial of a Waterside Residences tower",
       },
     ],
   },
@@ -444,7 +444,7 @@ export const projects = {
       },
       {
         title: "Broker-led clarity",
-        body: "Spandaman is an independent brokerage. We confirm inventory, walk configurations, and share price on request — no invented rates, RERA numbers, or developer spin.",
+        body: "Spandaman is an independent brokerage. We confirm which of Krisumi’s published homes are open and walk the configurations — no invented rates or developer spin.",
       },
     ],
     faqs: [
@@ -454,11 +454,11 @@ export const projects = {
       },
       {
         q: "What configurations are available?",
-        a: "Public project materials show 3 LDK, 3 LDK + servant, 4 LDK + servant, and penthouse floorplan options across Forest Reserve phases. Spandaman will confirm what is currently available for your visit.",
+        a: "Krisumi publishes 3 LDK, 3 LDK + servant, 4 LDK + servant, and penthouse plans for Forest Reserve A, Forest Reserve B, and Forest Reserve II on one project page. Spandaman confirms which of these are open for a visit.",
       },
       {
         q: "What is the price?",
-        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified rates.",
+        a: "Krisumi does not publish a price list on The Forest Reserve project page. Share the configuration you want and Spandaman will confirm the current figure.",
       },
       {
         q: "How is The Forest Reserve different from Waterfall Residences or Suites?",
@@ -475,28 +475,28 @@ export const projects = {
     ],
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80",
-        alt: "Sunlit forest canopy with calm woodland path",
+        src: "/projects/forest-reserve/home-design-img.jpg",
+        alt: "Evening drop-off at Krisumi Waterside Residences — The Forest Reserve",
       },
       {
-        src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        alt: "Luxury residence exterior with landscaped entrance",
+        src: "/projects/forest-reserve/gallery-img-a.jpg",
+        alt: "Main pool at The Forest Reserve",
       },
       {
-        src: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=80",
-        alt: "Modern living room opening toward outdoor greenery",
+        src: "/projects/forest-reserve/speci-img-b.jpg",
+        alt: "Podium garden between Forest Reserve towers",
       },
       {
-        src: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80",
-        alt: "Resort-style pool with landscaped deck planting",
+        src: "/projects/forest-reserve/Group-80-1.png",
+        alt: "Forest Reserve residential tower",
       },
       {
-        src: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
-        alt: "Green courtyard seating in a residential community",
+        src: "/projects/forest-reserve/Waterside-Residences-4LDKS-Typical-1.jpg",
+        alt: "Forest Reserve 4 LDK plus servant floor plan",
       },
       {
-        src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
-        alt: "Open-plan kitchen and dining in a luxury home",
+        src: "/projects/forest-reserve/map-img-1.png",
+        alt: "Location map for The Forest Reserve",
       },
     ],
   },
@@ -510,15 +510,15 @@ export const projects = {
     support:
       "A later Waterside / Forest Reserve phase in Krisumi City, Sector 36A — Spandaman coordinates site visits and shares current availability on request.",
     priceLabel: "Price on request",
-    typologies: ["3 LDK + S", "Related Waterside layouts"],
+    typologies: ["3 LDK", "3 LDK + S", "4 LDK + S", "Penthouse"],
     highlights: [
       {
         title: "Forest Reserve line, next chapter",
         body: "Public materials position Forest Reserve II as a follow-on Waterside Residences phase within Krisumi City in Sector 36A — wellness and green lifestyle framing you verify with Spandaman on site.",
       },
       {
-        title: "Soft typology, confirmed on visit",
-        body: "Developer floorplan labels for Forest Reserve II emphasise 3 LDK + servant Waterside layouts. Spandaman confirms what is currently offered rather than inventing unit counts or mix.",
+        title: "The same published plans",
+        body: "Krisumi publishes Forest Reserve and Forest Reserve II plans on one page: 3 LDK, 3 LDK + servant, 4 LDK + servant, and penthouses. Spandaman confirms which of these are open.",
       },
       {
         title: "Green lifestyle in Sector 36A",
@@ -526,7 +526,7 @@ export const projects = {
       },
       {
         title: "Broker-led clarity",
-        body: "Spandaman is an independent brokerage. We confirm inventory, walk configurations, and share price on request — no invented rates, RERA digits, or hard possession promises without verification.",
+        body: "Spandaman is an independent brokerage. We confirm which of Krisumi’s published homes are open and walk the configurations — no invented rates or developer spin.",
       },
     ],
     faqs: [
@@ -536,11 +536,11 @@ export const projects = {
       },
       {
         q: "What configurations are available?",
-        a: "Public floorplan materials for Forest Reserve II highlight 3 LDK + servant Waterside layouts and related configurations as marketed. Spandaman will confirm current inventory for your visit rather than invent unit counts.",
+        a: "Krisumi publishes 3 LDK, 3 LDK + servant, 4 LDK + servant, and penthouse plans for Forest Reserve A, Forest Reserve B, and Forest Reserve II on one project page. Spandaman confirms which of these are open for a visit.",
       },
       {
         q: "What is the price?",
-        a: "Price on request. Share your preferred configuration and budget band — Spandaman will discuss current options personally. We do not publish unverified rates.",
+        a: "Krisumi does not publish a price list on The Forest Reserve project page. Share the configuration you want and Spandaman will confirm the current figure.",
       },
       {
         q: "When is possession?",
@@ -561,28 +561,28 @@ export const projects = {
     ],
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&q=80",
-        alt: "Misty green hillside landscape at dawn",
+        src: "/projects/forest-reserve/home-design-img.jpg",
+        alt: "Evening drop-off at Krisumi Waterside Residences — The Forest Reserve II",
       },
       {
-        src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        alt: "Luxury residence exterior with landscaped entrance",
+        src: "/projects/forest-reserve/gallery-img-a.jpg",
+        alt: "Main pool at The Forest Reserve",
       },
       {
-        src: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=80",
-        alt: "Modern living room opening toward outdoor greenery",
+        src: "/projects/forest-reserve/speci-img-b.jpg",
+        alt: "Podium garden between Forest Reserve towers",
       },
       {
-        src: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?auto=format&fit=crop&w=1200&q=80",
-        alt: "Green courtyard seating in a residential community",
+        src: "/projects/forest-reserve/Group-80-1.png",
+        alt: "Forest Reserve residential tower",
       },
       {
-        src: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80",
-        alt: "Resort-style pool with landscaped deck planting",
+        src: "/projects/forest-reserve/The-Forest-Reserve-II-Pentouse-A-Lower.jpg",
+        alt: "Forest Reserve II penthouse lower-level floor plan",
       },
       {
-        src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
-        alt: "Open-plan kitchen and dining in a luxury home",
+        src: "/projects/forest-reserve/map-img-1.png",
+        alt: "Location map for The Forest Reserve",
       },
     ],
   },

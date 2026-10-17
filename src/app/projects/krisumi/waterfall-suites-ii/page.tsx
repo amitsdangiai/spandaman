@@ -14,7 +14,7 @@ const whatsappMessage =
 export const metadata = pageMetadata({
   title: "Krisumi Waterfall Suites II",
   description:
-    "Krisumi Waterfall Suites II in Sector 36A, Gurugram. Spandaman arranges site visits for 1 LDK suites and penthouses, and shares the current price on request.",
+    "Krisumi Waterfall Suites II in Sector 36A, Gurugram. 1 LDK suites from ₹2.53 crore. Spandaman arranges site visits and confirms current availability.",
   path: "/projects/krisumi/waterfall-suites-ii",
   keywords: [
     "Krisumi Waterfall Suites II",
@@ -171,15 +171,208 @@ export default function WaterfallSuitesIIPage() {
         </div>
       </section>
 
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              Where does Waterfall Suites II sit in Sector 36A?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Krisumi places it on the two widest roads in the sector, NPR and
+              CPR, about three minutes from NH-48, beside a 220-acre green
+              zone and a 50-metre green belt.
+            </p>
+          </div>
+          <figure className="mt-8">
+            <Image
+              src="/projects/waterfall-suites-ii/location-map.webp"
+              alt="Map of Krisumi Waterfall Suites II in Sector 36A, Gurugram"
+              width={2000}
+              height={1300}
+              className="h-auto w-full rounded-xl border border-border/80 bg-white"
+            />
+          </figure>
+          <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            {[
+              ["entry.webp", "Entry gate", "Waterfall Suites II entry and fluted facade"],
+              ["aerial.webp", "Aerial", "Aerial of the Waterfall Suites II cluster"],
+              ["building.webp", "Building", "Waterfall Suites II tower facade"],
+            ].map(([file, title, alt]) => (
+              <figure key={file}>
+                <Image
+                  src={`/projects/waterfall-suites-ii/${file}`}
+                  alt={alt}
+                  width={1240}
+                  height={800}
+                  className="h-48 w-full rounded-xl object-cover"
+                />
+                <figcaption className="mt-2 text-sm font-medium text-ink">
+                  {title}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+            What do the Waterfall Suites II interiors look like?
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Krisumi publishes a living room, dining room, gym, bar, reception,
+            and lift lobby for the Suites II interiors.
+          </p>
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            ["living.webp", "Living room"],
+            ["dining.webp", "Dining room"],
+            ["gym.webp", "Gym"],
+            ["bar.webp", "Bar"],
+            ["reception.webp", "Reception"],
+            ["lobby.webp", "Lift lobby"],
+          ].map(([file, title]) => (
+            <figure key={file}>
+              <Image
+                src={`/projects/waterfall-suites-ii/${file}`}
+                alt={`Krisumi Waterfall Suites II ${title}`}
+                width={1240}
+                height={800}
+                className="h-48 w-full rounded-xl object-cover"
+              />
+              <figcaption className="mt-2 text-sm font-medium text-ink">
+                {title}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              Which unit plans does Waterfall Suites II offer?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Five published plans: 1 LDK + 1T, two 1 LDK + 2T types, and a
+              two-level penthouse.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-6 lg:grid-cols-2">
+            {[
+              ["plan-1ldk-1t.webp", "1 LDK + 1T"],
+              ["plan-1ldk-2t-type1.webp", "1 LDK + 2T, Type 1"],
+              ["plan-1ldk-2t-type2.webp", "1 LDK + 2T, Type 2"],
+              ["plan-ph-lower.webp", "Penthouse, lower level"],
+              ["plan-ph-upper.webp", "Penthouse, upper level"],
+            ].map(([file, title]) => (
+              <figure key={file}>
+                <figcaption className="text-sm font-medium text-ink">
+                  {title}
+                </figcaption>
+                <Image
+                  src={`/projects/waterfall-suites-ii/${file}`}
+                  alt={`Krisumi Waterfall Suites II floor plan, ${title}`}
+                  width={1360}
+                  height={970}
+                  className="mt-3 h-auto w-full rounded-xl border border-border/80 bg-white"
+                />
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+            What is the published starting price?
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Krisumi’s page lists three starting prices. Spandaman confirms
+            which of these suites are open, and stamp duty and registration
+            sit on top of the figure.
+          </p>
+        </div>
+        <div className="mt-8 overflow-x-auto rounded-xl border border-border/80 bg-white">
+          <table className="w-full min-w-[28rem] text-left text-sm">
+            <caption className="sr-only">
+              Krisumi Waterfall Suites II published starting prices
+            </caption>
+            <thead className="bg-ink text-white">
+              <tr>
+                <th scope="col" className="px-4 py-3 font-medium">
+                  Unit type
+                </th>
+                <th scope="col" className="px-4 py-3 font-medium">
+                  Starting price
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["1 LDK T1", "₹2.53 crore"],
+                ["1 LDK T2, Type 2", "₹2.73 crore"],
+                ["1 LDK T2, Type 1", "₹3.16 crore"],
+              ].map(([type, price]) => (
+                <tr key={type} className="border-t border-border/70">
+                  <th scope="row" className="px-4 py-3 font-medium text-ink">
+                    {type}
+                  </th>
+                  <td className="px-4 py-3 text-ink">{price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              What does the Waterfall Suites II site look like now?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              These aerial photographs are from Krisumi’s September 2026 site
+              update for Waterfall Suites II.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <figure>
+              <Image
+                src="/projects/waterfall-suites-ii/site-1.jpg"
+                alt="September 2026 aerial of the Waterfall Suites II site"
+                width={4032}
+                height={3024}
+                className="h-72 w-full rounded-xl object-cover sm:h-80"
+              />
+            </figure>
+            <figure>
+              <Image
+                src="/projects/waterfall-suites-ii/site-2.jpg"
+                alt="September 2026 aerial of Waterfall Suites II tower construction"
+                width={4032}
+                height={3024}
+                className="h-72 w-full rounded-xl object-cover sm:h-80"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
-              Gallery
+              Compare other Krisumi homes
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Atmosphere references for luxury suite living — confirm actual
-              inventory and finishes on your visit with Spandaman.
+              Waterfall Suites II is the later 1 LDK phase at Sector 36A.
+              Suites, Residences, and Forest Reserve sit on the same visit.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
@@ -209,18 +402,6 @@ export default function WaterfallSuitesIIPage() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {suitesII.gallery.slice(1).map((image) => (
-            <Image
-              key={image.src}
-              src={image.src}
-              alt={image.alt}
-              width={900}
-              height={700}
-              className="h-52 w-full rounded-xl object-cover sm:h-56"
-            />
-          ))}
-        </div>
       </section>
 
       <section
@@ -236,8 +417,8 @@ export default function WaterfallSuitesIIPage() {
               Request Waterfall Suites II details
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Tell Spandaman your preferred configuration and budget band. Price
-              on request — we share current options personally. Or call{" "}
+              Tell Spandaman your preferred configuration. The published bands
+              are on this page — we confirm the suite that is open. Or call{" "}
               <a
                 className="font-medium text-brand underline-offset-2 hover:underline"
                 href={telUrl()}
@@ -289,7 +470,7 @@ export default function WaterfallSuitesIIPage() {
               Ready for a Waterfall Suites II site visit?
             </h2>
             <p className="mt-3 text-base text-white/80">
-              Spandaman will confirm inventory, share price on request, and
+              Spandaman will confirm which published suites are open and
               schedule a walkthrough that fits your day — including a
               side-by-side look at{" "}
               <Link

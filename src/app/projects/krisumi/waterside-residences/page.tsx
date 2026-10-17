@@ -14,7 +14,7 @@ const whatsappMessage =
 export const metadata = pageMetadata({
   title: "Krisumi Waterside Residences",
   description:
-    "Krisumi Waterside Residences in Sector 36A, Gurugram. Spandaman books site visits for 2 LDK and 3 LDK homes, and shares the current price on request.",
+    "Krisumi Waterside Residences in Sector 36A, Gurugram. 2 and 3 LDK homes from ₹4.35 crore. Spandaman arranges site visits and confirms availability.",
   path: "/projects/krisumi/waterside-residences",
   keywords: [
     "Krisumi Waterside Residences",
@@ -173,15 +173,225 @@ export default function WatersideResidencesPage() {
         </div>
       </section>
 
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              Where does Waterside Residences sit in Sector 36A?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Krisumi places it on Gurugram’s NPR and CPR, about three minutes
+              from NH-48, beside a 220-acre green zone and a 50-metre green
+              belt.
+            </p>
+          </div>
+          <figure className="mt-8">
+            <Image
+              src="/projects/waterside-residences/location-map.webp"
+              alt="Map of Krisumi Waterside Residences in Sector 36A, Gurugram"
+              width={2000}
+              height={1300}
+              className="h-auto w-full rounded-xl border border-border/80 bg-white"
+            />
+          </figure>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["concept-entrance.webp", "Entrance"],
+              ["concept-dropoff.webp", "Drop-off"],
+              ["concept-gate.webp", "Entry gate"],
+              ["concept-gate-2.webp", "Gate approach"],
+            ].map(([file, title]) => (
+              <figure key={file}>
+                <Image
+                  src={`/projects/waterside-residences/${file}`}
+                  alt={`Krisumi Waterside Residences ${title}`}
+                  width={1240}
+                  height={800}
+                  className="h-40 w-full rounded-xl object-cover"
+                />
+                <figcaption className="mt-2 text-sm font-medium text-ink">
+                  {title}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+            What do the Waterside pools and interiors look like?
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Krisumi publishes a main pool, a kids pool, a lake, and interiors
+            for the lounge, elevator lobby, dining room, bedrooms, and
+            bathroom.
+          </p>
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            ["main-pool.webp", "Main pool"],
+            ["kids-pool.webp", "Kids pool"],
+            ["lake.webp", "Lake"],
+            ["lounge.webp", "Lounge"],
+            ["lobby.webp", "Elevator lobby"],
+            ["dining.webp", "Dining"],
+            ["master-bedroom.webp", "Master bedroom"],
+            ["kids-bedroom.webp", "Kids bedroom"],
+            ["bathroom.webp", "Bathroom"],
+          ].map(([file, title]) => (
+            <figure key={file}>
+              <Image
+                src={`/projects/waterside-residences/${file}`}
+                alt={`Krisumi Waterside Residences ${title}`}
+                width={1240}
+                height={800}
+                className="h-48 w-full rounded-xl object-cover"
+              />
+              <figcaption className="mt-2 text-sm font-medium text-ink">
+                {title}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              Which unit plans does Waterside Residences offer?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Krisumi publishes 2 LDK, 2 LDK + study, 3 LDK, 3 LDK + servant,
+              and penthouse plans for Tower 1 and for Towers 2 and 3.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-6 lg:grid-cols-2">
+            {[
+              ["plan-2ldk.webp", "Tower 1, 2 LDK"],
+              ["plan-3ldk-s.webp", "Tower 1, 3 LDK + servant"],
+              ["plan-2ldk-a.webp", "Towers 2 and 3, 2 LDK A"],
+              ["plan-2ldk-study.webp", "Towers 2 and 3, 2 LDK + study"],
+              ["plan-3ldk.webp", "Towers 2 and 3, 3 LDK"],
+              ["plan-ph-a-lower.webp", "Penthouse A, lower level"],
+              ["plan-ph-a-upper.webp", "Penthouse A, upper level"],
+            ].map(([file, title]) => (
+              <figure key={file}>
+                <figcaption className="text-sm font-medium text-ink">
+                  {title}
+                </figcaption>
+                <Image
+                  src={`/projects/waterside-residences/${file}`}
+                  alt={`Krisumi Waterside Residences floor plan, ${title}`}
+                  width={1360}
+                  height={970}
+                  className="mt-3 h-auto w-full rounded-xl border border-border/80 bg-white"
+                />
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+            What is the published starting price?
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Krisumi’s page lists these starting prices. Spandaman confirms
+            which homes are open, and stamp duty and registration sit on top
+            of the figure.
+          </p>
+        </div>
+        <div className="mt-8 overflow-x-auto rounded-xl border border-border/80 bg-white">
+          <table className="w-full min-w-[28rem] text-left text-sm">
+            <caption className="sr-only">
+              Krisumi Waterside Residences published starting prices
+            </caption>
+            <thead className="bg-ink text-white">
+              <tr>
+                <th scope="col" className="px-4 py-3 font-medium">
+                  Typology
+                </th>
+                <th scope="col" className="px-4 py-3 font-medium">
+                  Starting price
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["2 LDK", "₹4.35 crore"],
+                ["2 LDK + S", "₹4.82 crore and ₹4.91 crore"],
+                ["3 LDK", "₹5.65 crore"],
+                ["3 LDK + S", "₹6.75 crore"],
+              ].map(([type, price]) => (
+                <tr key={type} className="border-t border-border/70">
+                  <th scope="row" className="px-4 py-3 font-medium text-ink">
+                    {type}
+                  </th>
+                  <td className="px-4 py-3 text-ink">{price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="border-y border-border/70 bg-white/70">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
+              What does the Waterside Residences site look like now?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              These photographs are from Krisumi’s construction updates for
+              Waterside Residences, including the September 2026 tower aerials.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <figure>
+              <Image
+                src="/projects/waterside-residences/site-tower-32.jpg"
+                alt="September 2026 aerial of Waterside Residences Tower 3.2"
+                width={4032}
+                height={3024}
+                className="h-72 w-full rounded-xl object-cover sm:h-80"
+              />
+            </figure>
+            <figure>
+              <Image
+                src="/projects/waterside-residences/site-tower-33.jpg"
+                alt="September 2026 aerial of Waterside Residences Tower 3.3"
+                width={4032}
+                height={3024}
+                className="h-72 w-full rounded-xl object-cover sm:h-80"
+              />
+            </figure>
+            <figure className="sm:col-span-2">
+              <Image
+                src="/projects/waterside-residences/site-august.jpg"
+                alt="Earlier aerial of a Waterside Residences floor under construction"
+                width={1360}
+                height={970}
+                className="h-72 w-full rounded-xl object-cover sm:h-96"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-xl">
             <h2 className="font-display text-3xl tracking-tight text-ink sm:text-4xl">
-              Gallery
+              Compare other Krisumi homes
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Atmosphere references for waterside residential living — confirm
-              actual inventory and finishes on your visit with Spandaman.
+              Waterside Residences is the 2 and 3 LDK line at Sector 36A.
+              Forest Reserve and the Waterfall projects sit on the same visit.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
@@ -205,18 +415,6 @@ export default function WatersideResidencesPage() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {waterside.gallery.slice(1).map((image) => (
-            <Image
-              key={image.src}
-              src={image.src}
-              alt={image.alt}
-              width={900}
-              height={700}
-              className="h-52 w-full rounded-xl object-cover sm:h-56"
-            />
-          ))}
-        </div>
       </section>
 
       <section
@@ -232,8 +430,8 @@ export default function WatersideResidencesPage() {
               Request Waterside Residences details
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Tell Spandaman your preferred configuration and budget band. Price
-              on request — we share current options personally. Or call{" "}
+              Tell Spandaman your preferred configuration. The published bands
+              are on this page — we confirm the home that is open. Or call{" "}
               <a
                 className="font-medium text-brand underline-offset-2 hover:underline"
                 href={telUrl()}
@@ -285,7 +483,7 @@ export default function WatersideResidencesPage() {
               Ready for a Waterside Residences site visit?
             </h2>
             <p className="mt-3 text-base text-white/80">
-              Spandaman will confirm inventory, share price on request, and
+              Spandaman will confirm which published homes are open and
               schedule a walkthrough that fits your day — including a
               side-by-side look at{" "}
               <Link
