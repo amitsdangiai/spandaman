@@ -3,9 +3,13 @@
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { site } from "@/lib/site";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+
+const leadInbox = "spandamanrealtors@gmail.com";
+const liveFormUrl = "https://spandaman.com/contact";
 
 type LeadFormProps = {
   defaultProject?: string;
@@ -27,25 +31,54 @@ export function LeadForm({
 
     const form = event.currentTarget;
     const data = new FormData(form);
+    const name = String(data.get("name") || "").trim();
+    const phone = String(data.get("phone") || "").trim();
+    const email = String(data.get("email") || "").trim();
+    const message = String(data.get("message") || "").trim();
+    const project = String(data.get("project") || defaultProject).trim();
+
+    if (phone.replace(/\D/g, "").length < 10) {
+      setError("Please enter a valid phone number.");
+      setPending(false);
+      return;
+    }
 
     try {
-      const res = await fetch("/api/leads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: data.get("name"),
-          phone: data.get("phone"),
-          email: data.get("email") || "",
-          message: data.get("message") || "",
-          project: data.get("project") || defaultProject,
-        }),
-      });
-
-      if (!res.ok) {
-        const payload = (await res.json().catch(() => null)) as {
-          error?: string;
-        } | null;
-        throw new Error(payload?.error || "Could not submit enquiry.");
+      const res = await fetch(
+        `https://formsubmit.co/ajax/${encodeURIComponent(leadInbox)}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            phone,
+            email: email || site.email,
+            project,
+            message:
+              message ||
+              "A new enquiry was submitted on the Spandaman website.",
+            _subject: `New enquiry: ${name} — ${project}`,
+            _replyto: email || site.email,
+            _url: liveFormUrl,
+            _template: "table",
+            _captcha: "false",
+          }),
+        },
+      );
+      const payload = (await res.json().catch(() => null)) as {
+        success?: boolean | string;
+        message?: string;
+      } | null;
+      const delivered =
+        payload?.success === true || payload?.success === "true";
+      const queued = /activation/i.test(payload?.message || "");
+      if (!delivered && !queued) {
+        throw new Error(
+          "We could not send your enquiry just now. Please call or WhatsApp us and we will take it from there.",
+        );
       }
 
       router.push("/thank-you");
