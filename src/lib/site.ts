@@ -6,6 +6,7 @@ export const site = {
   phoneTel: "+919992989289",
   whatsapp: "919992989289",
   email: "enquire@spandaman.in",
+  googleAnalyticsId: "G-7TX4QZGW55",
   address: "Gurugram, Haryana",
   hours: "Mon–Sat, 10:00 AM – 7:00 PM",
 } as const;

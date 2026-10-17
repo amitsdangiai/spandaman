@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Figtree, Fraunces, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import { JsonLd } from "@/components/json-ld";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -57,6 +58,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main className="flex-1">{children}</main>
         <SiteFooter />
         <StickyCta />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${site.googleAnalyticsId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${site.googleAnalyticsId}');
+          `}
+        </Script>
       </body>
     </html>
   );
