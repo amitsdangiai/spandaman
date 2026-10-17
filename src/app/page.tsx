@@ -25,28 +25,27 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={faqJsonLd(krisumi.faqs)} />
-      <section className="relative min-h-[100svh] overflow-hidden text-white">
-        {/* nsventures aerial VR (or local tiles if present); video only if iframe fails */}
+      <section className="relative h-[calc(75svh-4.5rem)] overflow-hidden md:h-[75svh]">
         <HeroVr />
-
-        {/* Edge scrims only — the center of the tour stays clear. Clicks pass through. */}
         <div className="pointer-events-none absolute inset-x-0 top-0 z-[2] h-24 bg-gradient-to-b from-black/50 to-transparent" />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[2] h-48 bg-gradient-to-t from-black/55 to-transparent sm:h-40" />
+      </section>
 
-        {/* Copy sits along the bottom so the aerial view remains the focus. */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[3] px-4 pb-20 sm:px-6 sm:pb-6">
-          <div className="hero-cue-group pointer-events-auto mx-auto max-w-3xl text-center">
-            <h1 className="hero-cue text-balance text-lg font-medium leading-snug text-white drop-shadow-[0_1px_8px_rgba(0,0,0,0.65)] sm:text-2xl">
-              Enquire on Krisumi — Sector 36A, Gurugram
-            </h1>
-            <p className="hero-cue hero-cue-delay-1 mx-auto mt-1.5 max-w-xl text-sm leading-relaxed text-white/90 drop-shadow-[0_1px_6px_rgba(0,0,0,0.7)]">
-              Broker-led site visits, current inventory, and price on request.
-            </p>
-            <div className="hero-cue hero-cue-delay-2 mt-3 flex flex-wrap items-center justify-center gap-2">
+      <section className="flex min-h-[25svh] items-center border-b border-border/70 bg-mist">
+        <div className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-2.5 px-4 py-3 sm:gap-3 sm:px-6 sm:py-5">
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <div className="max-w-xl">
+              <h1 className="text-balance font-display text-2xl tracking-tight text-ink sm:text-3xl">
+                Enquire on Krisumi — Sector 36A, Gurugram
+              </h1>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                Broker-led site visits, current inventory, and price on request.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
               <LinkButton
                 href="#enquire"
                 size="sm"
-                className="bg-white text-ink hover:bg-white/90"
+                className="bg-brand text-brand-foreground hover:bg-brand/90"
               >
                 Enquire now
               </LinkButton>
@@ -54,44 +53,38 @@ export default function HomePage() {
                 href={whatsappUrl()}
                 external
                 size="sm"
-                variant="outline"
-                className="hidden border-white/55 bg-black/25 text-white hover:bg-white/10 hover:text-white sm:inline-flex"
+                className="bg-sage text-white hover:bg-sage/90"
               >
                 WhatsApp
               </LinkButton>
-              <LinkButton
-                href={telUrl()}
-                size="sm"
-                variant="ghost"
-                className="hidden text-white hover:bg-white/10 hover:text-white md:inline-flex"
-              >
+              <LinkButton href={telUrl()} size="sm" variant="outline">
                 Call {site.phoneDisplay}
               </LinkButton>
             </div>
-            <nav
-              aria-label="Explore Krisumi projects"
-              className="hero-cue hero-cue-delay-3 mt-3 flex flex-wrap items-center justify-center gap-1.5"
-            >
-              {(
-                [
-                  ["Waterfall Residences", "/projects/krisumi/waterfall-residences"],
-                  ["Waterfall Suites", "/projects/krisumi/waterfall-suites"],
-                  ["Waterfall Suites II", "/projects/krisumi/waterfall-suites-ii"],
-                  ["Waterside Residences", "/projects/krisumi/waterside-residences"],
-                  ["Forest Reserve", "/projects/krisumi/forest-reserve"],
-                  ["Forest Reserve II", "/projects/krisumi/forest-reserve-ii"],
-                ] as const
-              ).map(([label, href]) => (
-                <a
-                  key={href}
-                  href={href}
-                  className="rounded-full border border-white/35 bg-black/35 px-2.5 py-1 text-[0.68rem] font-medium tracking-wide text-white shadow-sm backdrop-blur-sm transition-colors hover:border-white/70 hover:bg-black/50"
-                >
-                  {label}
-                </a>
-              ))}
-            </nav>
           </div>
+          <nav
+            aria-label="Explore Krisumi projects"
+            className="flex gap-1.5 overflow-x-auto pb-0.5 md:flex-wrap md:overflow-visible"
+          >
+            {(
+              [
+                ["Waterfall Residences", "/projects/krisumi/waterfall-residences"],
+                ["Waterfall Suites", "/projects/krisumi/waterfall-suites"],
+                ["Waterfall Suites II", "/projects/krisumi/waterfall-suites-ii"],
+                ["Waterside Residences", "/projects/krisumi/waterside-residences"],
+                ["Forest Reserve", "/projects/krisumi/forest-reserve"],
+                ["Forest Reserve II", "/projects/krisumi/forest-reserve-ii"],
+              ] as const
+            ).map(([label, href]) => (
+              <a
+                key={href}
+                href={href}
+                className="shrink-0 rounded-full border border-border bg-white px-2.5 py-1 text-[0.72rem] font-medium whitespace-nowrap text-ink transition-colors hover:border-brand/40 hover:text-brand"
+              >
+                {label}
+              </a>
+            ))}
+          </nav>
         </div>
       </section>
 

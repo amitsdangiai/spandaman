@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-Dev server defaults to **http://127.0.0.1:43127**.
+Dev server defaults to **http://127.0.0.1:3000**.
 
 Production build:
 
