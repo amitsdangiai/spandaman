@@ -2,6 +2,8 @@ import { mkdir, appendFile, writeFile } from "fs/promises";
 import path from "path";
 import { sendLeadEmail, type LeadMail } from "@/lib/send-lead-email";
 
+export const runtime = "nodejs";
+
 type LeadPayload = {
   name?: string;
   phone?: string;
